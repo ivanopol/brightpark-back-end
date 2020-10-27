@@ -1,0 +1,32 @@
+User-agent: *
+Disallow: /*?*
+Allow: *.css
+Allow: *.js
+Allow: *.jpeg
+Allow: *.jpg
+Allow: *.png
+Allow: *.svg
+Allow: /build/images/
+
+User-agent: Yandex
+Disallow: /*?*
+Allow: *.css
+Allow: *.js
+Allow: *.jpeg
+Allow: *.jpg
+Allow: *.png
+Allow: *.svg
+Allow: /build/images/
+
+User-agent: Googlebot
+Disallow: /*?*
+Allow: *.css
+Allow: *.js
+Allow: *.jpeg
+Allow: *.jpg
+Allow: *.png
+Allow: *.svg
+Allow: /build/images/
+
+Host: https://brightpark.ru/
+Sitemap: https://brightpark.ru/sitemap.xml
