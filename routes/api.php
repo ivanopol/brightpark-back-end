@@ -13,7 +13,7 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::middleware(['cache.headers:private;max_age=3600'])->group(function () {
+Route::middleware(['cache.headers:private;max_age=3600', 'middleware' => 'throttle:5'])->group(function () {
     Route::get('/model_details', 'API\ModelController@model_details')->name('model_details');
     Route::get('/models_list', 'API\ModelController@index')->name('models_list');
     Route::get('/carcasses', 'API\ModelController@carcasses')->name('carcasses');
