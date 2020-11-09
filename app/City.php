@@ -145,7 +145,7 @@ class City extends Model
                     'opening_hours' => $opening_hours,
                     'coords' => $city->coordinates,
                     'jivosite_token' => $city->jivosite_token,
-                    'begin_script' => $city->begin_script,
+                    'begin_script' => $city->open_script,
                     'bitrix_responsible_id' => $city->bitrix_responsible_id
                 ];
 
