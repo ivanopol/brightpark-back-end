@@ -18,7 +18,7 @@ use App\City;
 
 class ModelController extends Controller
 {
-    private $cache_time = 5; // seconds
+    private $cache_time = 300; // 300 сек. / 60 = 5 минут
 
     /**
      * Получает список моделей авто
@@ -27,7 +27,13 @@ class ModelController extends Controller
      */
     public function index() : \Illuminate\Http\JsonResponse
     {
-        $models = CarModel::with('types_preview')->orderBy('sort', 'asc')->get();
+        $minutes = $this->cache_time;
+        $key = 'car_models';
+
+        $models = Cache::remember($key, $minutes, function () {
+            return CarModel::with('types_preview')->orderBy('sort', 'asc')->get();
+        });
+
         return Response::json($models);
     }
 
