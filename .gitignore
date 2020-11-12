@@ -3,7 +3,6 @@
 /public/hot
 /public/storage
 /public/images
-/storage
 /storage/docker/mysql
 /vendor
 .env
