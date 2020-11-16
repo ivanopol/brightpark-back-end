@@ -227,6 +227,37 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 6,
             ],
+            [
+                'title' => 'ПОЛУЧИ СКИДКУ 20 000 РУБЛЕЙ!',
+                'text' => '<p>При покупке автомобиля с&nbsp;пробегом в&nbsp;кредит или в&nbsp;обмен в&nbsp;автосалоне &laquo;КАРЛССОН&raquo; ГК&nbsp;&laquo;БРАЙТ ПАРК&raquo; по&nbsp;промокоду &laquo;Гриндэй 2ГИС&raquo;&nbsp;&mdash; получи скидку 20&nbsp;000&nbsp;рублей! Сроки ограничены. Подробности в&nbsp;автосалоне.</p>
+                    <p class="b_title">КАРЛССОН</p>
+                    <p>
+                    Федеральная сеть авто с&nbsp;пробегом<br>
+                    входит в&nbsp;группу компаний &laquo;БРАЙТ ПАРК&raquo;</p>
+                    <p>Представлена в&nbsp;5&nbsp;городах:<br>
+                    Москва, Симферопольское ш., 22, стр.&nbsp;7, Щербинка<br>
+                    Пермь, ул. Спешилова, 107<br>
+                    Екатеринбург, ул. Маневровая, 41<br>
+                    Волгоград, ул. Зевина, 3д<br>
+                    Магнитогорск, ул. Калмыкова, 70/2</p>
+                    <p>Полный склад авто с&nbsp;пробегом на&nbsp;сайте АВИТО:<br>
+                    <a href="https://www.avito.ru/karlssonpro">https://www.avito.ru/karlssonpro</a></p>
+                ',
+                'text_short' => 'При покупке автомобиля с&nbsp;пробегом в&nbsp;кредит или в&nbsp;обмен в&nbsp;автосалоне &laquo;КАРЛССОН&raquo; ГК&nbsp;&laquo;БРАЙТ&nbsp;ПАРК&raquo; по&nbsp;промокоду &laquo;Гриндэй 2ГИС&raquo;&nbsp;&mdash; получи скидку 20&nbsp;000&nbsp;рублей! Сроки ограничены. Подробности в&nbsp;автосалоне.',
+                'preview' => '/images/stocks/rasshirennye_usloviya_programmy_gosudarstvennoj_podderzhki.jpg',
+                'slug' => 'karlsson-skidka',
+                'city_id' => 0,
+                'sort' => 7,
+            ],
+            [
+                'title' => 'ПОЛУЧИ ЗИМНЮЮ РЕЗИНУ В ПОДАРОК!',
+                'text' => '<p>При покупке новой LADA по&nbsp;промокоду &laquo;Гриндэй 2ГИС&raquo; в&nbsp;автосалоне Брайт&nbsp;парк&nbsp;&mdash; зимняя резина в&nbsp;подарок! Сроки ограничены. Подробности в&nbsp;автосалоне.</p>',
+                'text_short' => 'При покупке новой LADA по&nbsp;промокоду &laquo;Гриндэй 2ГИС&raquo; в&nbsp;автосалоне Брайт&nbsp;парк&nbsp;&mdash; зимняя резина в&nbsp;подарок! Сроки ограничены. Подробности в&nbsp;автосалоне.',
+                'preview' => '/images/stocks/brajt_park_rabotaet_onlajn.jpg',
+                'slug' => 'zimnyaya-rezina',
+                'city_id' => 0,
+                'sort' => 8,
+            ],
         ];
 
         DB::table('stocks')->insert($stocks);
