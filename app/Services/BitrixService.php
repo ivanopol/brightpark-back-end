@@ -297,7 +297,7 @@ class BitrixService
                 curl_close($curl);
                 $result = json_decode($result, 1);
 
-                $lead = $result['result'];
+                $lead = isset($result['result']) ? $result['result'] : [];
 
 
                 if (!empty($lead) && !empty($lead['PHONE'][0]['VALUE'])) {
