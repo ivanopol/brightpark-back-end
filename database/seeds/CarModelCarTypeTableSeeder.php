@@ -93,7 +93,7 @@ class CarModelCarTypeTableSeeder extends Seeder
                 'count'=>333,
                 'image' => '/images/slider/mini/vesta/mobile/lada_vesta_cross.png',
                 'slogan' => 'Стиль стремительного седана и проходимость уверенного в себе кроссовера',
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'car_model_id' => '2',
@@ -104,7 +104,7 @@ class CarModelCarTypeTableSeeder extends Seeder
                 'count'=>333,
                 'image' => '/images/slider/mini/vesta/mobile/lada_vesta_sw.png',
                 'slogan' => 'Увеличенное пространство для пассажиров заднего ряда',
-                'active' => 0,
+                'active' => 1,
             ],
             [
                 'car_model_id' => '2',
