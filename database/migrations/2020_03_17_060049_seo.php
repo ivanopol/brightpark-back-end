@@ -19,7 +19,7 @@ class Seo extends Migration
             $table->bigIncrements('id')->unsigned();
             $table->string('url')->nullable();
             $table->string('title')->nullable();
-            $table->string('description')->nullable();
+            $table->text('description')->nullable();
             $table->string('city');
         });
 
