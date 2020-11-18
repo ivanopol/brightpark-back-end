@@ -289,7 +289,7 @@ class StocksTableSeeder extends Seeder
                 </p>
                 ',
                 'text_short' => 'Условия маркетинговой акции &laquo;Розыгрыш телевизора&raquo; (далее&nbsp;&mdash; Акция)',
-                'preview' => '/build/images/stocks/brajt_park_rabotaet_onlajn.jpg',
+                'preview' => '/images/stocks/brajt_park_rabotaet_onlajn.jpg',
                 'slug' => 'rozygrysh-televizora',
                 'city_id' => 0,
                 'sort' => 9,
