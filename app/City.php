@@ -138,6 +138,14 @@ class City extends Model
                     ]
                 ];
 
+                $scripts_ids = explode(';',  $city->begin_script);
+                $scripts_ids_tmp = [];
+                $scripts_ids_tmp['ya_metrika'] = isset($scripts_ids[0]) && !empty($scripts_ids[0]) ? $scripts_ids[0] : '';
+                $scripts_ids_tmp['gtag'] = isset($scripts_ids[1]) && !empty($scripts_ids[1]) ? $scripts_ids[1] : '';
+                $scripts_ids_tmp['facebook'] = isset($scripts_ids[2]) && !empty($scripts_ids[2]) ? $scripts_ids[2] : '';
+                $scripts_ids_tmp['mailru'] = isset($scripts_ids[3]) && !empty($scripts_ids[3]) ? $scripts_ids[3] : '';
+                $scripts_ids_tmp['vk'] = isset($scripts_ids[4]) && !empty($scripts_ids[4]) ? $scripts_ids[4] : '';
+
                 $cities['active'] = [
                     'value' => $city->alias,
                     'label' => $city->title_ru,
@@ -145,7 +153,8 @@ class City extends Model
                     'opening_hours' => $opening_hours,
                     'coords' => $city->coordinates,
                     'jivosite_token' => $city->jivosite_token,
-                    'begin_script' => $city->open_script,
+                    'begin_script' => '',//$city->open_script,
+                    'scripts' => $scripts_ids_tmp,
                     'bitrix_responsible_id' => $city->bitrix_responsible_id
                 ];
 
