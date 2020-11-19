@@ -7,7 +7,7 @@ class CityTableSeeder extends Seeder
     public function run()
     {
         $end_script = "";
-        $responsible_id = App::environment('production') ? 1201 : 1447 ;
+        $responsible_id = 1201;
 
         $cities = [
             [
