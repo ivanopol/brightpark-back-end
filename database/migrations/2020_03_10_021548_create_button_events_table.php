@@ -19,7 +19,7 @@ class CreateButtonEventsTable extends Migration
             $table->bigIncrements('id');
             $table->string('button_id')->nullable();
             $table->dateTime('timestamp');
-            $table->string('href')->nullable();
+            $table->text('href')->nullable();
             $table->string('location');
             $table->string('user_ip');
             $table->string('bp_uid');
