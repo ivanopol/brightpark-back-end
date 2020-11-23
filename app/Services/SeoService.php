@@ -109,7 +109,7 @@ class SeoService
                 if (count($segments) && $segments[0] === 'contacts') {
                     $contacts = Contacts::where('city_id', $city->id)->first();
 
-                    array_push($patterns, '/<:CONTACTS_ADDRESS:>/', '/<:CONTACTS_PHONE:>/');
+                    array_push($patterns, '/<:ADDRESS:>/', '/<:PHONE:>/');
                     array_push($replacements, $contacts->address, $contacts->phone);
                 }
 
