@@ -57,7 +57,7 @@ class SeoTableSeeder extends Seeder
             [
                 'url' => 'service',
                 'title' => 'Сервисный центр автосалона Брайт Парк в <:CITY_DATIVE:>',
-                'description' => 'Брайт Парк " . $city->title_ru . " предлагает Сервисное обслуживание автомобилей Лада в <:CITY_DATIVE:>',
+                'description' => 'Брайт Парк <:CITY:> предлагает Сервисное обслуживание автомобилей Лада в <:CITY_DATIVE:>',
                 'city' => '0',
             ],
             [
