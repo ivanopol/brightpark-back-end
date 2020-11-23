@@ -42,7 +42,9 @@ class SeoService
             return $meta_tags;
         }
 
-        $segments = explode("/", ltrim($route, '/'));
+        $route_tmp = explode('?', $route);
+
+        $segments = explode("/", ltrim($route_tmp[0], '/'));
         $route_city = array_shift($segments);
 
         $city = City::where('alias', $route_city)->first();
