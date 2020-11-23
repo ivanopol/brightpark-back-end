@@ -167,6 +167,10 @@ class BasePageService
             'model_slug' => $car_model->slug,
             'type_slug' => $car_type->slug,
             'model_full' => $model_full,
+            'car_attrs' => [
+                'price' => $car_price->price,
+                'special_price' => $car_price->special_price,
+                ]
         ];
 
         return $data;
