@@ -50,6 +50,14 @@ class CarModelTableSeeder extends Seeder
                 'preview' => '/images/photos/models/largus/largus.png',
             ],
             [
+                'title' => 'Largus Cross',
+                'title_ru' => 'Ларгус Cross',
+                'slug' => Str::slug('Largus Cross'),
+                'description' => 'Этот автомобиль может легко приспособиться к любым вашим потребностям. LADA Largus Cross идеально сочетает в себе комфорт, практичность и высокую полезную нагрузку. Крепкий, сбитый, уверенный Largus Cross однозначно заявляет: «На меня можно положиться!». LADA Largus Cross адаптирован к российским условиям эксплуатации, а отработанная конструкция и технологии обеспечивают высокое качество автомобиля.',
+                'sort' => 7,
+                'preview' => '/images/photos/models/largus/largus_cross.png',
+            ],
+            [
                 'title' => 'Niva',
                 'title_ru' => 'Нива',
                 'slug' => Str::slug('Niva'),

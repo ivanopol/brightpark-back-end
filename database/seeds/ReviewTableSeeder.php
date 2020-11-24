@@ -286,6 +286,13 @@ class ReviewTableSeeder extends Seeder
                 'quote' => 'На фоне прочих моделей Lada выглядит Largus по-своему добротно и уютно. Lada Largus – автомобиль действительно доступный: универсал оказался дешевле Renault Logan, также производимого в России и уступающего в габаритах и вместительности. ',
                 'author' => 'портал <cite>carexpert.ru</cite>'
             ],
+            [
+                'model_id' => 5,
+                'type_id' => 4,
+                'url' => 'https://www.kolesa.ru/test-drive/test-drayv-lada-largus-simptom-vyzdorovleniya-2012-10-16',
+                'quote' => 'На фоне прочих моделей Lada выглядит Largus по-своему добротно и уютно. Lada Largus – автомобиль действительно доступный: универсал оказался дешевле Renault Logan, также производимого в России и уступающего в габаритах и вместительности. ',
+                'author' => 'портал <cite>carexpert.ru</cite>'
+            ],
             // Vesta CNG
             [
                 'model_id' => 2,

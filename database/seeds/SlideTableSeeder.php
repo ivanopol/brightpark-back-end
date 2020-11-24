@@ -110,7 +110,7 @@ class SlideTableSeeder extends Seeder
             [
                 'model_id' => 5,
                 'type_id' => 4,
-                'class' => 'largus_1',
+                'class' => 'largus_cross',
                 'title' => 'LADA Largus Cross',
                 'reduction' => 'Largus Cross',
                 'subtitle' => 'динамический дизайн<br> и вместительность',

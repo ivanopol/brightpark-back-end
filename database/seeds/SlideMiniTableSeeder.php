@@ -182,7 +182,7 @@ class SlideMiniTableSeeder extends Seeder
                 'image' => '/images/slider/mini/largus/mobile/lada_largus_cross.png',
                 'alt' => 'Лада Largus Cross',
                 'title' => 'Cross',
-                'active' => false,
+                'active' => true,
             ],
             [
                 'model_id' => 5,
