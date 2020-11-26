@@ -216,6 +216,14 @@ class SlideMiniTableSeeder extends Seeder
                 'title' => 'Niva',
                 'active' => true,
             ],
+            [
+                'model_id' => 6,
+                'type_id' => 23,
+                'image' => '/images/slider/mini/4x4/mobile/lada_niva_iceberg.png',
+                'alt' => 'Лада Niva Off-road',
+                'title' => 'Niva Off-road',
+                'active' => true,
+            ],
         ];
 
         DB::table('slide_mini')->insert($slides_mini);

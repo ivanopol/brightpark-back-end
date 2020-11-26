@@ -162,6 +162,16 @@ class SlideTableSeeder extends Seeder
                 'link' => '/model-details'
             ],
             [
+
+                'model_id' => 6,
+                'type_id' => 23,
+                'class' => 'niva_off_road',
+                'title' => 'LADA Niva Off-road',
+                'reduction' => 'Niva Off-road',
+                'subtitle' => 'На край света и обратно',
+                'link' => '/model-details'
+            ],
+            [
                 'model_id' => 4,
                 'type_id' => 13,
                 'class' => 'l4x4_5dv',

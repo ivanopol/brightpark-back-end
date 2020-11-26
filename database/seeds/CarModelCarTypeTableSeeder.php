@@ -293,6 +293,17 @@ class CarModelCarTypeTableSeeder extends Seeder
                 'slogan' => 'На край света и обратно',
                 'active' => 1,
             ],
+            [
+                'car_model_id' => '6',
+                'car_type_id' => '22',
+                'preview' => true,
+                'price' => 824000,
+                'special_price' => 741600,
+                'count'=>333,
+                'image' => '/images/slider/mini/4x4/mobile/lada_niva_iceberg.png',
+                'slogan' => 'На край света и обратно',
+                'active' => 0,
+            ],
         ];
 
         DB::table('car_model_car_type')->insert($model_types);

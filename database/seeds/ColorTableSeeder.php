@@ -936,6 +936,71 @@ class ColorTableSeeder extends Seeder
                 'class' => 'color-coriander-dark',
                 'is_active' => false
             ],
+            // Niva Off-road
+            [
+                'type_id' => 23,
+                'model_id' => 6,
+                'title' => 'Айсберг',
+                'image' => '/images/colors/lada/4x4/niva_off_road/lada_niva_iceberg.png',
+                'class' => 'color-iceberg',
+                'is_active' => true
+            ],
+            [
+                'type_id' => 23,
+                'model_id' => 6,
+                'title' => 'Феерия',
+                'image' => '/images/colors/lada/4x4/niva_off_road/lada_niva_extravaganza.png',
+                'class' => 'color-extravaganza',
+                'is_active' => true
+            ],
+            [
+                'type_id' => 23,
+                'model_id' => 6,
+                'title' => 'Сочи',
+                'image' => '/images/colors/lada/4x4/niva_off_road/lada_niva_sochi.png',
+                'class' => 'color-sochi',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 23,
+                'model_id' => 6,
+                'title' => 'Техно',
+                'image' => '/images/colors/lada/4x4/niva_off_road/lada_niva_techno.png',
+                'class' => 'color-techno-2',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 23,
+                'model_id' => 6,
+                'title' => 'Кварц',
+                'image' => '/images/colors/lada/4x4/niva_off_road/lada_niva_quartz.png',
+                'class' => 'color-quartz',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 23,
+                'model_id' => 6,
+                'title' => 'Борнео',
+                'image' => '/images/colors/lada/4x4/niva_off_road/lada_niva_borneo.png',
+                'class' => 'color-borneo-2',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 23,
+                'model_id' => 6,
+                'title' => 'Черное зеркало',
+                'image' => '/images/colors/lada/4x4/niva_off_road/lada_niva_black_mirror.png',
+                'class' => 'color-black-mirror',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 23,
+                'model_id' => 6,
+                'title' => 'Снежная королева',
+                'image' => '/images/colors/lada/4x4/niva_off_road/lada_niva_snow_queen.png',
+                'class' => 'color-snow-queen-2',
+                'is_active' => false
+            ],
         ];
 
         DB::table('colors')->insert($colors);
