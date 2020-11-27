@@ -951,7 +951,7 @@ class ColorTableSeeder extends Seeder
                 'title' => 'Феерия',
                 'image' => '/images/colors/lada/4x4/niva_off_road/lada_niva_extravaganza.png',
                 'class' => 'color-extravaganza',
-                'is_active' => true
+                'is_active' => false
             ],
             [
                 'type_id' => 23,

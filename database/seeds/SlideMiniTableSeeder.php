@@ -222,7 +222,7 @@ class SlideMiniTableSeeder extends Seeder
                 'image' => '/images/slider/mini/4x4/mobile/lada_niva_iceberg.png',
                 'alt' => 'Лада Niva Off-road',
                 'title' => 'Niva Off-road',
-                'active' => true,
+                'active' => false,
             ],
         ];
 
