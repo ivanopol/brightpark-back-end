@@ -22,6 +22,7 @@ class CreateCarModelCarTypeTable extends Migration
             $table->string('image')->nullable();
             $table->string('slogan')->nullable();
             $table->tinyInteger('active');
+            $table->unique(['car_model_id', 'car_type_id']);
         });
         Artisan::call('db:seed', [
             '--class' => CarModelCarTypeTableSeeder::class
