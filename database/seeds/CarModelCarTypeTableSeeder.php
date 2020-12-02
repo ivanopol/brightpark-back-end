@@ -300,9 +300,9 @@ class CarModelCarTypeTableSeeder extends Seeder
                 'price' => 824000,
                 'special_price' => 774000,
                 'count'=>333,
-                'image' => '/images/slider/mini/4x4/mobile/lada_niva_iceberg.png',
+                'image' => '/images/slider/mini/4x4/mobile/lada_niva_extravaganza.png',
                 'slogan' => 'На край света и обратно',
-                'active' => 0,
+                'active' => 1,
             ],
         ];
 
