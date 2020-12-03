@@ -29,6 +29,10 @@ class BasePageService
         $car_model = CarModel::where('slug', $model)->first();
         $car_type = CarType::where('slug', $type)->first();
 
+        if (!$car_model || !$car_type) {
+            return [];
+        }
+
         $car_attrs = CarModelCarType::where([
             ['car_model_id', '=', $car_model->id],
             ['car_type_id', '=', $car_type->id],
@@ -36,6 +40,19 @@ class BasePageService
 
         $car_preview = $service->getCarPreviewPath($car_model->id, $car_type->id);
         $minimal_percent_rate = DB::selectOne('select min(percent_rate) as rate from credit_programs');
+
+        $test_data = [
+            'city' => $city,
+            'model' => $model,
+            'type' => $type,
+        ];
+
+        $test_prices = $this->get_test_prices($test_data);
+
+        if ($test_prices) {
+            $car_attrs['price'] = $test_prices['price'];
+            $car_attrs['special_price'] = $test_prices['special_price'];
+        }
 
         return [
             'car_attrs' => $car_attrs,
@@ -58,6 +75,10 @@ class BasePageService
     {
         $car_model = CarModel::where('slug', $model)->first();
         $car_type = CarType::where('slug', $type)->first();
+
+        if (!$car_model || !$car_type) {
+            return [];
+        }
 
         $condition = [
             ['model_id', '=', $car_model->id],
@@ -120,10 +141,10 @@ class BasePageService
 
         $active_slide = 0;
         foreach ($slide_mini as $key => &$slide) {
-            foreach ($car_types as $type) {
-                if ($slide->type_id == $type->id) {
-                    $slide->url = '/' . $city . '/' . $car_model->slug . '/' . $type->slug;
-                    $slide->slug = $type->slug;
+            foreach ($car_types as $this_type) {
+                if ($slide->type_id == $this_type->id) {
+                    $slide->url = '/' . $city . '/' . $car_model->slug . '/' . $this_type->slug;
+                    $slide->slug = $this_type->slug;
                 }
 
                 if ($slide->type_id == $car_type->id && $slide->model_id == $car_model->id) {
@@ -143,13 +164,18 @@ class BasePageService
             $slides = $slides[0];
         }
 
-        $model_full = '';
-        if (strtolower($car_model->title) === strtolower($car_type->title_ru))
-        {
-            $model_full = $car_model->title;
-        } else {
-            $model_full = $car_model->title . ' ' . $car_type->title_ru;
-        }
+        $model_full = strtolower($car_model->title) === strtolower($car_type->title_ru) ? $car_model->title : $car_model->title . ' ' . $car_type->title_ru ;
+
+        $test_data = [
+            'city' => $city,
+            'model' => $model,
+            'type' => $type,
+        ];
+
+        $test_prices = $this->get_test_prices($test_data);
+
+        $price = $test_prices ? $test_prices['price'] : $car_price->price;
+        $special_price = $test_prices ? $test_prices['special_price'] : $car_price->special_price;
 
         $data = [
             'slider' => [
@@ -168,12 +194,121 @@ class BasePageService
             'type_slug' => $car_type->slug,
             'model_full' => $model_full,
             'car_attrs' => [
-                'price' => $car_price->price,
-                'special_price' => $car_price->special_price,
-                ]
+                'price' => $price,
+                'special_price' => $special_price,
+            ]
         ];
 
         return $data;
+    }
+
+    /**
+     * Задаем тестовые цены для заданных городов
+     *
+     * @param array $data Начальные данные
+     * @return array
+     */
+    private function get_test_prices(array $data) :array
+    {
+        $prices = [];
+
+        switch($data['city']) {
+            case 'moscow':
+                $prices = $this->getMoscowPrices($data);
+                break;
+        }
+
+        return $prices;
+    }
+
+    /**
+     * Задаем цены для Москвы
+     *
+     * @param array $data Начальные данные
+     * @return array
+     */
+    private function getMoscowPrices(array $data) : array
+    {
+        $result = [];
+
+        $car = $data['model'] . ' ' . $data['type'];
+
+        switch($car) {
+            case 'granta sedan':
+                $result['price'] = 488900;
+                $result['special_price'] = 368510;
+                break;
+            case 'granta liftback':
+                $result['price'] = 507900;
+                $result['special_price'] = 385610;
+                break;
+            case 'granta cross':
+                $result['price'] = 603900;
+                $result['special_price'] = 472010;
+                break;
+            case 'granta drive-active':
+                $result['price'] = 672900;
+                $result['special_price'] = 534110;
+                break;
+            case 'vesta sedan':
+                $result['price'] = 676900;
+                $result['special_price'] = 556110;
+                break;
+            case 'vesta cross':
+                $result['price'] = 823900;
+                $result['special_price'] = 679410;
+                break;
+            case 'vesta sw':
+                $result['price'] = 759900;
+                $result['special_price'] = 613010;
+                break;
+            case 'vesta sw-cross':
+                $result['price'] = 866900;
+                $result['special_price'] = 709310;
+                break;
+            case 'vesta cng':
+                $result['price'] = 883900;
+                $result['special_price'] = 693900;
+                break;
+            case 'vesta sport':
+                $result['price'] = 1089900;
+                $result['special_price'] = 900810;
+                break;
+            case 'xray xray':
+                $result['price'] = 660900;
+                $result['special_price'] = 523510;
+                break;
+            case 'xray cross':
+                $result['price'] = 810900;
+                $result['special_price'] = 658710;
+                break;
+            case 'largus universal':
+                $result['price'] = 653900;
+                $result['special_price'] = 517310;
+                break;
+            case 'largus cross':
+                $result['price'] = 813900;
+                $result['special_price'] = 661310;
+                break;
+            case '4x4 three-doors':
+                $result['price'] = 587900;
+                $result['special_price'] = 493710;
+                break;
+            case '4x4 five-doors':
+                $result['price'] = 630900;
+                $result['special_price'] = 532410;
+                break;
+            case 'niva niva':
+                $result['price'] = 738000;
+                $result['special_price'] = 556200;
+                break;
+            case 'niva off-road':
+                $result['price'] = 824000;
+                $result['special_price'] = 633600;
+                break;
+        }
+
+        return $result;
     }
 
     public function get_base_page_data($car_model, $car_type, $city)
