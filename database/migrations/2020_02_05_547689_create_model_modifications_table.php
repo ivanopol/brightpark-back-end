@@ -24,7 +24,7 @@ class CreateModelModificationsTable extends Migration
         });
 
         Artisan::call('db:seed', [
-        //    '--class' => ModelModificationsTableSeeder::class
+            '--class' => ModelModificationsTableSeeder::class
         ]);
     }
 
