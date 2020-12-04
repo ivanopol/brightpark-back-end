@@ -145,7 +145,12 @@ class ModelController extends Controller
             'city' => $city
         ];
 
-        $car_list = $car_model->getAllCars($city);
+        $minutes = $this->cache_time;
+        $key = $city ? 'car_models_' . $city : 'car_models';
+
+        $car_list = Cache::remember($key, $minutes, function () use ($car_model, $city) {
+            return $car_model->getAllCars($city);
+        });
 
         $status = $car_list ? 'OK' : 'ERROR';
         return Response::json(['status' => $status, 'car_list' => $car_list]);
