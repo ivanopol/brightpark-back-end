@@ -49,7 +49,7 @@ class SeoTableSeeder extends Seeder
                 'city' => '0',
             ],
             [
-                'url' => 'special-offers2',
+                'url' => 'special-offers-profitable',
                 'title' => 'Выгодное предложение от компании Брайт Парк - Официальный дилер LADA (ЛАДА) в <:CITY_DATIVE:>',
                 'description' => 'Выбираете где купить новую LADA (ЛАДА) по лучшей цене в <:CITY_DATIVE:>? У официального дилера LADA - Брайт Парк автомобили в наличии по лучшей стоимости. Также в нашем автосалоне выгодный обмен и кредит.',
                 'city' => '0',
