@@ -54,15 +54,16 @@ class ModelController extends Controller
         }
 
         $model_title = htmlspecialchars($request->input('model'));
+        $city = htmlspecialchars($request->input('city'));
 
         $minutes = $this->cache_time;
-        $key = 'model_' . $model_title;
+        $key = $city ? 'model_' . $model_title . '_' . $city : 'model_' . $model_title;
 
-        $carcasses = Cache::remember($key, $minutes, function () use ($model_title) {
+        $carcasses = Cache::remember($key, $minutes, function () use ($model_title, $city) {
             $model = CarModel::firstWhere('slug', $model_title);
 
             $service = new BasePageService();
-            return $service->getAllCarcasses($model);
+            return $service->getAllCarcasses($model, $city);
         });
 
         return Response::json($carcasses);

@@ -432,14 +432,25 @@ class BasePageService
      * Получаем все кузовы для заданной модели
      *
      * @param CarModel $car_model Модель
-     * @param City|null $city Город
+     * @param string City $city Город
      * @return object кузовы для заданной модели
      */
-    public function getAllCarcasses(CarModel $car_model, City $city = null) : object
+    public function getAllCarcasses(CarModel $car_model, string $city = '') : object
     {
         $carcasses = CarModel::where('id', $car_model->id)->with('carcasses')->get();
 
         foreach ($carcasses[0]->carcasses as &$carcass) {
+            $test_data = [
+                'city' => $city,
+                'model' => $car_model->slug,
+                'type' => $carcass->slug,
+            ];
+
+            $test_prices = $this->get_test_prices($test_data);
+
+            $carcass->pivot->price = $test_prices ? $test_prices['price'] : $carcass->pivot->price;
+            $carcass->pivot->special_price = $test_prices ? $test_prices['special_price'] : $carcass->pivot->special_price;
+
             if (strtolower($carcasses[0]->title) === strtolower($carcass->title_en)) {
                 $carcass->title_en = '';
                 $carcass->title_ru = '';
