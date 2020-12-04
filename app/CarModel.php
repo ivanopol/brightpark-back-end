@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Services\BasePageService;
 use Illuminate\Database\Eloquent\Model;
 
 class CarModel extends Model
@@ -33,7 +34,7 @@ class CarModel extends Model
      */
     public function types()
     {
-        return $this->belongsToMany('App\CarType')->using('App\CarModelCarType')->withPivot('preview', 'price')->wherePivot('active', 1);
+        return $this->belongsToMany('App\CarType')->using('App\CarModelCarType')->withPivot('preview', 'special_price')->wherePivot('active', 1);
     }
 
     public function carcasses()
@@ -62,26 +63,29 @@ class CarModel extends Model
     /**
      * Получаем список автомобилей с ценой
      *
+     * @param string $city
      * @return array
      */
-    public function getAllCars() : array
+    public function getAllCars(string $city = '') : array
     {
         $car_list_tmp = $this::with('types')->get();
-        return $this->formatCarList($car_list_tmp);
+        return $this->formatCarList($car_list_tmp, $city);
     }
 
     /**
      * Приводим массив автомобилей в удобный формат
      *
-     * @param $car_list_tmp
+     * @param object $car_list_tmp
+     * @param string $data
      * @return array
      */
-    private function formatCarList($car_list_tmp) : array
+    private function formatCarList($car_list_tmp, string $city = '') : array
     {
         if (!$car_list_tmp) {
             return [];
         }
 
+        $base_page_service = new BasePageService();
         $car_list_formatted = [];
 
         $i=0;
@@ -89,16 +93,21 @@ class CarModel extends Model
             foreach ($car->types as $info) {
                 $label = strtolower($car->title) === strtolower($info->title_ru) ? $car->title : $car->title . ' ' . $info->title_ru;
 
+                $test_data = [
+                    'city' => $city,
+                    'model' => $car->slug,
+                    'type' => $info->slug,
+                ];
+                $test_prices = $base_page_service->get_test_prices($test_data);
+
                 $car_list_formatted[] = [
                     'id' => $i,
                     'label' => $label,
-                    'code' => $info->pivot->price,
+                    'code' => $test_prices ? $test_prices['special_price'] : $info->pivot->special_price,
                     'number' => $i,
                 ];
                 $i++;
             }
-
-
         }
 
         return $car_list_formatted;

@@ -210,7 +210,7 @@ class BasePageService
      * @param array $data Начальные данные
      * @return array
      */
-    private function get_test_prices(array $data) :array
+    public function get_test_prices(array $data) :array
     {
         $prices = [];
 
@@ -229,7 +229,7 @@ class BasePageService
      * @param array $data Начальные данные
      * @return array
      */
-    private function getMoscowPrices(array $data) : array
+    public function getMoscowPrices(array $data) : array
     {
         $result = [];
 
