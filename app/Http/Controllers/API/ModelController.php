@@ -146,10 +146,9 @@ class ModelController extends Controller
         ];
 
         $car_list = $car_model->getAllCars($city);
-        return Response::json(['car_list' => $car_list]);
-/*        $car_list = $car_model->getAllCars($city);
+
         $status = $car_list ? 'OK' : 'ERROR';
-        return Response::json(['status' => $status, 'car_list' => $car_list]);*/
+        return Response::json(['status' => $status, 'car_list' => $car_list]);
     }
 
     /**
