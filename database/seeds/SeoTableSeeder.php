@@ -32,7 +32,7 @@ class SeoTableSeeder extends Seeder
             ],
             [
                 'url' => 'contacts',
-                'title' => 'Контакты Брайт Парка в <:CITY_DATIVE:>. Адрес: " <:ADDRESS:> Телефон: <:PHONE:>;',
+                'title' => 'Контакты Брайт Парка в <:CITY_DATIVE:>. Адрес: <:ADDRESS:> Телефон: <:PHONE:>',
                 'description' => 'Информация о компании Брайт Парк в <:CITY_DATIVE:>',
                 'city' => '0',
             ],
