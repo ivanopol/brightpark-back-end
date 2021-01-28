@@ -924,13 +924,13 @@ LADA Largus по-европейски добротен. Все системы �
                 'show' => false,
                 'trigger' => "",
             ],
-            //Niva Legend
+            //Niva Travel
             [
                 'model_id' => 6,
                 'type_id' => 24,
                 'title' => '<span class="c_orange">LADA Niva Travel.<br>Выросла дикой, приучена к городу.</span>',
                 'text' => 'Путешествуйте по&nbsp;джунглям: бетонным и&nbsp;природным! Внедорожник LADA Niva Travel осилит любую местность и&nbsp;откроет вам новые пути. Беспрепятственно мчит по&nbsp;грунтовке и&nbsp;в&nbsp;то&nbsp;же время смягчает неровности асфальта. Компактность автомобиля его важнейшее преимущество&nbsp;&mdash; это говорит не&nbsp;только об&nbsp;удобстве в&nbsp;парковке, но&nbsp;и&nbsp;о&nbsp;восхитительной геометрической проходимости.',
-                'url' => '/images/photos/models/4x4/blocks/niva_off_road/block_01/mobile/block_01.jpg',
+                'url' => '/images/photos/models/niva/travel/block_01/mobile/block_01.jpg',
                 'pointers' => 0,
                 'pnum' => 0,
                 'show' => false,
@@ -941,7 +941,7 @@ LADA Largus по-европейски добротен. Все системы �
                 'type_id' => 24,
                 'title' => '',
                 'text' => '',
-                'url' => '/images/photos/models/4x4/blocks/niva_off_road/block_02/mobile/block_02.jpg',
+                'url' => '/images/photos/models/niva/travel/block_02/mobile/block_02.jpg',
                 'pointers' => 0,
                 'pnum' => 0,
                 'show' => false,
