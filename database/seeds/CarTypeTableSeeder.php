@@ -148,6 +148,12 @@ class CarTypeTableSeeder extends Seeder
                 'title_cyr' => 'Офф-роуд',
                 'slug' => Str::slug('off-road'),
             ],
+            [
+                'title_ru' => 'Travel',
+                'title_en' => 'Travel',
+                'title_cyr' => 'Трэвел',
+                'slug' => Str::slug('travel'),
+            ],
         ];
 
         DB::table('car_types')->insert($model_types);

@@ -1001,6 +1001,15 @@ class ColorTableSeeder extends Seeder
                 'class' => 'color-snow-queen-2',
                 'is_active' => false
             ],
+            // Niva Off-road
+            [
+                'type_id' => 24,
+                'model_id' => 6,
+                'title' => 'Айсберг',
+                'image' => '/images/colors/lada/4x4/niva_off_road/lada_niva_iceberg.png',
+                'class' => 'color-iceberg',
+                'is_active' => true
+            ],
         ];
 
         DB::table('colors')->insert($colors);

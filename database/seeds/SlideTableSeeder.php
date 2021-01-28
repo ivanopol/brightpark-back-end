@@ -172,6 +172,16 @@ class SlideTableSeeder extends Seeder
                 'link' => '/model-details'
             ],
             [
+
+                'model_id' => 6,
+                'type_id' => 24,
+                'class' => 'niva_travel',
+                'title' => 'LADA Niva Travel',
+                'reduction' => 'Niva Travel',
+                'subtitle' => 'Выросла дикой, приучена к городу.',
+                'link' => '/model-details'
+            ],
+            [
                 'model_id' => 4,
                 'type_id' => 13,
                 'class' => 'l4x4_5dv',
