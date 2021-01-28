@@ -363,6 +363,15 @@ class ReviewTableSeeder extends Seeder
 За что страна гордится Нивой, так это за ее сумасшедшую проходимость.',
                 'author' => 'портал <cite>zr.ru</cite>'
             ],
+            // Niva Legend
+            [
+                'model_id' => 4,
+                'type_id' => 24,
+                'url' => 'https://www.zr.ru/content/articles/921576-obnovlennaya-lada-4kh4-2020/',
+                'quote' => 'О качестве дороги, сидя за рулем Lada 4x4, можно особенно не задумываться благодаря штатной металлической защите моторного отсека.
+За что страна гордится Нивой, так это за ее сумасшедшую проходимость.',
+                'author' => 'портал <cite>zr.ru</cite>'
+            ],
         ];
 
         DB::table('reviews')->insert($reviews);

@@ -304,6 +304,17 @@ class CarModelCarTypeTableSeeder extends Seeder
                 'slogan' => 'На край света и обратно',
                 'active' => 1,
             ],
+            [
+                'car_model_id' => '6',
+                'car_type_id' => '24',
+                'preview' => true,
+                'price' => 804900,
+                'special_price' => 804900,
+                'count'=>333,
+                'image' => '/images/slider/mini/4x4/mobile/lada_niva_extravaganza.png',
+                'slogan' => 'Выросла дикой, приучена к городу.',
+                'active' => 1,
+            ],
         ];
 
         DB::table('car_model_car_type')->insert($model_types);
