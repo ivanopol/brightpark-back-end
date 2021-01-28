@@ -354,7 +354,7 @@ class NewsTableSeeder extends Seeder
                 <p>Комфорт водителя и&nbsp;пассажиров обеспечивают просторный салон с&nbsp;превосходным обзором, мощный кондиционер, надежная шумо- и&nbsp;виброизоляция, удобные сиденья и&nbsp;мультимедиа.</p>
 
                 <p>О&nbsp;старте продаж LADA Niva Travel будет объявлено дополнительно. Купить LADA Niva Travel можно будет на&nbsp;<a href="/">официальном сайте</a>.</p>',
-                'text_short' => 'ADA начала серийное производство внедорожника под новым именем&nbsp;&mdash; LADA Niva Travel. Первым выпущенным автомобилем стал Niva Travel в&nbsp;исполнении Off-road.',
+                'text_short' => 'LADA начала серийное производство внедорожника под новым именем&nbsp;&mdash; LADA Niva Travel. Первым выпущенным автомобилем стал Niva Travel в&nbsp;исполнении Off-road.',
                 'preview' => '/images/news/niva-travel.jpg',
                 'slug' => 'start-proizvodstva-novoy-lada-niva-travel',
                 'city_id' => 0,
