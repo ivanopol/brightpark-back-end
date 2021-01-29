@@ -58,6 +58,8 @@ class BitrixService
             $emailsTo .= $city[0]->callback_service_emails;
         }
 
+        $emailsTo = str_replace(' ', '', $emailsTo);
+
         $subject = 'Брайт Парк. Заявка с сайта ';
 
         $params['name'] = isset($data['name']) ? $data['name'] : '';

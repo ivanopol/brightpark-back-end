@@ -38,7 +38,7 @@ class CityTableSeeder extends Seeder
                 'jivosite_token'=>'IFmL6hf3c9',
                 'bitrix_responsible_id' => $responsible_id,
                 'begin_script' => '55893871;UA-144189432-6;1083869451946144;3157819;VK-RTRG-444330-ax3CC;9f1rg9h6',
-                'callback_emails' => 'moscow@brightpark.ru, erc@brightpark.ru',
+                'callback_emails' => 'moscow@brightpark.ru,erc@brightpark.ru',
                 'callback_service_emails' => 'service.moscow@brightpark.ru,servis@brightpark.ru',
                 'emails' => 'moscow@brightpark.ru, erc@brightpark.ru'
             ],
