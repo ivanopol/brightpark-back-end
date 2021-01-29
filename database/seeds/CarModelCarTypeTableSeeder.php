@@ -291,7 +291,7 @@ class CarModelCarTypeTableSeeder extends Seeder
                 'count'=>333,
                 'image' => '/images/slider/mini/4x4/mobile/lada_niva.png',
                 'slogan' => 'На край света и обратно',
-                'active' => 0,
+                'active' => 1,
             ],
             [
                 'car_model_id' => '6',
@@ -302,7 +302,7 @@ class CarModelCarTypeTableSeeder extends Seeder
                 'count'=>333,
                 'image' => '/images/slider/mini/4x4/mobile/lada_niva_extravaganza.png',
                 'slogan' => 'На край света и обратно',
-                'active' => 0,
+                'active' => 1,
             ],
             [
                 'car_model_id' => '6',
