@@ -55,7 +55,7 @@ class CarModelTableSeeder extends Seeder
                 'slug' => Str::slug('Niva'),
                 'description' => 'Отправляйтесь в путешествие по горам и городам! Потрясающие внедорожные возможности LADA Niva открывают перед вами все пути.',
                 'sort' => 6,
-                'preview' => '/images/photos/models/4x4/lada_niva.png',
+                'preview' => '/images/photos/models/niva/travel/niva_travel.png',
             ],
         ];
 
