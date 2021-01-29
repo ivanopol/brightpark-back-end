@@ -1005,9 +1005,9 @@ class ColorTableSeeder extends Seeder
             [
                 'type_id' => 24,
                 'model_id' => 6,
-                'title' => 'Айсберг',
-                'image' => '/images/colors/lada/4x4/niva_off_road/lada_niva_iceberg.png',
-                'class' => 'color-iceberg',
+                'title' => 'Техно',
+                'image' => '/images/colors/lada/niva/travel/lada_niva_travel.png',
+                'class' => 'color-techno',
                 'is_active' => true
             ],
         ];
