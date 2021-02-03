@@ -84,8 +84,8 @@ class SlideTableSeeder extends Seeder
                 'model_id' => 4,
                 'type_id' => 11,
                 'class' => 'l4x4_1',
-                'title' => 'LADA 4x4 3 дв.',
-                'reduction' => '4x4 3 дв.',
+                'title' => 'LADA 4x4 | Legend 3 дв.',
+                'reduction' => '4x4 | Legend 3 дв.',
                 'subtitle' => 'Классический стиль,</br> оптимальный выбор',
                 'link' => '/model-details'
             ],
@@ -185,8 +185,8 @@ class SlideTableSeeder extends Seeder
                 'model_id' => 4,
                 'type_id' => 13,
                 'class' => 'l4x4_5dv',
-                'title' => 'LADA 4x4 5 дв.',
-                'reduction' => '4x4 5 дв.',
+                'title' => 'LADA 4x4 | Legend 5 дв.',
+                'reduction' => '4x4 | Legend 5 дв.',
                 'subtitle' => 'Создана для приключений',
                 'link' => '/model-details'
             ],

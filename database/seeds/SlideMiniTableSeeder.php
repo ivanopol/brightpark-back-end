@@ -124,8 +124,8 @@ class SlideMiniTableSeeder extends Seeder
                 'model_id' => 4,
                 'type_id' => 11,
                 'image' => '/images/slider/mini/4x4/mobile/lada_4x4_three.png',
-                'alt' => 'Лада 4x4 3 дв.',
-                'title' => '4x4 3 дв.',
+                'alt' => 'Лада 4x4 | Legend 3 дв.',
+                'title' => '4x4 | Legend 3 дв.',
                 'active' => true,
             ],
             [
@@ -140,8 +140,8 @@ class SlideMiniTableSeeder extends Seeder
                 'model_id' => 4,
                 'type_id' => 13,
                 'image' => '/images/slider/mini/4x4/mobile/lada_4x4_five.png',
-                'alt' => 'Лада 4x4 5 дв.',
-                'title' => '4x4 5 дв.',
+                'alt' => 'Лада 4x4 | Legend 5 дв.',
+                'title' => '4x4 | Legend 5 дв.',
                 'active' => true,
             ],
             [

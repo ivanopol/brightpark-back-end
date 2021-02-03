@@ -34,10 +34,10 @@ class CarModelTableSeeder extends Seeder
                 'preview' => '/images/photos/models/xray/xray.png',
             ],
             [
-                'title' => '4x4',
-                'title_ru' => '4x4',
+                'title' => '4x4 | Legend',
+                'title_ru' => '4x4 | Legend',
                 'slug' => Str::slug('4x4'),
-                'description' => 'LADA 4&times;4&nbsp;&mdash; легендарный автомобиль, который не&nbsp;может жить без сильных ощущений. Он&nbsp;силен, оборотист и&nbsp;неприхотлив. Его призвание&nbsp;&mdash; бездорожье, но&nbsp;он&nbsp;прекрасно себя чувствует и&nbsp;в&nbsp;городских джунглях. Принципы данной модели: уникальная проходимость, надежность и&nbsp;простота обслуживания.',
+                'description' => 'LADA 4&times;4&nbsp;|&nbsp;Legend &mdash; легендарный автомобиль, который не&nbsp;может жить без сильных ощущений. Он&nbsp;силен, оборотист и&nbsp;неприхотлив. Его призвание&nbsp;&mdash; бездорожье, но&nbsp;он&nbsp;прекрасно себя чувствует и&nbsp;в&nbsp;городских джунглях. Принципы данной модели: уникальная проходимость, надежность и&nbsp;простота обслуживания.',
                 'sort' => 5,
                 'preview' => '/images/photos/models/4x4/4x4.png',
             ],
