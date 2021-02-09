@@ -1,7 +1,10 @@
 <?php
+
+Route::middleware(['cache.headers:private;max_age=3600'])->group(function () {
+    Route::get('/feeds/autoru.xml', 'FeedController@autoru');
+});
+
 /*
-
-
 // Редиректы
 // Ретаргетинг и прочее
 
