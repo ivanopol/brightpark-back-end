@@ -371,62 +371,62 @@ class BlockSliderTableSeeder extends Seeder
                 'text' => 'Современная форма кузова Улучшенная аэродинамика автомобиля',
                 'image' => '/images/photos/models/granta/blocks/cross/block_02/plus/1.jpg',
                 'number' => '3',
-                'block_id' => '44'
+                'block_id' => '14'
             ],
             [
                 'text' => 'Новые диски 15’’ Легкосплавные диски оригинального дизайна с чередующимися двухразмерными спицами и полированной поверхностью',
                 'image' => '/images/photos/models/granta/blocks/cross/block_02/plus/2.jpg',
                 'number' => '5',
-                'block_id' => '44'
+                'block_id' => '14'
             ],
             [
                 'text' => 'Большие зеркала - Гарантия отличной обзорности',
                 'image' => '/images/photos/models/granta/blocks/cross/block_02/plus/3.jpg',
                 'number' => '1',
-                'block_id' => '44'
+                'block_id' => '14'
             ],
             [
                 'text' => 'Легкое открытие багажника Наружная электрокнопка отпирания багажника - неотъемлемый атрибут современного комфорта и стиля',
                 'image' => '/images/photos/models/granta/blocks/cross/block_02/plus/4.jpg',
                 'number' => '4',
-                'block_id' => '44'
+                'block_id' => '14'
             ],
             [
                 'text' => 'Настройка сиденья водителя Регулировка в диапазоне 40 мм',
                 'image' => '/images/photos/models/granta/blocks/cross/block_02/plus/5.jpg',
                 'number' => '2',
-                'block_id' => '44'
+                'block_id' => '14'
             ],
 
             [
                 'text' => 'Круиз-контроль повысит комфорт и поможет избежать нарушений скоростного режима во время дальних поездок',
                 'image' => '/images/photos/models/granta/blocks/cross/block_03/plus/granta_3_1.jpg',
                 'number' => '1',
-                'block_id' => '45'
+                'block_id' => '15'
             ],
             [
                 'text' => 'Освещение салона Функция задержки освещения салона после закрытия двери: освещение гаснет через 25 секунд или сразу после включения зажигания',
                 'image' => '/images/photos/models/granta/blocks/cross/block_03/plus/granta_3_2.jpg',
                 'number' => '2',
-                'block_id' => '45'
+                'block_id' => '15'
             ],
             [
                 'text' => '«Проводи меня домой» Функция задержки выключения света фар: забота о водителе и пассажирах даже после того, как они покидают машину',
                 'image' => '/images/photos/models/granta/blocks/cross/block_03/plus/granta_3_3.jpg',
                 'number' => '3',
-                'block_id' => '45'
+                'block_id' => '15'
             ],
             [
                 'text' => 'Акустический комфорт Дополнительная шумоизоляция улучшает виброакустику салона: мягкие подкрылки в арках колес – из специального материала, эффективно гасит «пескоструй» и удары гравия',
                 'image' => '/images/photos/models/granta/blocks/cross/block_03/plus/granta_3_4.jpg',
                 'number' => '4',
-                'block_id' => '45'
+                'block_id' => '15'
             ],
             [
                 'text' => 'Датчик дождя Незаменимая опция, когда ваш автомобиль окатят мутной водой из соседней лужи и при мелком дожде в долгой поездке',
                 'image' => '/images/photos/models/granta/blocks/cross/block_03/plus/granta_3_5.jpg',
                 'number' => '5',
-                'block_id' => '45'
+                'block_id' => '15'
             ],
         ];
 
