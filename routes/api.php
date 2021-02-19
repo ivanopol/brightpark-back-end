@@ -18,6 +18,7 @@ use Illuminate\Http\Request;
     Route::get('/models_list', 'API\ModelController@index')->name('models_list');
     Route::get('/carcasses', 'API\ModelController@carcasses')->name('carcasses');
     Route::get('/model', 'API\ModelController@model')->name('model');
+    Route::post('/save_utm', 'API\ModelController@saveUtm')->name('save_utm');
     Route::get('/get_cars_list', 'API\ModelController@getCarsList');
     Route::get('/get_cars_brands', 'API\ModelController@getCarsBrands');
     Route::get('/retargeting', 'API\ModelController@getRetargetingInfo');

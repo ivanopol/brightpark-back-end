@@ -14,6 +14,7 @@ use App\Retarget;
 use App\News;
 use App\Stocks;
 use App\City;
+use App\UtmLabel;
 
 
 class ModelController extends Controller
@@ -345,5 +346,18 @@ class ModelController extends Controller
         });
 
         return Response::json($meta_tags);
+    }
+
+    /**
+     * Сохраняем UTM-метки визита пользователя
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function saveUtm(Request $request) : \Illuminate\Http\JsonResponse
+    {
+        $utm = UtmLabel::create($request->toArray());
+
+        return Response::json($utm);
     }
 }
