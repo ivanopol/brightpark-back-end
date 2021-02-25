@@ -356,7 +356,11 @@ class ModelController extends Controller
      */
     public function saveUtm(Request $request) : \Illuminate\Http\JsonResponse
     {
-        $utm = UtmLabel::create($request->toArray());
+        $data = $request->toArray();
+        $date = date_create_from_format('Y-m-d\TH:i:s+', $data['date']);
+        $data['date'] = $date->format('Y-m-d H:i:s');
+
+        $utm = UtmLabel::create($data);
 
         return Response::json($utm);
     }
