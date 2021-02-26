@@ -18,15 +18,15 @@ class CreateUtmLabelsTable extends Migration
             $table->collation = 'utf8mb4_general_ci';
             $table->bigIncrements('id');
             $table->string('bp_uid', 25);
-            $table->string('user_ip', 16);
+            $table->string('user_ip', 16)->nullable();
             $table->dateTime('date');
-            $table->string('utm_medium');
-            $table->string('utm_source');
-            $table->string('utm_campaign');
-            $table->text('utm_term');
-            $table->string('block');
-            $table->string('source');
-            $table->string('yclid');
+            $table->string('utm_medium')->nullable();
+            $table->string('utm_source')->nullable();
+            $table->string('utm_campaign')->nullable();
+            $table->text('utm_term')->nullable();
+            $table->string('block')->nullable();
+            $table->string('source')->nullable();
+            $table->string('yclid')->nullable();
             $table->timestamps();
         });
     }
