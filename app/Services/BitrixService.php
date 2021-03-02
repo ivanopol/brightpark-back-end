@@ -35,6 +35,12 @@ class BitrixService
         $data['caption'] = isset($data['caption']) ? htmlspecialchars(strip_tags($data['caption']), ENT_QUOTES) : '';
         $data['form_type'] = isset($data['form_type']) ? intval($data['form_type']) : '';
 
+        foreach (['utm_campaign', 'utm_content', 'utm_medium', 'utm_source', 'utm_term', 'block', 'source', 'yclid'] as $label) {
+            if (isset($data['utm'][$label]) && !empty($data['utm'][$label])) {
+                $data['utm'][$label] = htmlspecialchars(strip_tags($data['utm'][$label]));
+            }
+        }
+
         $phone = $data['phone'];
         $responsible_id = $data['responsible_id'];
 
@@ -67,7 +73,7 @@ class BitrixService
         $params['city'] = isset($city[0]->title_ru) ? $city[0]->title_ru : '';
         $params['caption'] = isset($data['caption']) ? $data['caption'] : '';
         $params['comment'] = isset($data['comment']) ? $data['comment'] : '';
-        $params['url'] = isset($data['url']['href']) ? $data['url']['href'] : '';
+        $params['url'] = isset($data['url']['href']) ? htmlspecialchars(strip_tags($data['url']['href'])) : '';
 
         if (isset($data['url']) && empty($data['url']['search'])) {
             if (Session::has('utmcuidF2y0seW')) {

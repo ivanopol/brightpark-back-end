@@ -88,9 +88,9 @@ class Kernel extends HttpKernel
         'signed' => ValidateSignature::class,
         'throttle' => ThrottleRequests::class,
         'verified' => EnsureEmailIsVerified::class,
-        'cookie.check' => CheckVisitorCookie::class,
-        'counter' => CountUniqueVisitors::class,
-        'utm.check' => \App\Http\Middleware\CheckUTM::class,
+       // 'cookie.check' => CheckVisitorCookie::class,
+        //'counter' => CountUniqueVisitors::class,
+       // 'utm.check' => \App\Http\Middleware\CheckUTM::class,
     ];
 
     /**
