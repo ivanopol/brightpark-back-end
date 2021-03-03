@@ -10,10 +10,6 @@ use Illuminate\Support\Facades\Session;
 
 class BitrixService
 {
-
-    // Сюда добавляются ID ответственных через запятую. Должен быть как минимум 1 ID
-    private $arr_responsible_id = [1447]; //Мурыга Милана
-
     public function __construct()
     {
     }
@@ -35,9 +31,19 @@ class BitrixService
         $data['caption'] = isset($data['caption']) ? htmlspecialchars(strip_tags($data['caption']), ENT_QUOTES) : '';
         $data['form_type'] = isset($data['form_type']) ? intval($data['form_type']) : '';
 
-        foreach (['utm_campaign', 'utm_content', 'utm_medium', 'utm_source', 'utm_term', 'block', 'source', 'yclid'] as $label) {
-            if (isset($data['utm'][$label]) && !empty($data['utm'][$label])) {
-                $data['utm'][$label] = htmlspecialchars(strip_tags($data['utm'][$label]));
+        if (isset($data['url']) && count($data['url'])) {
+            foreach (['href', 'search'] as $label) {
+                if (isset($data['url'][$label]) && !empty($data['url'][$label])) {
+                    $data['url'][$label] = htmlspecialchars(strip_tags($data['url'][$label]));
+                }
+            }
+        }
+
+        if (isset($data['utm']) && count($data['utm'])) {
+            foreach (['utm_campaign', 'utm_content', 'utm_medium', 'utm_source', 'utm_term', 'block', 'source', 'yclid'] as $label) {
+                if (isset($data['utm'][$label]) && !empty($data['utm'][$label])) {
+                    $data['utm'][$label] = htmlspecialchars(strip_tags($data['utm'][$label]));
+                }
             }
         }
 
@@ -73,16 +79,13 @@ class BitrixService
         $params['city'] = isset($city[0]->title_ru) ? $city[0]->title_ru : '';
         $params['caption'] = isset($data['caption']) ? $data['caption'] : '';
         $params['comment'] = isset($data['comment']) ? $data['comment'] : '';
-        $params['url'] = isset($data['url']['href']) ? htmlspecialchars(strip_tags($data['url']['href'])) : '';
+        $params['url'] = isset($data['url']['href']) ? $data['url']['href'] : '';
 
         if (isset($data['url']) && empty($data['url']['search'])) {
-            if (Session::has('utmcuidF2y0seW')) {
-                $params['url'] .= '?';
-                foreach (['utm_campaign', 'utm_content', 'utm_medium', 'utm_source', 'utm_term'] as $label) {
-                    if (Session::has('utmcuidF2y0seW.' . $label ))
-                    {
-                        $params['url'] .= '&' . $label . '=' . session('utmcuidF2y0seW.' .$label);
-                    }
+            $params['url'] .= '?';
+            foreach (['utm_campaign', 'utm_content', 'utm_medium', 'utm_source', 'utm_term', 'block', 'source', 'yclid'] as $label) {
+                if (isset($data['utm'][$label]) && !empty($data['utm'][$label])) {
+                    $params['url'] .= '&' . $label . '=' . $data['utm'][$label];
                 }
             }
         }
@@ -99,12 +102,37 @@ class BitrixService
             }
         });
 
+        $info = 'Создан новый лид #ID_SUSH# и к нему прикреплено дело #ID_JOB#';
+
+        // Добавление лида
+        $request = [
+            'fields' => [
+                "TITLE" => 'Test lid', //название формы на сайте
+                "STATUS_ID" => "NEW",
+                "OPENED" => "Y",
+                "ASSIGNED_BY_ID" => $responsible_id,
+                "UF_CRM_1471411617" => '3755', // источник=lada-rostov.ru
+                "SOURCE_ID" => "SELF",
+                "NAME" => $data['name'], //имя из поля
+                "PHONE" => [["VALUE" => $phone, "VALUE_TYPE" => "MOBILE"]],
+            ],
+            'params' => ["REGISTER_SONET_EVENT" => "Y"],
+        ];
+
+        if (isset($data['utm']) && count($data['utm'])) {
+            foreach (['utm_campaign', 'utm_content', 'utm_medium', 'utm_source', 'utm_term', 'block', 'source', 'yclid'] as $label) {
+                if (isset($data['utm'][$label]) && !empty($data['utm'][$label])) {
+                    $request['fields'][strtoupper($label)] = $data['utm'][$label];
+                }
+            }
+        }
+
         $curl = curl_init();
         curl_setopt_array($curl, [
             CURLOPT_SSL_VERIFYPEER => 0,
             CURLOPT_POST => 1,
             CURLOPT_RETURNTRANSFER => 1,
-            CURLOPT_URL => 'https://team.brightpark.ru/rest/610/g1iski89ajvio040/crm.duplicate.findbycomm.json',
+            CURLOPT_URL => 'https://team.brightpark.ru/rest/610/g1iski89ajvio040/crm.lead.add.json',
             CURLOPT_POSTFIELDS => http_build_query($request),
         ]);
 
@@ -112,89 +140,8 @@ class BitrixService
         curl_close($curl);
         $result = json_decode($result, 1);
 
-        if (!empty($result['result'])) {
-            if (!empty($result['result']["CONTACT"])) {
-                $info = 'Добавлено дело #ID_JOB# к контакту #ID_SUSH#';
-                $count = count($result['result']["CONTACT"]) - 1;
-                $id = $result['result']["CONTACT"][$count];
-                $type = 3;
-                $crm_method = 'contact';
-            } elseif (!empty($result['result']["COMPANY"])) {
-                $info = 'Добавлено дело #ID_JOB# к компании #ID_SUSH#';
-                $count = count($result['result']["COMPANY"]) - 1;
-                $id = $result['result']["COMPANY"][$count];
-                $type = 4;
-                $crm_method = 'company';
-            } elseif (!empty($result['result']["LEAD"])) {
-                $info = 'Добавлено дело #ID_JOB# к лиду #ID_SUSH#';
-                $count = count($result['result']["LEAD"]) - 1;
-                $id = $result['result']["LEAD"][$count];
-                $type = 1;
-                $crm_method = 'lead';
-            }
-            // Выбираем ID ответственного за сущность (Контакт, Компания, Лид)
-            $request = [
-                'id' => $id,
-            ];
-
-            $curl = curl_init();
-            curl_setopt_array($curl, [
-                CURLOPT_SSL_VERIFYPEER => 0,
-                CURLOPT_POST => 1,
-                CURLOPT_RETURNTRANSFER => 1,
-                CURLOPT_URL => "https://team.brightpark.ru/rest/610/g1iski89ajvio040/crm.{$crm_method}.get.json",
-                CURLOPT_POSTFIELDS => http_build_query($request),
-            ]);
-
-            $result = curl_exec($curl);
-            curl_close($curl);
-            $result = json_decode($result, 1);
-
-            $responsible_id = $result['result']["ASSIGNED_BY_ID"];
-
-        } else {
-            $info = 'Создан новый лид #ID_SUSH# и к нему прикреплено дело #ID_JOB#';
-
-            // Добавление лида
-            $request = [
-                'fields' => [
-                    "TITLE" => 'Test lid', //название формы на сайте
-                    "STATUS_ID" => "NEW",
-                    "OPENED" => "Y",
-                    "ASSIGNED_BY_ID" => $responsible_id,
-                    "UF_CRM_1471411617" => '3755', // источник=lada-rostov.ru
-                    "SOURCE_ID" => "SELF",
-                    "NAME" => $data['name'], //имя из поля
-                    "PHONE" => [["VALUE" => $phone, "VALUE_TYPE" => "MOBILE"]],
-                ],
-                'params' => ["REGISTER_SONET_EVENT" => "Y"],
-            ];
-
-           if (Session::has('utmcuidF2y0seW')) {
-                foreach (['utm_campaign', 'utm_content', 'utm_medium', 'utm_source', 'utm_term'] as $label) {
-                    if (Session::has('utmcuidF2y0seW.' . $label ))
-                    {
-                         $request['fields'][strtoupper($label)] = session('utmcuidF2y0seW.' .$label);
-                    }
-                }
-            }
-
-            $curl = curl_init();
-            curl_setopt_array($curl, [
-                CURLOPT_SSL_VERIFYPEER => 0,
-                CURLOPT_POST => 1,
-                CURLOPT_RETURNTRANSFER => 1,
-                CURLOPT_URL => 'https://team.brightpark.ru/rest/610/g1iski89ajvio040/crm.lead.add.json',
-                CURLOPT_POSTFIELDS => http_build_query($request),
-            ]);
-
-            $result = curl_exec($curl);
-            curl_close($curl);
-            $result = json_decode($result, 1);
-
-            $id = $result['result'];
-            $type = 1;
-        }
+        $id = $result['result'];
+        $type = 1;
 
         // Прикрепление дела
         $request = [
@@ -204,7 +151,6 @@ class BitrixService
                 'TYPE_ID' => 2,
                 'COMMUNICATIONS' => [['VALUE' => $phone]],
                 'SUBJECT' => 'Заявка с сайта!',
-                // 'START_TIME' => date('Y-m-d H:i:s'),
                 'END_TIME' => date('Y-m-d H:i:s'),
                 'COMPLETED' => 'N',
                 'PRIORITY' => 3,
@@ -226,20 +172,6 @@ class BitrixService
         $result = curl_exec($curl);
         curl_close($curl);
         $result = json_decode($result, 1);
-
-        // ставим куку, если еще не ставили
-        $key = 'cuidF2y0seW';
-
-        if (!isset($_COOKIE[$key])) {
-
-            $value = base64_encode(json_encode([
-                'owner_id' => $id,   // ID Сущности: лид/контакт/компания
-                'owner_type_id' => $type, // 1 лид, 3 контакт, 4 компания
-                'last_visit' => time(),
-            ]));
-
-            setcookie($key, $value, time() + 60 * 60 * 24 * 365, '/');
-        }
     }
 
     function getUrl()
