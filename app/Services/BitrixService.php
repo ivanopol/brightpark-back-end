@@ -48,7 +48,6 @@ class BitrixService
         }
 
         $phone = $data['phone'];
-        $responsible_id = $data['responsible_id'];
 
         $request = [
             'type' => "PHONE",
@@ -102,6 +101,38 @@ class BitrixService
             }
         });
 
+        // Определение ответственного из сотрудниц ЕРЦ которые онлайн
+        $department_id = $data['form_type'] === 2 ? 1552 : 834;
+
+        $request = [
+            "FILTER" => [
+                "UF_DEPARTMENT" => $department_id, // ID подразделения ЕРЦ/АСЦ
+                "ACTIVE" => "true",
+                "IS_ONLINE" => "Y",
+            ]
+        ];
+
+        $curl = curl_init();
+        curl_setopt_array($curl, [
+            CURLOPT_SSL_VERIFYPEER => 0,
+            CURLOPT_POST => 1,
+            CURLOPT_RETURNTRANSFER => 1,
+            CURLOPT_URL => 'https://team.brightpark.ru/rest/1071/hbibccfa9fyugrlv/user.get.json',
+            CURLOPT_POSTFIELDS => http_build_query($request),
+        ]);
+
+        $erc_online = curl_exec($curl);
+        curl_close($curl);
+        $erc_online = json_decode($erc_online, 1);
+        $erc_list = [];
+
+        foreach ($erc_online['result'] as $erc) {
+            $erc_list[] = $erc['ID'];
+        }
+
+        $responsible_id = $erc_list[ mt_rand(0, count($erc_list) - 1) ];
+
+
         $info = 'Создан новый лид #ID_SUSH# и к нему прикреплено дело #ID_JOB#';
 
         // Добавление лида
@@ -111,7 +142,7 @@ class BitrixService
                 "STATUS_ID" => "NEW",
                 "OPENED" => "Y",
                 "ASSIGNED_BY_ID" => $responsible_id,
-                "UF_CRM_1471411617" => '3755', // источник=lada-rostov.ru
+                "UF_CRM_1471411617" => '40', // источник=lada-rostov.ru
                 "SOURCE_ID" => "SELF",
                 "NAME" => $data['name'], //имя из поля
                 "PHONE" => [["VALUE" => $phone, "VALUE_TYPE" => "MOBILE"]],
