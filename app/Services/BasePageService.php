@@ -239,76 +239,80 @@ class BasePageService
 
         switch($car) {
             case 'granta sedan':
-                $result['price'] = 488900;
-                $result['special_price'] = 368510;
+                $result['price'] = 499900;
+                $result['special_price'] = 339900;
                 break;
             case 'granta liftback':
-                $result['price'] = 507900;
-                $result['special_price'] = 385610;
+                $result['price'] = 521900;
+                $result['special_price'] = 391900;
                 break;
             case 'granta cross':
-                $result['price'] = 603900;
-                $result['special_price'] = 472010;
+                $result['price'] = 615900;
+                $result['special_price'] = 505900;
                 break;
             case 'granta drive-active':
-                $result['price'] = 672900;
-                $result['special_price'] = 534110;
+                $result['price'] = 584900;
+                $result['special_price'] = 574900;
                 break;
             case 'vesta sedan':
-                $result['price'] = 676900;
-                $result['special_price'] = 556110;
+                $result['price'] = 703900;
+                $result['special_price'] = 593900;
                 break;
             case 'vesta cross':
-                $result['price'] = 823900;
-                $result['special_price'] = 679410;
+                $result['price'] = 851900;
+                $result['special_price'] = 761900;
                 break;
             case 'vesta sw':
-                $result['price'] = 759900;
-                $result['special_price'] = 613010;
+                $result['price'] = 790900;
+                $result['special_price'] = 690900;
                 break;
             case 'vesta sw-cross':
-                $result['price'] = 866900;
-                $result['special_price'] = 709310;
+                $result['price'] = 905900;
+                $result['special_price'] = 805900;
                 break;
             case 'vesta cng':
-                $result['price'] = 883900;
-                $result['special_price'] = 693900;
+                $result['price'] = 903900;
+                $result['special_price'] = 705900;
                 break;
             case 'vesta sport':
                 $result['price'] = 1089900;
                 $result['special_price'] = 900810;
                 break;
             case 'xray xray':
-                $result['price'] = 660900;
-                $result['special_price'] = 523510;
+                $result['price'] = 702900;
+                $result['special_price'] = 557900;
                 break;
             case 'xray cross':
-                $result['price'] = 810900;
-                $result['special_price'] = 658710;
+                $result['price'] = 790900;
+                $result['special_price'] = 680900;
                 break;
             case 'largus universal':
-                $result['price'] = 653900;
-                $result['special_price'] = 517310;
+                $result['price'] = 690900;
+                $result['special_price'] = 620900;
                 break;
             case 'largus cross':
-                $result['price'] = 813900;
-                $result['special_price'] = 661310;
+                $result['price'] = 865900;
+                $result['special_price'] = 795900;
                 break;
             case '4x4 three-doors':
-                $result['price'] = 587900;
-                $result['special_price'] = 493710;
+                $result['price'] = 599900;
+                $result['special_price'] = 529900;
                 break;
             case '4x4 five-doors':
-                $result['price'] = 630900;
-                $result['special_price'] = 532410;
+                $result['price'] = 644900;
+                $result['special_price'] = 574900;
                 break;
             case 'niva niva':
                 $result['price'] = 738000;
-                $result['special_price'] = 556200;
+                $result['special_price'] = 618000;
                 break;
             case 'niva off-road':
                 $result['price'] = 824000;
-                $result['special_price'] = 633600;
+                $result['special_price'] = 704000;
+                break;
+            case 'niva travel':
+                $result['price'] = 747900;
+                $result['special_price'] = 677900;
                 break;
         }
 
