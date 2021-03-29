@@ -70,7 +70,7 @@ class StocksTableSeeder extends Seeder
                 ',
                 'text_short' => 'В Брайт парке ВЕСНА! Порадуйте себя новым автомобилем на комфортных для вас условиях! Новая LADA может',
                 'preview' => '/images/stocks/stock_03.jpg',
-                'slug' => 'kredit-v-brajt-parke-novogodnyaya-rassrochka-pervyj-vznos-0',
+                'slug' => 'kredit-v-brajt-parke-vesennyaya-rassrochka-pervyj-vznos-0',
                 'city_id' => 0,
                 'sort' => 3,
             ],
