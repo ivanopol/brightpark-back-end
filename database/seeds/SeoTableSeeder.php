@@ -401,9 +401,9 @@ class SeoTableSeeder extends Seeder
                 'city' => '0',
             ],
             [
-                'url' => 'stocks/kredit-v-brajt-parke-novogodnyaya-rassrochka-pervyj-vznos-0',
-                'title' => 'КРЕДИТ В БРАЙТ ПАРКЕ НОВОГОДНЯЯ РАССРОЧКА + ПЕРВЫЙ ВЗНОС 0% - Брайт Парк <:CITY:>',
-                'description' => 'В Брайт парке уже новый год! Порадуйте себя новым автомобилем на комфортных для вас условиях! Новая LADA может Распространяется на все новые автомобили LADA. - Брайт Парк в <:CITY_DATIVE:>',
+                'url' => 'stocks/kredit-v-brajt-parke-vesennyaya-rassrochka-pervyj-vznos-0',
+                'title' => 'КРЕДИТ В БРАЙТ ПАРКЕ ВЕСЕННЯЯ РАССРОЧКА + ПЕРВЫЙ ВЗНОС 0% - Брайт Парк <:CITY:>',
+                'description' => 'В Брайт парке ВЕСНА! Порадуйте себя новым автомобилем на комфортных для вас условиях! Новая LADA может Распространяется на все новые автомобили LADA. - Брайт Парк в <:CITY_DATIVE:>',
                 'city' => '0',
             ],
         ];
