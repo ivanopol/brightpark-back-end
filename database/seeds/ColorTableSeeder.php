@@ -412,6 +412,64 @@ class ColorTableSeeder extends Seeder
                 'is_active' => false
             ],
             // Largus
+            // NEW
+            [
+                'model_id' => 5,
+                'type_id' => 25,
+                'title' => 'Ледниковый',
+                'image' => '/images/colors/lada/largus/universal/largus_glacial.png',
+                'class' => 'color-white-glacial',
+                'is_active' => true
+            ],
+            [
+                'model_id' => 5,
+                'type_id' => 25,
+                'title' => 'Огненно-красный',
+                'image' => '/images/colors/lada/largus/universal/largus_fire_red.png',
+                'class' => 'color-fiery-red',
+                'is_active' => false
+            ],
+            [
+                'model_id' => 5,
+                'type_id' => 25,
+                'title' => 'Серый базальт',
+                'image' => '/images/colors/lada/largus/universal/largus_basalt_gray.png',
+                'class' => 'color-basalt-gray',
+                'is_active' => false
+            ],
+            [
+                'model_id' => 5,
+                'type_id' => 25,
+                'title' => 'Кашемир',
+                'image' => '/images/colors/lada/largus/universal/largus_cashmere.png',
+                'class' => 'color-cashemer',
+                'is_active' => false
+            ],
+            [
+                'model_id' => 5,
+                'type_id' => 25,
+                'title' => 'Лазурно-синий',
+                'image' => '/images/colors/lada/largus/universal/largus_sky_blue.png',
+                'class' => 'color-sky-blue',
+                'is_active' => false
+            ],
+            [
+                'model_id' => 5,
+                'type_id' => 25,
+                'title' => 'Черная жемчужина',
+                'image' => '/images/colors/lada/largus/universal/largus_black_pearl.png',
+                'class' => 'color-black-pearl',
+                'is_active' => false
+            ],
+            [
+                'model_id' => 5,
+                'type_id' => 25,
+                'title' => 'Платина',
+                'image' => '/images/colors/lada/largus/universal/largus_platinum.png',
+                'class' => 'color-platina',
+                'is_active' => false
+            ],
+            // Largus
             // cross
             [
                 'model_id' => 5,

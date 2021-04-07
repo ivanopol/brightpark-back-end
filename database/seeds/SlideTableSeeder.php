@@ -117,6 +117,15 @@ class SlideTableSeeder extends Seeder
                 'link' => '/model-details'
             ],
             [
+                'model_id' => 5,
+                'type_id' => 25,
+                'class' => 'largus_cross',
+                'title' => 'Новый LADA Largus',
+                'reduction' => 'Largus',
+                'subtitle' => 'комфорт на максимум',
+                'link' => '/model-details'
+            ],
+            [
                 'model_id' => 2,
                 'type_id' => 7,
                 'class' => 'vesta_sw',

@@ -170,6 +170,14 @@ class SlideMiniTableSeeder extends Seeder
             ],
             [
                 'model_id' => 5,
+                'type_id' => 25,
+                'image' => '/images/slider/mini/largus/lada_largus_universal_cng.png',
+                'alt' => 'Новый Лада Largus',
+                'title' => 'Новый Largus',
+                'active' => true,
+            ],
+            [
+                'model_id' => 5,
                 'type_id' => 16,
                 'image' => '/images/slider/mini/largus/mobile/lada_largus_universal_cng.png',
                 'alt' => 'Лада Largus универсал CNG',

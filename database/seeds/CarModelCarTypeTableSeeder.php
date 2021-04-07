@@ -240,6 +240,17 @@ class CarModelCarTypeTableSeeder extends Seeder
             ],
             [
                 'car_model_id' => '5',
+                'car_type_id' => '25',
+                'preview' => false,
+                'price' => 704900,
+                'special_price' => 704900,
+                'count'=>333,
+                'image' => '/images/slider/mini/largus/mobile/lada_largus_cross.png',
+                'slogan' => 'Новый LADA Largus.</br> Комфорт на максимум.',
+                'active' => 1,
+            ],
+            [
+                'car_model_id' => '5',
                 'car_type_id' => '16',
                 'preview' => false,
                 'price' => 0,
