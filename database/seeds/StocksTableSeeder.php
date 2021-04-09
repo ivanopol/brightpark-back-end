@@ -227,6 +227,19 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 9,
             ],
+            [
+                'title' => 'Подарки на все времена!',
+                'text' => '<p>Новая LADA у&nbsp;официального дилера Брайт Парк от&nbsp;495&nbsp;900&nbsp;рублей, с&nbsp;выгодой до&nbsp;138&nbsp;000&nbsp;рублей, и&nbsp;кредит c&nbsp;отсрочкой по&nbsp;платежу на&nbsp;3&nbsp;месяца. КАСКО и&nbsp;зимние шины в&nbsp;подарок!</p>
+                            <p>Все это возможно в&nbsp;Брайт Парке</p>
+                           <p>Получите подарки и&nbsp;специальную выгоду, позвонив по&nbsp;телефону: <span class="callibri_tel">+7 (342) 225 09 21</span></p>
+                            <p>* Предложение ограничено и&nbsp;не&nbsp;является публичной офертой. Подробности и&nbsp;сроки акции уточняйте по&nbsp;телефону: <span class="callibri_tel">+7 (342) 225 09 21</span></p>
+                ',
+                'text_short' => 'Новая LADA у&nbsp;официального дилера Брайт Парк от&nbsp;495&nbsp;900&nbsp;рублей, с&nbsp;выгодой до&nbsp;138&nbsp;000&nbsp;рублей, и&nbsp;кредит c&nbsp;отсрочкой по&nbsp;платежу на&nbsp;3&nbsp;месяца. КАСКО и&nbsp;зимние шины в&nbsp;подарок!',
+                'preview' => '/images/stocks/podarki-na-vse-vremena.jpg',
+                'slug' => 'podarki-na-vse-vremena',
+                'city_id' => 0,
+                'sort' => 12,
+            ],
         ];
 
         DB::table('stocks')->insert($stocks);
