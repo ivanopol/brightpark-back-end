@@ -288,6 +288,18 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 15,
             ],
+            [
+                'title' => 'Особые условия для пенсионеров',
+                'text' => '<p>Пенсионный плюс! Если вы&nbsp;пенсионер и&nbsp;решили приобрести LADA&nbsp;&mdash; в&nbsp;Брайт Парке вы&nbsp;в&nbsp;плюсе!</p>
+                            <p>Предоставив пенсионное удостоверение, вы&nbsp;можете получить специальную выгоду при покупке автомобиля.</p>
+                            <p>Все выгоды носят индивидуальный характер. Вы&nbsp;так&nbsp;же можете воспользоваться предложением по&nbsp;обмену и&nbsp;кредиту.</p>
+                ',
+                'text_short' => 'Предоставив пенсионное удостоверение, вы&nbsp;можете получить специальную выгоду при покупке автомобиля.',
+                'preview' => '/images/stocks/osobye-usloviya-dlya-pensionerov.jpg',
+                'slug' => 'osobye-usloviya-dlya-pensionerov',
+                'city_id' => 0,
+                'sort' => 16,
+            ],
         ];
 
         DB::table('stocks')->insert($stocks);
