@@ -240,6 +240,21 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 12,
             ],
+            [
+                'title' => 'Новая LADA без переплаты!',
+                'text' => '<p>Рассрочка без %-ов!</p>
+                            <p>Все это возможно в&nbsp;Брайт Парке</p>
+                           <p>Ставка&nbsp;0% по&nbsp;кредиту сроком на&nbsp;6&nbsp;лет!<br>
+Представляем вам рассрочку сроком на&nbsp;6&nbsp;лет, без первоначального взноса, всего по&nbsp;двум документам!</p>
+                            <p>Получите специальную выгоду, позвонив по телефону: <span class="callibri_tel">+7 (342) 225 09 03</span></p>
+                            <p>* Предложение ограничено и&nbsp;не&nbsp;является публичной офертой. Подробности и&nbsp;сроки акции уточняйте по&nbsp;телефону: <span class="callibri_tel">+7 (342) 225 09 03</span></p>
+                ',
+                'text_short' => 'Представляем вам рассрочку сроком на&nbsp;6&nbsp;лет, без первоначального взноса, всего по&nbsp;двум документам!',
+                'preview' => '/images/stocks/novaya-lada-bez-pereplaty.jpg',
+                'slug' => 'novaya-lada-bez-pereplaty',
+                'city_id' => 0,
+                'sort' => 13,
+            ],
         ];
 
         DB::table('stocks')->insert($stocks);
