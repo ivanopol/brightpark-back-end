@@ -276,6 +276,18 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 14,
             ],
+            [
+                'title' => 'Новый XRAY от 679 900 рублей!',
+                'text' => '<p>Покупайте новый автомобиль у&nbsp;официального дилера от&nbsp;679&nbsp;900&nbsp;рублей + КАСКО + Подарок.</p>
+                            <p>Получите подарки и специальную выгоду, позвонив по&nbsp;телефону:&nbsp;<span class="callibri_tel">+7 (342) 225 09 03</span></p>
+                            <p>* Предложение ограничено и не является публичной офертой. Подробности и сроки акции уточняйте по&nbsp;телефону:&nbsp;<span class="callibri_tel">+7 (342) 225 09 03</span></p>
+                ',
+                'text_short' => 'Покупайте новый автомобиль у официального дилера от 679 900 рублей + КАСКО + Подарок.',
+                'preview' => '/images/stocks/novyj-xray-ot-679-900-rublej.jpg',
+                'slug' => 'novyj-xray-ot-679-900-rublej',
+                'city_id' => 0,
+                'sort' => 15,
+            ],
         ];
 
         DB::table('stocks')->insert($stocks);
