@@ -300,6 +300,18 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 16,
             ],
+            [
+                'title' => 'Ликвидация склада 2021',
+                'text' => '<p>Последние авто по&nbsp;ценам 2020. Распродаем автомобили 2020 года с&nbsp;дополнительными выгодами и&nbsp;подарками!</p>
+                            <p>Получите подарки и&nbsp;специальную выгоду, позвонив по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;09&nbsp;07</span></p>
+                            <p>* Предложение ограничено и&nbsp;не&nbsp;является публичной офертой. Подробности и&nbsp;сроки акции уточняйте по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;09&nbsp;07</span></p>
+                ',
+                'text_short' => 'Последние авто по&nbsp;ценам 2020. Распродаем автомобили 2020 года с&nbsp;дополнительными выгодами и&nbsp;подарками!',
+                'preview' => '/images/stocks/likvidaciya-sklada-2021.jpg',
+                'slug' => 'likvidaciya-sklada-2021',
+                'city_id' => 0,
+                'sort' => 17,
+            ],
         ];
 
         DB::table('stocks')->insert($stocks);
