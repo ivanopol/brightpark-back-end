@@ -345,6 +345,18 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 19,
             ],
+            [
+                'title' => 'Новая GRANTA от&nbsp;495&nbsp;900&nbsp;рублей!',
+                'text' => '<p>Покупайте новый автомобиль у&nbsp;официального дилера от&nbsp;495&nbsp;900 рублей + КАСКО + Подарок.</p>
+                            <p>Получите подарки и&nbsp;специальную выгоду, позвонив по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;09&nbsp;03</span></p>
+                            <p>* Предложение ограничено и&nbsp;не&nbsp;является публичной офертой. Подробности и&nbsp;сроки акции уточняйте по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;09&nbsp;03</span></p>
+                ',
+                'text_short' => 'Покупайте новый автомобиль у&nbsp;официального дилера от&nbsp;495&nbsp;900&nbsp;рублей.',
+                'preview' => '/images/stocks/novaya-granta-ot-495-900-rublej.jpg',
+                'slug' => 'novaya-granta-ot-495-900-rublej',
+                'city_id' => 0,
+                'sort' => 20,
+            ],
         ];
 
         DB::table('stocks')->insert($stocks);
