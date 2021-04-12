@@ -233,7 +233,7 @@ class ModelController extends Controller
         $key = 'stocks_' . $city_id;
 
         $stocks = Cache::remember($key, $minutes, function () use ($city_id)  {
-            $stocks = Stocks::whereIn('city_id', [0, $city_id])->orderBy('sort', 'desc')->get();
+            $stocks = Stocks::where('active', 1)->whereIn('city_id', [0, $city_id])->orderBy('sort', 'desc')->get();
             return $stocks;
         });
 
