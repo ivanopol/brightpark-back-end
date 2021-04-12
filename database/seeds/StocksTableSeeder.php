@@ -357,6 +357,19 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 20,
             ],
+            [
+                'title' => 'Держим &minus;15% на&nbsp;LADA!',
+                'text' => '<p>Выгода апреля на&nbsp;новую LADA в&nbsp;Брайт Парке!</p>
+                            <p>Дарим выгоду до&nbsp;15&nbsp;% на&nbsp;покупку нового автомобиля LADA у&nbsp;официального дилера Брайт Парк.</p>
+                            <p>Получите специальную выгоду, позвонив по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;06&nbsp;34</span></p>
+                            <p>* Предложение ограничено и&nbsp;не&nbsp;является публичной офертой. Подробности и&nbsp;сроки акции уточняйте по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;06&nbsp;34</span></p>
+                ',
+                'text_short' => 'Дарим выгоду до&nbsp;15&nbsp;% на&nbsp;покупку нового автомобиля LADA у&nbsp;официального дилера Брайт Парк.',
+                'preview' => '/images/stocks/derzhim-minus-15-na-nbsp-lada.jpg',
+                'slug' => 'derzhim-minus-15-na-nbsp-lada',
+                'city_id' => 0,
+                'sort' => 21,
+            ],
         ];
 
         DB::table('stocks')->insert($stocks);
