@@ -26,7 +26,7 @@ class Stocks extends Migration
             $table->date('date_begin')->nullable();
             $table->date('date_end')->nullable();
             $table->integer('sort')->nullable();
-            $table->tinyInteger('active')->default(0);
+            $table->tinyInteger('active')->default(1);
         });
 
         Artisan::call('db:seed', [
