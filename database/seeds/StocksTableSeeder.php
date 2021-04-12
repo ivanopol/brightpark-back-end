@@ -312,6 +312,19 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 17,
             ],
+            [
+                'title' => 'Первый автомобиль',
+                'text' => '<p>Первый авто? Открой мир LADA вместе с&nbsp;Брайт Парком</p>
+                            <p>Рассматриваешь покупку первого авто? Получи специальную выгоду при покупке LADA в&nbsp;Брайт Парке</p>
+                            <p>Новая LADA от&nbsp;2&nbsp;700&nbsp;руб.&nbsp;/ мес.</p>
+                            <p>* Предложение ограничено и&nbsp;не&nbsp;является публичной офертой. Подробности и&nbsp;сроки акции уточняйте по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;09&nbsp;03</span></p>
+                ',
+                'text_short' => 'Первый авто? Открой мир LADA вместе с&nbsp;Брайт Парком! Получи специальную выгоду при покупке LADA в&nbsp;Брайт Парке',
+                'preview' => '/images/stocks/pervyj-avtomobil.jpg',
+                'slug' => 'pervyj-avtomobil',
+                'city_id' => 0,
+                'sort' => 18,
+            ],
         ];
 
         DB::table('stocks')->insert($stocks);
