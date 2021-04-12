@@ -14,6 +14,9 @@ class Stocks extends Model
         'slug',
         'city_id',
         'sort',
+        'date_begin',
+        'date_end',
+        'active',
     ];
 
     /**
