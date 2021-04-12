@@ -370,6 +370,23 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 21,
             ],
+            [
+                'title' => 'ВЕСЕННЯЯ КОЛЛЕКЦИЯ ПОДАРКОВ!',
+                'text' => '<p>Весенние подарки!</p>
+                            <p>Приобретая новую LADA весной в&nbsp;Брайт Парке вы&nbsp;получаете очень выгодное предложение:</p>
+                            <ul>
+                                <li>Выгода на&nbsp;покупку LADA до&nbsp;15%.</li>
+                                <li>3&nbsp;платежа по&nbsp;кредиту в&nbsp;подарок.</li>
+                                <li>Бесплатное сервисное обслуживание на&nbsp;2&nbsp;года.</li>
+                            </ul>
+                            <p>Узнайте подробности акции, позвонив по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;09&nbsp;20</span></p>
+                ',
+                'text_short' => 'Приобретая новую LADA весной в&nbsp;Брайт Парке вы&nbsp;получаете очень выгодное предложение.',
+                'preview' => '/images/stocks/vesennyaya-kollekciya-podarkov.jpg',
+                'slug' => 'vesennyaya-kollekciya-podarkov',
+                'city_id' => 0,
+                'sort' => 22,
+            ],
         ];
 
         DB::table('stocks')->insert($stocks);
