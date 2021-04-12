@@ -325,6 +325,26 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 18,
             ],
+            [
+                'title' => 'Формула кредита в Брайт Парке',
+                'text' => '<p>Новая формула: 0% + 0% + подарки</p>
+                            <p>В Брайт парке максимально интересные условия при покупке новой LADA в кредит:</p>
+                            <ul>
+                                <li>Рассрочка, 0%.</li>
+                                <li>Первоначальный взнос, 0%.</li>
+                                <li>Платежи в&nbsp;подарок.</li>
+                                <li>Срок кредита&nbsp;&mdash; до&nbsp;6&nbsp;лет.</li>
+                                <li>КАСКО в&nbsp;подарок.</li>
+                            </ul>
+                            <p>Получите индивидуальную выгоду, позвонив по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;09&nbsp;03</span></p>
+                            <p>* Предложение ограничено и&nbsp;не&nbsp;является публичной офертой. Подробности и&nbsp;сроки акции уточняйте по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;09&nbsp;03</span></p>
+                ',
+                'text_short' => 'Новая формула: 0% + 0% + подарки. В Брайт парке максимально интересные условия при покупке новой LADA в кредит',
+                'preview' => '/images/stocks/formula-kredita-v-brajt-parke.jpg',
+                'slug' => 'formula-kredita-v-brajt-parke',
+                'city_id' => 0,
+                'sort' => 19,
+            ],
         ];
 
         DB::table('stocks')->insert($stocks);
