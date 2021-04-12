@@ -387,6 +387,19 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 22,
             ],
+            [
+                'title' => 'Новая Vesta от&nbsp;713&nbsp;900&nbsp;рублей!',
+                'text' => '<p>Новая Vesta от&nbsp;713&nbsp;900 рублей + КАСКО + Подарок!</p>
+                            <p>Покупайте новый автомобиль у&nbsp;официального дилера от&nbsp;713&nbsp;900&nbsp;рублей.</p>
+                            <p>Получите подарки и&nbsp;специальную выгоду, позвонив по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;09&nbsp;20</span></p>
+                            <p>* Предложение ограничено и&nbsp;не&nbsp;является публичной офертой. Подробности и&nbsp;сроки акции уточняйте по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;09&nbsp;20</span></p>
+                ',
+                'text_short' => 'Покупайте новый автомобиль у&nbsp;официального дилера от&nbsp;713&nbsp;900&nbsp;рублей.',
+                'preview' => '/images/stocks/novaya-vesta-ot-713-900-rublej.jpg',
+                'slug' => 'novaya-vesta-ot-713-900-rublej',
+                'city_id' => 0,
+                'sort' => 23,
+            ],
         ];
 
         DB::table('stocks')->insert($stocks);
