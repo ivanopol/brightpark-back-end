@@ -400,6 +400,20 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 23,
             ],
+            [
+                'title' => 'WOW-обмен на&nbsp;новую LADA',
+                'text' => '<p>Экспресс-обмен без доплаты</p>
+                            <p>Брайт Парк предлагает выгодный и&nbsp;удобный обмен на&nbsp;новую LADA.<br>
+Для вас экспресс-оценка и&nbsp;обмен вашего автомобиля на&nbsp;новую LADA без доплаты!<br>
+Наш специалист по&nbsp;оценке уже ждет вашего звонка!</p>
+                            <p>Узнайте подробности акции, позвонив по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;09&nbsp;20</span></p>
+                ',
+                'text_short' => 'Брайт Парк предлагает выгодный и&nbsp;удобный обмен на&nbsp;новую LADA. Для вас экспресс-оценка и&nbsp;обмен вашего автомобиля на&nbsp;новую LADA без доплаты!',
+                'preview' => '/images/stocks/wow-obmen-na-novuyu-lada.jpg',
+                'slug' => 'wow-obmen-na-novuyu-lada',
+                'city_id' => 0,
+                'sort' => 24,
+            ],
         ];
 
         DB::table('stocks')->insert($stocks);
