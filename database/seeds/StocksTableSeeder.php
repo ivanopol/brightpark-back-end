@@ -39,6 +39,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 1,
                 'date_begin' => NULL,
                 'date_end' => NULL,
+                'active' => 0,
             ],
             [
                 'title' => 'ГАРАНТИРУЕМ ПОДАРОК ПРИ ПОКУПКЕ LADA GRANTA',
@@ -62,6 +63,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 1,
                 'date_begin' => NULL,
                 'date_end' => NULL,
+                'active' => 0,
             ],
             [
                 'title' => 'КРЕДИТ В БРАЙТ ПАРКЕ Весенняя рассрочка + Первый взнос 0%',
@@ -79,6 +81,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 3,
                 'date_begin' => NULL,
                 'date_end' => NULL,
+                'active' => 1,
             ],
             [
                 'title' => 'WOW ТРЕЙД-ИН доплатим 40 000 Р к вашей цене',
@@ -105,6 +108,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 4,
                 'date_begin' => NULL,
                 'date_end' => NULL,
+                'active' => 0,
             ],
             [
                 'title' => 'ГОСПРОГРАММА-2021 СНОВА В БРАЙТ ПАРКЕ!',
@@ -126,6 +130,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 6,
                 'date_begin' => NULL,
                 'date_end' => NULL,
+                'active' => 0,
             ],
             [
                 'title' => '<strike>МОЖНО</strike> НУЖНО УСПЕТЬ ДО ПОВЫШЕНИЯ ЦЕН',
@@ -142,6 +147,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 10,
                 'date_begin' => NULL,
                 'date_end' => NULL,
+                'active' => 0,
             ],
             [
                 'title' => 'СПЕЦИАЛЬНЫЕ ЦЕНЫ КАЖДЫЙ ДЕНЬ',
@@ -165,6 +171,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 11,
                 'date_begin' => NULL,
                 'date_end' => NULL,
+                'active' => 0,
             ],
             [
                 'title' => 'LADA Granta 0% первоначальный взнос',
@@ -185,6 +192,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 3,
                 'date_begin' => NULL,
                 'date_end' => NULL,
+                'active' => 0,
             ],
             [
                 'title' => 'Доплата 40 000 рублей при обмене на LADA Granta',
@@ -208,6 +216,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 1,
                 'date_begin' => NULL,
                 'date_end' => NULL,
+                'active' => 1,
             ],
             [
                 'title' => 'Розыгрыш Телевизора',
@@ -246,6 +255,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 9,
                 'date_begin' => NULL,
                 'date_end' => NULL,
+                'active' => 0,
             ],
             [
                 'title' => 'Подарки на все времена!',
@@ -261,6 +271,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 12,
                 'date_begin' => '2021-04-01',
                 'date_end' => '2021-04-30',
+                'active' => 1,
             ],
             [
                 'title' => 'Новая LADA без переплаты!',
@@ -278,6 +289,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 13,
                 'date_begin' => '2021-04-01',
                 'date_end' => '2021-04-30',
+                'active' => 1,
             ],
             [
                 'title' => 'Платим платежи за вас!',
@@ -301,6 +313,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 14,
                 'date_begin' => '2021-04-01',
                 'date_end' => '2021-04-30',
+                'active' => 1,
             ],
             [
                 'title' => 'Новый XRAY от 679 900 рублей!',
@@ -315,6 +328,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 15,
                 'date_begin' => '2021-04-01',
                 'date_end' => '2021-04-30',
+                'active' => 1,
             ],
             [
                 'title' => 'Особые условия для пенсионеров',
@@ -329,6 +343,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 16,
                 'date_begin' => '2021-04-01',
                 'date_end' => '2021-04-30',
+                'active' => 1,
             ],
             [
                 'title' => 'Ликвидация склада 2021',
@@ -343,6 +358,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 17,
                 'date_begin' => '2021-04-01',
                 'date_end' => '2021-04-30',
+                'active' => 1,
             ],
             [
                 'title' => 'Первый автомобиль',
@@ -358,6 +374,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 18,
                 'date_begin' => '2021-04-01',
                 'date_end' => '2021-04-30',
+                'active' => 1,
             ],
             [
                 'title' => 'Формула кредита в Брайт Парке',
@@ -380,6 +397,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 19,
                 'date_begin' => '2021-04-01',
                 'date_end' => '2021-04-30',
+                'active' => 1,
             ],
             [
                 'title' => 'Новая GRANTA от&nbsp;495&nbsp;900&nbsp;рублей!',
@@ -394,6 +412,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 20,
                 'date_begin' => '2021-04-01',
                 'date_end' => '2021-04-30',
+                'active' => 1,
             ],
             [
                 'title' => 'Держим &minus;15% на&nbsp;LADA!',
@@ -409,6 +428,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 21,
                 'date_begin' => '2021-04-01',
                 'date_end' => '2021-04-30',
+                'active' => 1,
             ],
             [
                 'title' => 'ВЕСЕННЯЯ КОЛЛЕКЦИЯ ПОДАРКОВ!',
@@ -428,6 +448,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 22,
                 'date_begin' => '2021-04-01',
                 'date_end' => '2021-04-30',
+                'active' => 1,
             ],
             [
                 'title' => 'Новая Vesta от&nbsp;713&nbsp;900&nbsp;рублей!',
@@ -443,6 +464,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 23,
                 'date_begin' => '2021-04-01',
                 'date_end' => '2021-04-30',
+                'active' => 1,
             ],
             [
                 'title' => 'WOW-обмен на&nbsp;новую LADA',
@@ -459,6 +481,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 24,
                 'date_begin' => '2021-04-01',
                 'date_end' => '2021-04-30',
+                'active' => 1,
             ],
         ];
 
