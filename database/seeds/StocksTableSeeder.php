@@ -30,13 +30,15 @@ class StocksTableSeeder extends Seeder
                     <li>Договор купли-продажи.</li>
                     <li>Акт приема-передачи.</li>
                 </ul>
-                <p>Подробности предложения уточняйте по&nbsp;телефону: +7 (342) 225-10-28.</p>
+                <p>Подробности предложения уточняйте по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;10&nbsp;28</span>.</p>
                 ',
                 'text_short' => 'При покупке автомобиля LADA в&nbsp;нашем салоне&nbsp;&mdash; воспользуйтесь услугой обмена автомобиля. Пока вы&nbsp;пьете ароматный чай&nbsp;&mdash; ваш автомобиль уже оценят. Специалисты Брайт парка осмотрят и&nbsp;оценят ваш автомобиль буквально за&nbsp;15&nbsp;минут и&nbsp;предложат цену релевантную средней стоимости вашего автомобиля на&nbsp;рынке.',
                 'preview' => '/images/stocks/stock_01.jpg',
                 'slug' => 'dorogo-vykupim-vash-avto',
                 'city_id' => 0,
                 'sort' => 1,
+                'date_begin' => NULL,
+                'date_end' => NULL,
             ],
             [
                 'title' => 'ГАРАНТИРУЕМ ПОДАРОК ПРИ ПОКУПКЕ LADA GRANTA',
@@ -50,14 +52,16 @@ class StocksTableSeeder extends Seeder
                 <li>увеличенная оценка вашего авто;</li>
                 <li>КАСКО в подарок!</li>
                 </ul>
-                <p>Получите специальную выгоду, позвонив по телефону: <span class="callibri_tel">+7 (342) 225-10-28.</span></p>
-                <p>* Предложение ограничено и не является публичной офертой.  Подробности и сроки акции уточняйте по телефону: <span class="callibri_tel">+7 (342) 225-10-28.</span></p>
+                <p>Получите специальную выгоду, позвонив по телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;10&nbsp;28</span>.</p>
+                <p>* Предложение ограничено и не является публичной офертой.  Подробности и сроки акции уточняйте по телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;10&nbsp;28</span></p>
                 ',
                 'text_short' => 'При покупке LADA Granta в&nbsp;кредит в&nbsp;январе дарим вам шины в&nbsp;подарок! Прекрасное дополнение к&nbsp;совершенной покупке.',
                 'preview' => '/images/stocks/stock_01.jpg',
                 'slug' => 'garantiruem-podarok-pri-pokupke-lada-granta',
                 'city_id' => 0,
                 'sort' => 1,
+                'date_begin' => NULL,
+                'date_end' => NULL,
             ],
             [
                 'title' => 'КРЕДИТ В БРАЙТ ПАРКЕ Весенняя рассрочка + Первый взнос 0%',
@@ -73,6 +77,8 @@ class StocksTableSeeder extends Seeder
                 'slug' => 'kredit-v-brajt-parke-vesennyaya-rassrochka-pervyj-vznos-0',
                 'city_id' => 0,
                 'sort' => 3,
+                'date_begin' => NULL,
+                'date_end' => NULL,
             ],
             [
                 'title' => 'WOW ТРЕЙД-ИН доплатим 40 000 Р к вашей цене',
@@ -90,13 +96,15 @@ class StocksTableSeeder extends Seeder
                                 <li>Договор купли-продажи.</li>
                                 <li>Акт приема-передачи.</li>
                             </ul>
-                            <p>Подробности, сроки и&nbsp;условия уточняйте по&nbsp;телефону: +7 (342) 225-10-28.</p>
+                            <p>Подробности, сроки и&nbsp;условия уточняйте по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;10&nbsp;28</span>.</p>
                 ',
                 'text_short' => 'Программа обмена в&nbsp;Брайт парке&nbsp;&mdash; это максимально удобный и&nbsp;быстрый способ обменять подержанный автомобиль на&nbsp;новый. Вам не&nbsp;нужно задумываться о&nbsp;реализации автомобиля, никаких классифайдов, звонков перекупов и&nbsp;других не&nbsp;известных вам людей. Реализацию вашего авто возьмут на&nbsp;себя специалисты дилерского центра Брайт Парк. Кроме того, участники программы обмена в&nbsp;Брайт парке получают преимущество в&nbsp;виде выгоды на&nbsp;покупку нового автомобиля в&nbsp;размере 40&nbsp;000&nbsp;рублей.',
                 'preview' => '/images/stocks/stock_04.jpg',
                 'slug' => 'wow-trejd-in-doplatim-40-000-r-k-vashej-cene',
                 'city_id' => 0,
                 'sort' => 4,
+                'date_begin' => NULL,
+                'date_end' => NULL,
             ],
             [
                 'title' => 'ГОСПРОГРАММА-2021 СНОВА В БРАЙТ ПАРКЕ!',
@@ -108,14 +116,16 @@ class StocksTableSeeder extends Seeder
                 <li>увеличенная оценка вашего авто;</li>
                 <li>КАСКО в подарок!</li>
                 </ul>
-                <p>Получите специальную выгоду, позвонив по телефону: <span class="callibri_tel">+7 (342) 225-10-28.</span></p>
-                <p>* Предложение ограничено и не является публичной офертой.  Подробности и сроки акции уточняйте по телефону: <span class="callibri_tel">+7 (342) 225-10-28.</span></p>
+                <p>Получите специальную выгоду, позвонив по телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;10&nbsp;28</span>.</p>
+                <p>* Предложение ограничено и не является публичной офертой.  Подробности и сроки акции уточняйте по телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;10&nbsp;28</span></p>
                          ',
                 'text_short' => 'Максимально выгодные предложения на&nbsp;покупку LADA. Вы&nbsp;можете приобрести автомобиль по&nbsp;доступной цене, суммируя акции по&nbsp;специальным программам.',
                 'preview' => '/images/stocks/rasshirennye_usloviya_programmy_gosudarstvennoj_podderzhki.jpg',
                 'slug' => 'gosprogramma-brajt-parka-skidka-10-vsem',
                 'city_id' => 0,
                 'sort' => 6,
+                'date_begin' => NULL,
+                'date_end' => NULL,
             ],
             [
                 'title' => '<strike>МОЖНО</strike> НУЖНО УСПЕТЬ ДО ПОВЫШЕНИЯ ЦЕН',
@@ -123,13 +133,15 @@ class StocksTableSeeder extends Seeder
                 LADA повысит цены на автомобили в 2021 году во всех дилерских центрах.<br>
                 Повышение цен коснется всех моделей LADA за&nbsp;исключением внедорожника LADA Niva. Успевайте забронировать автомобиль по&nbsp;ценам декабря. Отмена брони бесплатная.
                 </p>
-                <p>Подробности предложения уточняйте по&nbsp;телефону: <span class="callibri_tel">+7 (342) 225-10-28.</span></p>
+                <p>Подробности предложения уточняйте по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;10&nbsp;28</span>.</p>
                 ',
                 'text_short' => 'Успевайте приобрести автомобиль марки LADA в&nbsp;автосалоне Брайт&nbsp;Парк в&nbsp;январе! LADA повышает цены на&nbsp;автомобили в&nbsp;декабре 2020 года во&nbsp;всех дилерских центрах.',
                 'preview' => '/images/main/tablet/nuzhno-uspet-do-povysheniya-cen.jpg',
                 'slug' => 'nuzhno-uspet-do-povysheniya-cen',
                 'city_id' => 0,
                 'sort' => 10,
+                'date_begin' => NULL,
+                'date_end' => NULL,
             ],
             [
                 'title' => 'СПЕЦИАЛЬНЫЕ ЦЕНЫ КАЖДЫЙ ДЕНЬ',
@@ -143,14 +155,16 @@ class StocksTableSeeder extends Seeder
                 <li>увеличенная оценка вашего авто;</li>
                 <li>КАСКО в подарок!</li>
                 </ul>
-                <p>Получите специальную выгоду, позвонив по телефону: <span class="callibri_tel">+7 (342) 225-10-28.</span></p>
-                <p>* Предложение ограничено и не является публичной офертой.  Подробности и сроки акции уточняйте по телефону: <span class="callibri_tel">+7 (342) 225-10-28.</span></p>
+                <p>Получите специальную выгоду, позвонив по телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;10&nbsp;28</span></p>
+                <p>* Предложение ограничено и не является публичной офертой.  Подробности и сроки акции уточняйте по телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;10&nbsp;28</span></p>
                 ',
                 'text_short' => 'В последние дни декабря - в Брайт парке очень выгодные условия на покупку новой LADA. Сделайте себе подарок к Новому Году и воспользуйтесь нашими предложениями.',
                 'preview' => '/images/main/tablet/black-friday.jpg',
                 'slug' => 'predlozhenie-goda-v-brayt-parke',
                 'city_id' => 0,
                 'sort' => 11,
+                'date_begin' => NULL,
+                'date_end' => NULL,
             ],
             [
                 'title' => 'LADA Granta 0% первоначальный взнос',
@@ -169,6 +183,8 @@ class StocksTableSeeder extends Seeder
                 'slug' => 'lada-granta-0-pervonachalnyj-vznos',
                 'city_id' => 0,
                 'sort' => 3,
+                'date_begin' => NULL,
+                'date_end' => NULL,
             ],
             [
                 'title' => 'Доплата 40 000 рублей при обмене на LADA Granta',
@@ -190,6 +206,8 @@ class StocksTableSeeder extends Seeder
                 'slug' => 'doplata-40-000-rublej-pri-obmene-na-lada-granta',
                 'city_id' => 0,
                 'sort' => 1,
+                'date_begin' => NULL,
+                'date_end' => NULL,
             ],
             [
                 'title' => 'Розыгрыш Телевизора',
@@ -226,19 +244,23 @@ class StocksTableSeeder extends Seeder
                 'slug' => 'rozygrysh-televizora',
                 'city_id' => 0,
                 'sort' => 9,
+                'date_begin' => NULL,
+                'date_end' => NULL,
             ],
             [
                 'title' => 'Подарки на все времена!',
                 'text' => '<p>Новая LADA у&nbsp;официального дилера Брайт Парк от&nbsp;495&nbsp;900&nbsp;рублей, с&nbsp;выгодой до&nbsp;138&nbsp;000&nbsp;рублей, и&nbsp;кредит c&nbsp;отсрочкой по&nbsp;платежу на&nbsp;3&nbsp;месяца. КАСКО и&nbsp;зимние шины в&nbsp;подарок!</p>
                             <p>Все это возможно в&nbsp;Брайт Парке</p>
-                           <p>Получите подарки и&nbsp;специальную выгоду, позвонив по&nbsp;телефону: <span class="callibri_tel">+7 (342) 225 09 21</span></p>
-                            <p>* Предложение ограничено и&nbsp;не&nbsp;является публичной офертой. Подробности и&nbsp;сроки акции уточняйте по&nbsp;телефону: <span class="callibri_tel">+7 (342) 225 09 21</span></p>
+                           <p>Получите подарки и&nbsp;специальную выгоду, позвонив по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;10&nbsp;28</span></p>
+                            <p>* Предложение ограничено и&nbsp;не&nbsp;является публичной офертой. Подробности и&nbsp;сроки акции уточняйте по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;10&nbsp;28</span></p>
                 ',
                 'text_short' => 'Новая LADA у&nbsp;официального дилера Брайт Парк от&nbsp;495&nbsp;900&nbsp;рублей, с&nbsp;выгодой до&nbsp;138&nbsp;000&nbsp;рублей, и&nbsp;кредит c&nbsp;отсрочкой по&nbsp;платежу на&nbsp;3&nbsp;месяца. КАСКО и&nbsp;зимние шины в&nbsp;подарок!',
                 'preview' => '/images/stocks/podarki-na-vse-vremena.jpg',
                 'slug' => 'podarki-na-vse-vremena',
                 'city_id' => 0,
                 'sort' => 12,
+                'date_begin' => '2021-04-01',
+                'date_end' => '2021-04-30',
             ],
             [
                 'title' => 'Новая LADA без переплаты!',
@@ -246,14 +268,16 @@ class StocksTableSeeder extends Seeder
                             <p>Все это возможно в&nbsp;Брайт Парке</p>
                            <p>Ставка&nbsp;0% по&nbsp;кредиту сроком на&nbsp;6&nbsp;лет!<br>
 Представляем вам рассрочку сроком на&nbsp;6&nbsp;лет, без первоначального взноса, всего по&nbsp;двум документам!</p>
-                            <p>Получите специальную выгоду, позвонив по телефону: <span class="callibri_tel">+7 (342) 225 09 03</span></p>
-                            <p>* Предложение ограничено и&nbsp;не&nbsp;является публичной офертой. Подробности и&nbsp;сроки акции уточняйте по&nbsp;телефону: <span class="callibri_tel">+7 (342) 225 09 03</span></p>
+                            <p>Получите специальную выгоду, позвонив по телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;10&nbsp;28</span></p>
+                            <p>* Предложение ограничено и&nbsp;не&nbsp;является публичной офертой. Подробности и&nbsp;сроки акции уточняйте по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;10&nbsp;28</span></p>
                 ',
                 'text_short' => 'Представляем вам рассрочку сроком на&nbsp;6&nbsp;лет, без первоначального взноса, всего по&nbsp;двум документам!',
                 'preview' => '/images/stocks/novaya-lada-bez-pereplaty.jpg',
                 'slug' => 'novaya-lada-bez-pereplaty',
                 'city_id' => 0,
                 'sort' => 13,
+                'date_begin' => '2021-04-01',
+                'date_end' => '2021-04-30',
             ],
             [
                 'title' => 'Платим платежи за вас!',
@@ -268,25 +292,29 @@ class StocksTableSeeder extends Seeder
                                 <li>с&nbsp;подарками и&nbsp;бонусами от&nbsp;Брайт Парка,</li>
                                 <li>с&nbsp;большим выбором кредитных программ.</li>
                             </ul>
-                            <p>Получите специальную выгоду, позвонив по&nbsp;телефону: <span class="callibri_tel">+7 (342) 225 09 03</span></p>
+                            <p>Получите специальную выгоду, позвонив по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;10&nbsp;28</span></p>
                 ',
                 'text_short' => 'Платим платежи за&nbsp;вас! Каждый 12-платеж в&nbsp;подарок! Оплата производится вами в&nbsp;течении 11&nbsp;месяцев, а&nbsp;12&nbsp;месяц за&nbsp;вас платит наш дилерский центр.',
                 'preview' => '/images/stocks/platim-platezhi-za-vas.jpg',
                 'slug' => 'platim-platezhi-za-vas',
                 'city_id' => 0,
                 'sort' => 14,
+                'date_begin' => '2021-04-01',
+                'date_end' => '2021-04-30',
             ],
             [
                 'title' => 'Новый XRAY от 679 900 рублей!',
                 'text' => '<p>Покупайте новый автомобиль у&nbsp;официального дилера от&nbsp;679&nbsp;900&nbsp;рублей + КАСКО + Подарок.</p>
-                            <p>Получите подарки и специальную выгоду, позвонив по&nbsp;телефону:&nbsp;<span class="callibri_tel">+7 (342) 225 09 03</span></p>
-                            <p>* Предложение ограничено и не является публичной офертой. Подробности и сроки акции уточняйте по&nbsp;телефону:&nbsp;<span class="callibri_tel">+7 (342) 225 09 03</span></p>
+                            <p>Получите подарки и специальную выгоду, позвонив по&nbsp;телефону:&nbsp;<span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;10&nbsp;28</span></p>
+                            <p>* Предложение ограничено и не является публичной офертой. Подробности и сроки акции уточняйте по&nbsp;телефону:&nbsp;<span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;10&nbsp;28</span></p>
                 ',
                 'text_short' => 'Покупайте новый автомобиль у официального дилера от 679 900 рублей + КАСКО + Подарок.',
                 'preview' => '/images/stocks/novyj-xray-ot-679-900-rublej.jpg',
                 'slug' => 'novyj-xray-ot-679-900-rublej',
                 'city_id' => 0,
                 'sort' => 15,
+                'date_begin' => '2021-04-01',
+                'date_end' => '2021-04-30',
             ],
             [
                 'title' => 'Особые условия для пенсионеров',
@@ -299,31 +327,37 @@ class StocksTableSeeder extends Seeder
                 'slug' => 'osobye-usloviya-dlya-pensionerov',
                 'city_id' => 0,
                 'sort' => 16,
+                'date_begin' => '2021-04-01',
+                'date_end' => '2021-04-30',
             ],
             [
                 'title' => 'Ликвидация склада 2021',
                 'text' => '<p>Последние авто по&nbsp;ценам 2020. Распродаем автомобили 2020 года с&nbsp;дополнительными выгодами и&nbsp;подарками!</p>
-                            <p>Получите подарки и&nbsp;специальную выгоду, позвонив по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;09&nbsp;07</span></p>
-                            <p>* Предложение ограничено и&nbsp;не&nbsp;является публичной офертой. Подробности и&nbsp;сроки акции уточняйте по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;09&nbsp;07</span></p>
+                            <p>Получите подарки и&nbsp;специальную выгоду, позвонив по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;10&nbsp;28</span></p>
+                            <p>* Предложение ограничено и&nbsp;не&nbsp;является публичной офертой. Подробности и&nbsp;сроки акции уточняйте по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;10&nbsp;28</span></p>
                 ',
                 'text_short' => 'Последние авто по&nbsp;ценам 2020. Распродаем автомобили 2020 года с&nbsp;дополнительными выгодами и&nbsp;подарками!',
                 'preview' => '/images/stocks/likvidaciya-sklada-2021.jpg',
                 'slug' => 'likvidaciya-sklada-2021',
                 'city_id' => 0,
                 'sort' => 17,
+                'date_begin' => '2021-04-01',
+                'date_end' => '2021-04-30',
             ],
             [
                 'title' => 'Первый автомобиль',
                 'text' => '<p>Первый авто? Открой мир LADA вместе с&nbsp;Брайт Парком</p>
                             <p>Рассматриваешь покупку первого авто? Получи специальную выгоду при покупке LADA в&nbsp;Брайт Парке</p>
                             <p>Новая LADA от&nbsp;2&nbsp;700&nbsp;руб.&nbsp;/ мес.</p>
-                            <p>* Предложение ограничено и&nbsp;не&nbsp;является публичной офертой. Подробности и&nbsp;сроки акции уточняйте по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;09&nbsp;03</span></p>
+                            <p>* Предложение ограничено и&nbsp;не&nbsp;является публичной офертой. Подробности и&nbsp;сроки акции уточняйте по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;10&nbsp;28</span></p>
                 ',
                 'text_short' => 'Первый авто? Открой мир LADA вместе с&nbsp;Брайт Парком! Получи специальную выгоду при покупке LADA в&nbsp;Брайт Парке',
                 'preview' => '/images/stocks/pervyj-avtomobil.jpg',
                 'slug' => 'pervyj-avtomobil',
                 'city_id' => 0,
                 'sort' => 18,
+                'date_begin' => '2021-04-01',
+                'date_end' => '2021-04-30',
             ],
             [
                 'title' => 'Формула кредита в Брайт Парке',
@@ -336,39 +370,45 @@ class StocksTableSeeder extends Seeder
                                 <li>Срок кредита&nbsp;&mdash; до&nbsp;6&nbsp;лет.</li>
                                 <li>КАСКО в&nbsp;подарок.</li>
                             </ul>
-                            <p>Получите индивидуальную выгоду, позвонив по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;09&nbsp;03</span></p>
-                            <p>* Предложение ограничено и&nbsp;не&nbsp;является публичной офертой. Подробности и&nbsp;сроки акции уточняйте по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;09&nbsp;03</span></p>
+                            <p>Получите индивидуальную выгоду, позвонив по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;10&nbsp;28</span></p>
+                            <p>* Предложение ограничено и&nbsp;не&nbsp;является публичной офертой. Подробности и&nbsp;сроки акции уточняйте по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;10&nbsp;28</span></p>
                 ',
                 'text_short' => 'Новая формула: 0% + 0% + подарки. В Брайт парке максимально интересные условия при покупке новой LADA в кредит',
                 'preview' => '/images/stocks/formula-kredita-v-brajt-parke.jpg',
                 'slug' => 'formula-kredita-v-brajt-parke',
                 'city_id' => 0,
                 'sort' => 19,
+                'date_begin' => '2021-04-01',
+                'date_end' => '2021-04-30',
             ],
             [
                 'title' => 'Новая GRANTA от&nbsp;495&nbsp;900&nbsp;рублей!',
                 'text' => '<p>Покупайте новый автомобиль у&nbsp;официального дилера от&nbsp;495&nbsp;900 рублей + КАСКО + Подарок.</p>
-                            <p>Получите подарки и&nbsp;специальную выгоду, позвонив по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;09&nbsp;03</span></p>
-                            <p>* Предложение ограничено и&nbsp;не&nbsp;является публичной офертой. Подробности и&nbsp;сроки акции уточняйте по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;09&nbsp;03</span></p>
+                            <p>Получите подарки и&nbsp;специальную выгоду, позвонив по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;10&nbsp;28</span></p>
+                            <p>* Предложение ограничено и&nbsp;не&nbsp;является публичной офертой. Подробности и&nbsp;сроки акции уточняйте по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;10&nbsp;28</span></p>
                 ',
                 'text_short' => 'Покупайте новый автомобиль у&nbsp;официального дилера от&nbsp;495&nbsp;900&nbsp;рублей.',
                 'preview' => '/images/stocks/novaya-granta-ot-495-900-rublej.jpg',
                 'slug' => 'novaya-granta-ot-495-900-rublej',
                 'city_id' => 0,
                 'sort' => 20,
+                'date_begin' => '2021-04-01',
+                'date_end' => '2021-04-30',
             ],
             [
                 'title' => 'Держим &minus;15% на&nbsp;LADA!',
                 'text' => '<p>Выгода апреля на&nbsp;новую LADA в&nbsp;Брайт Парке!</p>
                             <p>Дарим выгоду до&nbsp;15&nbsp;% на&nbsp;покупку нового автомобиля LADA у&nbsp;официального дилера Брайт Парк.</p>
-                            <p>Получите специальную выгоду, позвонив по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;06&nbsp;34</span></p>
-                            <p>* Предложение ограничено и&nbsp;не&nbsp;является публичной офертой. Подробности и&nbsp;сроки акции уточняйте по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;06&nbsp;34</span></p>
+                            <p>Получите специальную выгоду, позвонив по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;10&nbsp;28</span></p>
+                            <p>* Предложение ограничено и&nbsp;не&nbsp;является публичной офертой. Подробности и&nbsp;сроки акции уточняйте по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;10&nbsp;28</span></p>
                 ',
                 'text_short' => 'Дарим выгоду до&nbsp;15&nbsp;% на&nbsp;покупку нового автомобиля LADA у&nbsp;официального дилера Брайт Парк.',
                 'preview' => '/images/stocks/derzhim-minus-15-na-nbsp-lada.jpg',
                 'slug' => 'derzhim-minus-15-na-nbsp-lada',
                 'city_id' => 0,
                 'sort' => 21,
+                'date_begin' => '2021-04-01',
+                'date_end' => '2021-04-30',
             ],
             [
                 'title' => 'ВЕСЕННЯЯ КОЛЛЕКЦИЯ ПОДАРКОВ!',
@@ -379,26 +419,30 @@ class StocksTableSeeder extends Seeder
                                 <li>3&nbsp;платежа по&nbsp;кредиту в&nbsp;подарок.</li>
                                 <li>Бесплатное сервисное обслуживание на&nbsp;2&nbsp;года.</li>
                             </ul>
-                            <p>Узнайте подробности акции, позвонив по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;09&nbsp;20</span></p>
+                            <p>Узнайте подробности акции, позвонив по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;10&nbsp;28</span></p>
                 ',
                 'text_short' => 'Приобретая новую LADA весной в&nbsp;Брайт Парке вы&nbsp;получаете очень выгодное предложение.',
                 'preview' => '/images/stocks/vesennyaya-kollekciya-podarkov.jpg',
                 'slug' => 'vesennyaya-kollekciya-podarkov',
                 'city_id' => 0,
                 'sort' => 22,
+                'date_begin' => '2021-04-01',
+                'date_end' => '2021-04-30',
             ],
             [
                 'title' => 'Новая Vesta от&nbsp;713&nbsp;900&nbsp;рублей!',
                 'text' => '<p>Новая Vesta от&nbsp;713&nbsp;900 рублей + КАСКО + Подарок!</p>
                             <p>Покупайте новый автомобиль у&nbsp;официального дилера от&nbsp;713&nbsp;900&nbsp;рублей.</p>
-                            <p>Получите подарки и&nbsp;специальную выгоду, позвонив по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;09&nbsp;20</span></p>
-                            <p>* Предложение ограничено и&nbsp;не&nbsp;является публичной офертой. Подробности и&nbsp;сроки акции уточняйте по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;09&nbsp;20</span></p>
+                            <p>Получите подарки и&nbsp;специальную выгоду, позвонив по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;10&nbsp;28</span></p>
+                            <p>* Предложение ограничено и&nbsp;не&nbsp;является публичной офертой. Подробности и&nbsp;сроки акции уточняйте по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;10&nbsp;28</span></p>
                 ',
                 'text_short' => 'Покупайте новый автомобиль у&nbsp;официального дилера от&nbsp;713&nbsp;900&nbsp;рублей.',
                 'preview' => '/images/stocks/novaya-vesta-ot-713-900-rublej.jpg',
                 'slug' => 'novaya-vesta-ot-713-900-rublej',
                 'city_id' => 0,
                 'sort' => 23,
+                'date_begin' => '2021-04-01',
+                'date_end' => '2021-04-30',
             ],
             [
                 'title' => 'WOW-обмен на&nbsp;новую LADA',
@@ -406,13 +450,15 @@ class StocksTableSeeder extends Seeder
                             <p>Брайт Парк предлагает выгодный и&nbsp;удобный обмен на&nbsp;новую LADA.<br>
 Для вас экспресс-оценка и&nbsp;обмен вашего автомобиля на&nbsp;новую LADA без доплаты!<br>
 Наш специалист по&nbsp;оценке уже ждет вашего звонка!</p>
-                            <p>Узнайте подробности акции, позвонив по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;09&nbsp;20</span></p>
+                            <p>Узнайте подробности акции, позвонив по&nbsp;телефону: <span class="callibri_tel">+7&nbsp;(342)&nbsp;225&nbsp;10&nbsp;28</span></p>
                 ',
                 'text_short' => 'Брайт Парк предлагает выгодный и&nbsp;удобный обмен на&nbsp;новую LADA. Для вас экспресс-оценка и&nbsp;обмен вашего автомобиля на&nbsp;новую LADA без доплаты!',
                 'preview' => '/images/stocks/wow-obmen-na-novuyu-lada.jpg',
                 'slug' => 'wow-obmen-na-novuyu-lada',
                 'city_id' => 0,
                 'sort' => 24,
+                'date_begin' => '2021-04-01',
+                'date_end' => '2021-04-30',
             ],
         ];
 
