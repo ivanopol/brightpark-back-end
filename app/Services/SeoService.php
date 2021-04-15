@@ -35,11 +35,10 @@ class SeoService
      */
     public function getMetaTags(string $route = '')
     {
-        $meta_tags = [];
         $meta = [];
 
         if (!$route) {
-            return $meta_tags;
+            return $meta;
         }
 
         $route_tmp = explode('?', $route);

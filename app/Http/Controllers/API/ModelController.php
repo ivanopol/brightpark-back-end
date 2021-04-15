@@ -233,7 +233,7 @@ class ModelController extends Controller
         $key = 'stocks_' . $city_id;
 
         $stocks = Cache::remember($key, $minutes, function () use ($city_id)  {
-            $stocks = Stocks::whereIn('city_id', [0, $city_id])->orderBy('sort', 'desc')->get();
+            $stocks = Stocks::where('active', 1)->whereIn('city_id', [0, $city_id])->orderBy('sort', 'desc')->get();
             return $stocks;
         });
 
@@ -254,6 +254,7 @@ class ModelController extends Controller
         $key = 'stocks_' . $city_id . '_' . $stocks_slug;
 
         $stocks = Cache::remember($key, $minutes, function () use ($city_id, $stocks_slug)  {
+            $result = [];
             $stocks = Stocks::where('slug', $stocks_slug)->first();
 
             if (!$stocks) {
@@ -261,12 +262,17 @@ class ModelController extends Controller
             }
 
             if (intval($stocks->city_id) === 0) {
-                return $stocks;
+                $result = $stocks;
             } else {
                 $cities = explode(',', $stocks->city_id);
+                $result = in_array($city_id, $cities) ? $stocks : new \stdClass();
             }
 
-            return in_array($city_id, $cities) ? $stocks : new \stdClass();
+            if (count((array)$result) > 0) {
+                $result = Stocks::handlePlaceholders($result, $city_id, ['title', 'text', 'text_short']);
+            }
+
+            return $result;
         });
 
         return Response::json($stocks);
