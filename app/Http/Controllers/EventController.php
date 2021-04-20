@@ -21,7 +21,7 @@ class EventController extends Controller
 
     public function write_event(Request $request)
     {
-        $this->event_handler_service->handle_event(json_decode($request->getContent()));
+        //$this->event_handler_service->handle_event(json_decode($request->getContent()));
         return \Response::noContent();
     }
 }
