@@ -469,6 +469,16 @@ class NewsTableSeeder extends Seeder
                 'slug' => 'lada-predlagaet-xray-vnovoj-komplektacii',
                 'city_id' => 0,
             ],
+            [
+                'title' => 'Расширенные условия программы государственной поддержки при покупке LADA',
+                'text' => '<p>В&nbsp;апреле возобновляется госпрограмма, позволяющая приобрести новый автомобиль LADA в&nbsp;кредит на&nbsp;льготных условиях&nbsp;&mdash; выгода&nbsp;10% от&nbsp;стоимости автомобиля для всех граждан России.</p>
+                            <p>Новый автомобиль можно приобрести по&nbsp;доступной цене, суммируя выгоду по&nbsp;Госпрограмме на&nbsp;условиях льготного автокредитования и&nbsp;акции производителя, в&nbsp;том числе предложения LADA Finance и&nbsp;LADA Finance Максимум без ограничений по&nbsp;цене автомобиля и&nbsp;дополнительных требований к&nbsp;клиентам. До&nbsp;конца апреля дополнительный бонус&nbsp;&mdash; КАСКО в&nbsp;подарок.</p>
+                            <p>Узнавайте подробную информацию у&nbsp;менеджеров Брайт парка.</p>',
+                'text_short' => 'В&nbsp;апреле возобновляется госпрограмма, позволяющая приобрести новый автомобиль LADA в&nbsp;кредит на&nbsp;льготных условиях&nbsp;&mdash; выгода&nbsp;10% от&nbsp;стоимости автомобиля для всех граждан России.',
+                'preview' => '/images/news/rasshirennye-usloviya-programmy-gosudarstvennoj-podderzhki-pri-pokupke-lada.jpg',
+                'slug' => 'rasshirennye-usloviya-programmy-gosudarstvennoj-podderzhki-pri-pokupke-lada',
+                'city_id' => 0,
+            ],
         ];
         DB::table('news')->insert($news);
     }
