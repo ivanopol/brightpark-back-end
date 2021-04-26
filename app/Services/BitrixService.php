@@ -153,6 +153,7 @@ class BitrixService
         $info = 'Создан новый лид #ID_SUSH# и к нему прикреплено дело #ID_JOB#';
 
         $isReturnCustomer = $isDuplicate ? "Y" : "N";
+        $isReturnCustomer2 = $isDuplicate ? "5839" : "5838";
         // Добавление лида
         $request = [
             'fields' => [
@@ -165,6 +166,7 @@ class BitrixService
                 "NAME" => $data['name'], //имя из поля
                 "PHONE" => [["VALUE" => $phone, "VALUE_TYPE" => "MOBILE"]],
                 "IS_RETURN_CUSTOMER" => $isReturnCustomer,
+                "UF_CRM_1604059483" =>$isReturnCustomer2,
             ],
             'params' => ["REGISTER_SONET_EVENT" => "Y"],
         ];
