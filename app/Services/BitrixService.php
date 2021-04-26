@@ -101,6 +101,23 @@ class BitrixService
             }
         });
 
+        // Ищем есть ли лиды или контакты с таким номером в Битриксе, если есть
+        // Ставим признак "Повторный лид"
+        $curl = curl_init();
+        curl_setopt_array($curl, [
+            CURLOPT_SSL_VERIFYPEER => 0,
+            CURLOPT_POST => 1,
+            CURLOPT_RETURNTRANSFER => 1,
+            CURLOPT_URL => 'https://team.brightpark.ru/rest/610/g1iski89ajvio040/crm.duplicate.findbycomm.json',
+            CURLOPT_POSTFIELDS => http_build_query($request),
+        ]);
+
+        $res = curl_exec($curl);
+        curl_close($curl);
+        $res = json_decode($res, 1);
+
+        $isDuplicate = count($res["result"]) > 0;
+
         // Определение ответственного из сотрудниц ЕРЦ которые онлайн
         $department_id = $data['form_type'] === 2 ? 1552 : 834;
 
@@ -135,6 +152,7 @@ class BitrixService
 
         $info = 'Создан новый лид #ID_SUSH# и к нему прикреплено дело #ID_JOB#';
 
+        $isReturnCustomer = $isDuplicate ? "Y" : "N";
         // Добавление лида
         $request = [
             'fields' => [
@@ -146,6 +164,7 @@ class BitrixService
                 "SOURCE_ID" => "SELF",
                 "NAME" => $data['name'], //имя из поля
                 "PHONE" => [["VALUE" => $phone, "VALUE_TYPE" => "MOBILE"]],
+                "IS_RETURN_CUSTOMER" => $isReturnCustomer,
             ],
             'params' => ["REGISTER_SONET_EVENT" => "Y"],
         ];
