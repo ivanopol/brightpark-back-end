@@ -216,11 +216,11 @@ class BasePageService
     {
         $prices = [];
 
-        switch($data['city']) {
+/*        switch($data['city']) {
             case 'moscow':
                 $prices = $this->getMoscowPrices($data);
                 break;
-        }
+        }*/
 
         return $prices;
     }
