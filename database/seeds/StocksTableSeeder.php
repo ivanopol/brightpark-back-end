@@ -316,14 +316,14 @@ class StocksTableSeeder extends Seeder
                 'active' => 1,
             ],
             [
-                'title' => 'Новый XRAY от 679 900 рублей!',
-                'text' => '<p>Покупайте новый автомобиль у&nbsp;официального дилера от&nbsp;679&nbsp;900&nbsp;рублей + КАСКО + Подарок.</p>
+                'title' => 'Новый XRAY от 620 910 рублей!',
+                'text' => '<p>Покупайте новый автомобиль у&nbsp;официального дилера от&nbsp;620&nbsp;910&nbsp;рублей + КАСКО + Подарок.</p>
                             <p>Получите подарки и специальную выгоду, позвонив по&nbsp;телефону:&nbsp;<span class="callibri_tel"><:PHONE:></span></p>
                             <p>* Предложение ограничено и не является публичной офертой. Подробности и сроки акции уточняйте по&nbsp;телефону:&nbsp;<span class="callibri_tel"><:PHONE:></span></p>
                 ',
-                'text_short' => 'Покупайте новый автомобиль у официального дилера от 679 900 рублей + КАСКО + Подарок.',
-                'preview' => '/images/stocks/novyj-xray-ot-679-900-rublej.jpg',
-                'slug' => 'novyj-xray-ot-679-900-rublej',
+                'text_short' => 'Покупайте новый автомобиль у официального дилера от 620 910 рублей + КАСКО + Подарок.',
+                'preview' => '/images/stocks/novyj-xray-po-luchshej-cene.jpg',
+                'slug' => 'novyj-xray-po-luchshej-cene',
                 'city_id' => 0,
                 'sort' => 15,
                 'date_begin' => '2021-04-01',
@@ -400,14 +400,14 @@ class StocksTableSeeder extends Seeder
                 'active' => 1,
             ],
             [
-                'title' => 'Новая GRANTA от&nbsp;495&nbsp;900&nbsp;рублей!',
-                'text' => '<p>Покупайте новый автомобиль у&nbsp;официального дилера от&nbsp;495&nbsp;900 рублей + КАСКО + Подарок.</p>
+                'title' => 'Новая GRANTA от&nbsp;459&nbsp;810&nbsp;рублей!',
+                'text' => '<p>Покупайте новый автомобиль у&nbsp;официального дилера от&nbsp;459&nbsp;810 рублей + КАСКО + Подарок.</p>
                             <p>Получите подарки и&nbsp;специальную выгоду, позвонив по&nbsp;телефону: <span class="callibri_tel"><:PHONE:></span></p>
                             <p>* Предложение ограничено и&nbsp;не&nbsp;является публичной офертой. Подробности и&nbsp;сроки акции уточняйте по&nbsp;телефону: <span class="callibri_tel"><:PHONE:></span></p>
                 ',
-                'text_short' => 'Покупайте новый автомобиль у&nbsp;официального дилера от&nbsp;495&nbsp;900&nbsp;рублей.',
-                'preview' => '/images/stocks/novaya-granta-ot-495-900-rublej.jpg',
-                'slug' => 'novaya-granta-ot-495-900-rublej',
+                'text_short' => 'Покупайте новый автомобиль у&nbsp;официального дилера от&nbsp;459&nbsp;810&nbsp;рублей.',
+                'preview' => '/images/stocks/novaya-granta-po-luchshej-cene.jpg',
+                'slug' => 'novaya-granta-po-luchshej-cene',
                 'city_id' => 0,
                 'sort' => 20,
                 'date_begin' => '2021-04-01',
@@ -451,15 +451,15 @@ class StocksTableSeeder extends Seeder
                 'active' => 1,
             ],
             [
-                'title' => 'Новая Vesta от&nbsp;713&nbsp;900&nbsp;рублей!',
-                'text' => '<p>Новая Vesta от&nbsp;713&nbsp;900 рублей + КАСКО + Подарок!</p>
-                            <p>Покупайте новый автомобиль у&nbsp;официального дилера от&nbsp;713&nbsp;900&nbsp;рублей.</p>
+                'title' => 'Новая Vesta от&nbsp;651&nbsp;510&nbsp;рублей!',
+                'text' => '<p>Новая Vesta от&nbsp;651&nbsp;510 рублей + КАСКО + Подарок!</p>
+                            <p>Покупайте новый автомобиль у&nbsp;официального дилера от&nbsp;651&nbsp;510&nbsp;рублей.</p>
                             <p>Получите подарки и&nbsp;специальную выгоду, позвонив по&nbsp;телефону: <span class="callibri_tel"><:PHONE:></span></p>
                             <p>* Предложение ограничено и&nbsp;не&nbsp;является публичной офертой. Подробности и&nbsp;сроки акции уточняйте по&nbsp;телефону: <span class="callibri_tel"><:PHONE:></span></p>
                 ',
-                'text_short' => 'Покупайте новый автомобиль у&nbsp;официального дилера от&nbsp;713&nbsp;900&nbsp;рублей.',
-                'preview' => '/images/stocks/novaya-vesta-ot-713-900-rublej.jpg',
-                'slug' => 'novaya-vesta-ot-713-900-rublej',
+                'text_short' => 'Покупайте новый автомобиль у&nbsp;официального дилера от&nbsp;651&nbsp;510&nbsp;рублей.',
+                'preview' => '/images/stocks/novaya-vesta-po-luchshej-cene.jpg',
+                'slug' => 'novaya-vesta-po-luchshej-cene',
                 'city_id' => 0,
                 'sort' => 23,
                 'date_begin' => '2021-04-01',
