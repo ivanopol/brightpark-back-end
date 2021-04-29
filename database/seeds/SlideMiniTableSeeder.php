@@ -54,7 +54,7 @@ class SlideMiniTableSeeder extends Seeder
                 'image' => '/images/slider/mini/granta/mobile/lada_granta_hatcback.png',
                 'alt' => 'Лада Гранта хэтчбек',
                 'title' => 'Хэтчбек',
-                'active' => false,
+                'active' => true,
             ],
             [
                 'model_id' => 2,

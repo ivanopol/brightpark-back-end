@@ -71,7 +71,7 @@ class CarModelCarTypeTableSeeder extends Seeder
                 'count'=>333,
                 'image' => '/images/slider/mini/granta/mobile/lada_granta_hatcback.png',
                 'slogan' => 'Удобный компактный багажник',
-                'active' => 0,
+                'active' => 1,
             ],
             [
                 'car_model_id' => '2',
