@@ -499,6 +499,17 @@ class NewsTableSeeder extends Seeder
                 'slug' => 'rasshirennye-usloviya-programmy-gosudarstvennoj-podderzhki-pri-pokupke-lada',
                 'city_id' => 0,
             ],
+            [
+                'title' => 'LADA – лауреат Гран-При «За рулем»',
+                'text' => '<p>Две модели LADA стали призерами престижной автомобильной премии Гран-При &laquo;За&nbsp;рулем&raquo;&nbsp;&mdash; 2021. LADA Granta победила в&nbsp;номинации &laquo;Лидер продаж&raquo;, а&nbsp;в&nbsp;номинации &laquo;За&nbsp;верность традициям&raquo; LADA получила приз с&nbsp;формулировкой &laquo;За&nbsp;возвращение бренда &laquo;Нива&raquo;.</p>
+
+<p>Напомним, что LADA уже не&nbsp;раз становилась лауреатом премии Гран-при &laquo;За&nbsp;рулем&raquo;. В&nbsp;2019 году в&nbsp;номинации &laquo;За&nbsp;новую энергию&raquo; награждены двухтопливные LADA Vesta CNG и&nbsp;LADA Largus CNG, а&nbsp;в&nbsp;категории &laquo;Малый класс&raquo; одержал победу седан LADA Vesta Cross. В&nbsp;2018 году LADA Vesta SW&nbsp;Cross получила Гран-при в&nbsp;номинации &laquo;Компактные кроссоверы&raquo;, в&nbsp;2017 году LADA XRAY стал лучшим в&nbsp;номинации &laquo;Малый класс&raquo;, а&nbsp;седан LADA Vesta удостоился специального приза &laquo;Выбор редакции &laquo;За&nbsp;рулем&raquo;. Также наградами Гран-при отмечались LADA Granta (2013) и&nbsp;LADA Kalina (2014).</p>
+<p>Приходи в&nbsp;<a href="/<:CITY:>/" class="event">Брайт парк</a> и&nbsp;выбери свою LADA.</p>',
+                'text_short' => 'Две модели LADA стали призерами престижной автомобильной премии Гран-При &laquo;За&nbsp;рулем&raquo;&nbsp;&mdash; 2021. LADA Granta победила в&nbsp;номинации &laquo;Лидер продаж&raquo;, а&nbsp;в&nbsp;номинации &laquo;За&nbsp;верность традициям&raquo; LADA получила приз с&nbsp;формулировкой &laquo;За&nbsp;возвращение бренда &laquo;Нива&raquo;.',
+                'preview' => '/images/news/lada_laureat.jpeg',
+                'slug' => 'lada-laureat-gran-pri-za-rulem',
+                'city_id' => 0,
+            ],
         ];
         DB::table('news')->insert($news);
     }
