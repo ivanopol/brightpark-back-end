@@ -684,6 +684,12 @@ class SeoTableSeeder extends Seeder
                 'description' => '🔥 В апреле возобновляется госпрограмма, позволяющая приобрести новый автомобиль LADA в кредит на льготных условиях - Брайт Парк в <:CITY_DATIVE:>',
                 'city' => '0',
             ],
+            [
+                'url' => 'news/lada-laureat-gran-pri-za-rulem',
+                'title' => 'LADA – лауреат Гран-При «За рулем» – Брайт Парк в <:CITY_DATIVE:>',
+                'description' => '🔥 Две модели LADA стали призерами престижной автомобильной премии Гран-При «За рулем» - 2021 – Брайт Парк в <:CITY_DATIVE:>',
+                'city' => '0',
+            ],
         ];
         $both = array_merge($news, $stocks, $models, $pages);
         DB::table('seo')->insert($both);
