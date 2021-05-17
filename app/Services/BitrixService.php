@@ -33,7 +33,7 @@ class BitrixService
 
         $url = '';
         if (isset($data['url']) && count($data['url'])) {
-            $url = $data['url'];
+            $url = $data['url']['href'];
             foreach (['href', 'search'] as $label) {
                 if (isset($data['url'][$label]) && !empty($data['url'][$label])) {
                     $data['url'][$label] = htmlspecialchars(strip_tags($data['url'][$label]));
@@ -156,17 +156,15 @@ class BitrixService
 
         $isReturnCustomer = $isDuplicate ? "Y" : "N";
 
-/*        if ($url) {
+        if ($url) {
             $urlArr = explode('//', $url);
             $urlArr2 = explode('/', $urlArr[1]);
             array_shift($urlArr2);
             array_shift($urlArr2);
             $referer = implode('/', $urlArr2);
         } else {
-            $referer = 'тест';
-        }*/
-
-        $referer = $url;
+            $referer = '';
+        }
 
         // Добавление лида
         $request = [
