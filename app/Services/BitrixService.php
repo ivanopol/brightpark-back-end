@@ -156,7 +156,7 @@ class BitrixService
 
         $isReturnCustomer = $isDuplicate ? "Y" : "N";
 
-        if ($url) {
+/*        if ($url) {
             $urlArr = explode('//', $url);
             $urlArr2 = explode('/', $urlArr[1]);
             array_shift($urlArr2);
@@ -164,7 +164,9 @@ class BitrixService
             $referer = implode('/', $urlArr2);
         } else {
             $referer = 'тест';
-        }
+        }*/
+
+        $referer = 'test';
 
         // Добавление лида
         $request = [
