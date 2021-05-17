@@ -157,7 +157,8 @@ class BitrixService
         $isReturnCustomer = $isDuplicate ? "Y" : "N";
 
         if ($url) {
-            $urlArr = explode('//', $url);
+            $url = explode('?', $url);
+            $urlArr = explode('//', $url[0]);
             $urlArr2 = explode('/', $urlArr[1]);
             array_shift($urlArr2);
             array_shift($urlArr2);
