@@ -31,7 +31,9 @@ class BitrixService
         $data['caption'] = isset($data['caption']) ? htmlspecialchars(strip_tags($data['caption']), ENT_QUOTES) : '';
         $data['form_type'] = isset($data['form_type']) ? intval($data['form_type']) : '';
 
+        $url = '';
         if (isset($data['url']) && count($data['url'])) {
+            $url = $data['url'];
             foreach (['href', 'search'] as $label) {
                 if (isset($data['url'][$label]) && !empty($data['url'][$label])) {
                     $data['url'][$label] = htmlspecialchars(strip_tags($data['url'][$label]));
@@ -153,6 +155,17 @@ class BitrixService
         $info = 'Создан новый лид #ID_SUSH# и к нему прикреплено дело #ID_JOB#';
 
         $isReturnCustomer = $isDuplicate ? "Y" : "N";
+
+        if ($url) {
+            $urlArr = explode('//', $url);
+            $urlArr2 = explode('/', $urlArr[1]);
+            array_shift($urlArr2);
+            array_shift($urlArr2);
+            $referer = implode('/', $urlArr2);
+        } else {
+            $referer = 'тест';
+        }
+
         // Добавление лида
         $request = [
             'fields' => [
@@ -161,6 +174,7 @@ class BitrixService
                 "OPENED" => "Y",
                 "ASSIGNED_BY_ID" => $responsible_id,
                 "UF_CRM_1471411617" => '40', // источник=lada-rostov.ru
+                "UF_CRM_MT_REFERER" => $referer,
                 "SOURCE_ID" => "SELF",
                 "NAME" => $data['name'], //имя из поля
                 "PHONE" => [["VALUE" => $phone, "VALUE_TYPE" => "MOBILE"]],
