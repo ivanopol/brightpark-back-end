@@ -166,7 +166,7 @@ class BitrixService
             $referer = 'тест';
         }*/
 
-        $referer = 'test';
+        $referer = $url;
 
         // Добавление лида
         $request = [
