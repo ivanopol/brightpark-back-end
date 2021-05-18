@@ -510,6 +510,17 @@ class NewsTableSeeder extends Seeder
                 'slug' => 'lada-laureat-gran-pri-za-rulem',
                 'city_id' => 0,
             ],
+            [
+                'title' => 'LADA увеличила продажи в&nbsp;апреле 2021 года',
+                'text' => '<p>Продажи LADA в&nbsp;апреле 2021 года в&nbsp;России составили 37&nbsp;931&nbsp;автомобиль, что в&nbsp;4&nbsp;раза больше результатов апреля 2020 года и&nbsp;на&nbsp;17,4% выше продаж апреля 2019&nbsp;года. Напомним, что продажи на&nbsp;всем российском рынке в&nbsp;апреле 2020 года показали самые низкие значения в&nbsp;современной истории в&nbsp;связи с&nbsp;введенными в&nbsp;стране жесткими санитарными ограничениями.</p>
+                    <p>Наиболее продаваемой моделью LADA в&nbsp;апреле 2021 года стала Granta с&nbsp;результатом в&nbsp;14&nbsp;050&nbsp;автомобилей; на&nbsp;втором месте расположилась LADA Vesta, ее&nbsp;продажи составили 11&nbsp;178&nbsp;автомобилей, на&nbsp;третьем месте&nbsp;&mdash; LADA Largus с&nbsp;результатом 4&nbsp;347&nbsp;автомобилей.</p>
+                    <p>В&nbsp;2021 году LADA успешно запустила новые важные продукты&nbsp;&mdash; Niva Travel и&nbsp;обновленный Largus. Модели Vesta и&nbsp;XRAY получили новую мультимедийную систему EnjoY Pro c&nbsp;Яндекс.Авто.</p>
+                    <p>Приходи в&nbsp;<a href="/<:CITY:>/" class="event">Брайт парк</a> и&nbsp;выбери свою LADA.</p>',
+                'text_short' => 'Продажи LADA в&nbsp;апреле 2021 года в&nbsp;России составили 37&nbsp;931&nbsp;автомобиль, что в&nbsp;4&nbsp;раза больше результатов апреля 2020 года и&nbsp;на&nbsp;17,4% выше продаж апреля 2019&nbsp;года.',
+                'preview' => '/images/news/lada-uvelichila-prodazhi-v-aprele-2021-goda.jpg',
+                'slug' => 'lada-uvelichila-prodazhi-v-aprele-2021-goda',
+                'city_id' => 0,
+            ],
         ];
         DB::table('news')->insert($news);
     }
