@@ -114,11 +114,19 @@ class BitrixService
             CURLOPT_POSTFIELDS => http_build_query($request),
         ]);
 
-        $res = curl_exec($curl);
+        $resultDuplicate = curl_exec($curl);
         curl_close($curl);
-        $res = json_decode($res, 1);
+        $resultDuplicate = json_decode($resultDuplicate, 1);
 
-        $isDuplicate = count($res["result"]) > 0;
+        $contactID = 0;
+        if (!empty($resultDuplicate['result'])) {
+            if (isset($resultDuplicate['result']["CONTACT"]) && !empty($resultDuplicate['result']["CONTACT"])) {
+                $count = count($resultDuplicate['result']["CONTACT"]) - 1;
+                $contactID = $resultDuplicate['result']["CONTACT"][$count];
+            }
+        }
+
+        $isDuplicate = intval($contactID) > 0;
 
         // Определение ответственного из сотрудниц ЕРЦ которые онлайн
         $department_id = $data['form_type'] === 2 ? 1552 : 834;
@@ -154,8 +162,6 @@ class BitrixService
 
         $info = 'Создан новый лид #ID_SUSH# и к нему прикреплено дело #ID_JOB#';
 
-        $isReturnCustomer = $isDuplicate ? "Y" : "N";
-
         if ($url) {
             $url = explode('?', $url);
             $urlArr = explode('//', $url[0]);
@@ -179,10 +185,13 @@ class BitrixService
                 "SOURCE_ID" => "SELF",
                 "NAME" => $data['name'], //имя из поля
                 "PHONE" => [["VALUE" => $phone, "VALUE_TYPE" => "MOBILE"]],
-                "IS_RETURN_CUSTOMER" => $isReturnCustomer,
             ],
             'params' => ["REGISTER_SONET_EVENT" => "Y"],
         ];
+
+        if ( $isDuplicate ) {
+            $request['fields']['CONTACT_ID'] = $contactID;
+        }
 
         if (isset($data['utm']) && count($data['utm'])) {
             foreach (['utm_campaign', 'utm_content', 'utm_medium', 'utm_source', 'utm_term', 'block', 'source', 'yclid'] as $label) {
