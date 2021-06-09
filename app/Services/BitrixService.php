@@ -7,6 +7,7 @@ use Exception;
 use Mail;
 use App\City;
 use Illuminate\Support\Facades\Session;
+use DateTimeImmutable;
 
 class BitrixService
 {
@@ -203,7 +204,9 @@ class BitrixService
         ];
 
         if ($datetime) {
-            $request['fields']['UF_CRM_1491831660'] = $datetime;
+            $date_test_drive =  new \DateTimeImmutable($datetime);
+            $date_test_drive2 = $date_test_drive->modify('+1 hour');
+            $request['fields']['UF_CRM_1491831660'] = $date_test_drive2->format('d.m.Y H:i:s');
         }
 
         if ($data['car']) {
