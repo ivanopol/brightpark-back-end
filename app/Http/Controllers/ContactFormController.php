@@ -24,7 +24,7 @@ class ContactFormController extends \Illuminate\Routing\Controller
             $this->bitrix_service->sendContactForm($request->getContent());
             return Response::HTTP_OK;
         } catch (Exception $e){
-            return Response::HTTP_BAD_REQUEST;
+            return $e;
         }
     }
 
