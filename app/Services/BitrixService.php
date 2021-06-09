@@ -181,6 +181,11 @@ class BitrixService
             $referer = '';
         }
 
+        $datetime = '';
+        if (isset($data['date']) && $data['date'] && isset($data['time']) ) {
+            $datetime = $data['date'] . ' ' . $data['time'] . ':00';
+        }
+
         // Добавление лида
         $request = [
             'fields' => [
@@ -196,6 +201,14 @@ class BitrixService
             ],
             'params' => ["REGISTER_SONET_EVENT" => "Y"],
         ];
+
+        if ($datetime) {
+            $request['fields']['UF_CRM_1491831660'] = $datetime;
+        }
+
+        if ($data['car']) {
+            $request['fields']['UF_CRM_1623242141'] = $data['car'];
+        }
 
         if ( $isDuplicate ) {
             $request['fields']['CONTACT_ID'] = $contactID;
