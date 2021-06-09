@@ -183,7 +183,7 @@ class BitrixService
         }
 
         $datetime = '';
-        if (isset($data['date']) && $data['date'] && isset($data['time']) ) {
+        if (isset($data['date']) && $data['date'] && isset($data['time']) && $data['time'] ) {
             $datetime = $data['date'] . ' ' . $data['time'] . ':00';
         }
 
