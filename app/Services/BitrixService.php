@@ -25,9 +25,9 @@ class BitrixService
         $data['name'] = isset($data['name']) ? htmlspecialchars(strip_tags($data['name']), ENT_QUOTES) : '';
         $data['phone'] =  isset($data['phone']) ? strip_tags($data['phone']) : '';
         $data['comment'] = isset($data['comment']) ? htmlspecialchars(strip_tags($data['comment']), ENT_QUOTES) : '';
-        $data['date'] = isset($data['date']) ? htmlspecialchars(strip_tags($data['date']), ENT_QUOTES) : '';
+/*        $data['date'] = isset($data['date']) ? htmlspecialchars(strip_tags($data['date']), ENT_QUOTES) : '';
         $data['time'] = isset($data['time']) ? htmlspecialchars(strip_tags($data['time']), ENT_QUOTES) : '';
-        $data['car'] = isset($data['car']) ? htmlspecialchars(strip_tags($data['car']), ENT_QUOTES) : '';
+        $data['car'] = isset($data['car']) ? htmlspecialchars(strip_tags($data['car']), ENT_QUOTES) : '';*/
 
         $data['responsible_id'] = isset($data['responsible_id']) ? intval($data['responsible_id']) : '';
         $data['form_id'] = isset($data['form_id']) ? htmlspecialchars(strip_tags($data['form_id']), ENT_QUOTES) : '';
@@ -81,9 +81,9 @@ class BitrixService
 
         $params['name'] = isset($data['name']) ? $data['name'] : '';
         $params['phone'] = isset($data['phone']) ? $data['phone'] : '';
-        $params['date'] = isset($data['date']) ? $data['date'] : '';
+/*        $params['date'] = isset($data['date']) ? $data['date'] : '';
         $params['time'] = isset($data['time']) ? $data['time'] : '';
-        $params['car'] = isset($data['car']) ? $data['car'] : '';
+        $params['car'] = isset($data['car']) ? $data['car'] : '';*/
         $params['comment'] = isset($data['comment']) ? $data['comment'] : '';
 
         $params['city'] = isset($city[0]->title_ru) ? $city[0]->title_ru : '';
