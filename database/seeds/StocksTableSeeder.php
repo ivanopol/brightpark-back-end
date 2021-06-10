@@ -517,6 +517,9 @@ class StocksTableSeeder extends Seeder
                 'slug' => 'detali-leta',
                 'city_id' => 0,
                 'sort' => 6,
+                'date_begin' => '2021-06-01',
+                'date_end' => '2021-06-30',
+                'active' => 1,
             ],
             [
                 'title' => 'Сервис в рассрочку',
@@ -528,6 +531,9 @@ class StocksTableSeeder extends Seeder
                 'slug' => 'servis-v-rassrochku',
                 'city_id' => 0,
                 'sort' => 6,
+                'date_begin' => '2021-06-01',
+                'date_end' => '2021-06-30',
+                'active' => 1,
             ],
         ];
 
