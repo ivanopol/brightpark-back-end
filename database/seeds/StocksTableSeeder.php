@@ -483,6 +483,29 @@ class StocksTableSeeder extends Seeder
                 'date_end' => '2021-04-30',
                 'active' => 1,
             ],
+            [
+                'title' => 'Трейд-ин LADA Selection для лояльных клиентов',
+                'text' => '<p>По&nbsp;акции &laquo;Трейд-ин LADA Selection для лояльных клиентов&raquo; предоставляется дополнительная выгода 15&nbsp;000&nbsp;руб.&nbsp;на&nbsp;приобретение нового автомобиля, при условии сдачи в&nbsp;зачет его стоимости автомобиля с&nbsp;пробегом, соответствующего следующим критериям:</p>
+                            <ul>
+                            <li>Марка автомобиля&nbsp;&mdash; LADA.</li>
+                            <li>Возраст автомобиля&nbsp;&mdash; до&nbsp;4&nbsp;лет.</li>
+                            <li>Пробег автомобиля&nbsp;&mdash; до&nbsp;80000&nbsp;км.</li>
+                            <li>Пройдено минимум 2&nbsp;ТО с&nbsp;отметками в&nbsp;сервисной книжке.</li>
+                            <li>Автомобиль не&nbsp;участвовал в&nbsp;крупных ДТП, связанных с&nbsp;нарушением геометрии кузова.</li>
+                            <li>Автомобиль юридически чист, не&nbsp;является предметом залогов банков, страховых компаний или иных третьих лиц.</li>
+                            </ul>
+                            <p>* Акция &laquo;Трейд-ин LADA Selection для лояльных клиентов&raquo; доступна только в&nbsp;дилерских центрах участниках программы LADA Selection. Дилер вправе отказать в&nbsp;предоставлении дополнительной выгоды по&nbsp;акции в&nbsp;случае обнаружения несоответствий автомобиля клиента условиям программы LADA Selection в&nbsp;процессе его осмотра и&nbsp;диагностики.</p>
+                            <p>Узнайте подробности акции, позвонив по&nbsp;телефону: <span class="callibri_tel"><:PHONE:></span></p>
+                ',
+                'text_short' => 'По&nbsp;акции &laquo;Трейд-ин LADA Selection для лояльных клиентов&raquo; предоставляется дополнительная выгода 15&nbsp;000&nbsp;руб.',
+                'preview' => '/images/stocks/trejd-in-lada-selection-dlya-loyalnyh-klientov.jpg',
+                'slug' => 'trejd-in-lada-selection-dlya-loyalnyh-klientov',
+                'city_id' => 0,
+                'sort' => 25,
+                'date_begin' => '2021-03-02',
+                'date_end' => '2021-06-30',
+                'active' => 1,
+            ],
         ];
 
         DB::table('stocks')->insert($stocks);
