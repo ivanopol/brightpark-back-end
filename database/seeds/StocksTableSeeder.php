@@ -414,6 +414,29 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 6,
             ],
+            [
+                'title' => 'Детали лета',
+                'text' => '<p>С 15 апреля по 15 июля 2021 года действует скидка 15% на всю продукцию LECAR при покупке от 1000 руб.</p>
+                           <p>LECAR — собственная эксклюзивная марка автокомпонентов фирменной сети LADA.</p>
+                           <p>Подробнее об ассортименте <a href="https://le.car/" target="_blank" rel="nofollow">https://le.car/</a>.</p>
+                         ',
+                'text_short' => 'С 15 апреля по 15 июля 2021 года действует скидка 15% на всю продукцию LECAR при покупке от 1000 руб.',
+                'preview' => '/images/stocks/detali-leta.jpg',
+                'slug' => 'detali-leta',
+                'city_id' => 0,
+                'sort' => 6,
+            ],
+            [
+                'title' => 'Сервис в рассрочку',
+                'text' => '<p>Официальный дилер LADA Брайт Парк предлагает рассрочку на 4 месяца на услуги сервиса и запчасти</p>
+                           <p>Подробности уточняйте по&nbsp;телефону: <span class="callibri_tel">+7 (342) 225-10-28.</span>.</p>
+                         ',
+                'text_short' => 'Официальный дилер LADA Брайт Парк предлагает рассрочку на 4 месяца на услуги сервиса и запчасти.',
+                'preview' => '/images/stocks/service-rassrochka.jpg',
+                'slug' => 'servis-v-rassrochku',
+                'city_id' => 0,
+                'sort' => 6,
+            ],
         ];
 
         DB::table('stocks')->insert($stocks);
