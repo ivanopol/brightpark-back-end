@@ -247,7 +247,7 @@ class CarModelCarTypeTableSeeder extends Seeder
                 'count'=>333,
                 'image' => '/images/slider/mini/largus/mobile/lada_largus_cross.png',
                 'slogan' => 'Новый LADA Largus.</br> Комфорт на максимум.',
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'car_model_id' => '5',
