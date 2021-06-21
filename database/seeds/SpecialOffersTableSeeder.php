@@ -12,23 +12,23 @@ class SpecialOffersTableSeeder extends Seeder
             [
                 'date' => null,
                 'title'=>'LADA VESTA',
-                'description'=>'<span class="title-uppercase">LADA</span><br>в Брайт Парке ещё выгоднее',
+                'description'=>'',
                 'count'=>17,
                 'is_active'=>true,
-                'img_mobile' => '/images/main/mobile/brajt_retargeting.jpg',
-                'img_tablet' => '/images/main/tablet/brajt_retargeting.jpg',
-                'img_desktop' => '/images/main/desktop/brajt_retargeting.jpg',
+                'img_mobile' => '/images/main/mobile/rate.jpg',
+                'img_tablet' => '/images/main/tablet/rate.jpg',
+                'img_desktop' => '/images/main/desktop/rate.jpg',
             ],
 
             [
                 'date' => Carbon::create(2020, 03, 30, 0, 0, 0),
                 'title'=>'LADA VESTA',
-                'description'=>'LADA Vesta<br> выгода 10%<br> по госпрограмме',
+                'description'=>'',
                 'count'=>6,
                 'is_active'=>true,
-                'img_mobile' => '/images/main/mobile/main_vesta_gray.jpg',
-                'img_tablet' => '/images/main/tablet/main_vesta_gray.jpg',
-                'img_desktop' => '/images/main/desktop/main_vesta_gray.jpg',
+                'img_mobile' => '/images/main/mobile/ball.jpg',
+                'img_tablet' => '/images/main/tablet/ball.jpg',
+                'img_desktop' => '/images/main/desktop/ball.jpg',
             ],
         ];
 

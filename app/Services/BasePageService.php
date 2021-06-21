@@ -499,29 +499,12 @@ class BasePageService
      * Получаем данные для ретаргетинговой страницы
      *
      * @param Retarget $retarget
-     * @param Request $request Параметры запроса
+     * @param integer $id ID страницы ретаргетинга
      *
      * @return array
      */
-    public function getRetargetOffers(Retarget $retarget, Request $request) : object
+    public function getRetargetOffers(Retarget $retarget, int $id) : object
     {
-        $result = [];
-        $params = $request->all();
-
-        if (isset($params['utm_campain'])) {
-            switch($params['utm_campain']) {
-                case 'test':
-                    $result = $retarget->find(2);
-                    break;
-                default:
-                    $result = $retarget->find(1);
-                    break;
-            }
-
-        } else {
-            $result = $retarget->find(1);
-        }
-
-        return $result;
+        return $retarget->find($id);
     }
 }

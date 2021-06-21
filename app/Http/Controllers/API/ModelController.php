@@ -185,12 +185,13 @@ class ModelController extends Controller
      */
     public function getRetargetingInfo(Request $request): \Illuminate\Http\JsonResponse
     {
+        $id = intval($request->input('id'));
         $minutes = $this->cache_time;
-        $key = 'retargeting';
+        $key = 'retargeting_' . $id;
 
-        $retargeting = Cache::remember($key, $minutes, function () use ($request)  {
+        $retargeting = Cache::remember($key, $minutes, function () use ($request, $id)  {
             $service = new BasePageService();
-            $offer = $service->getRetargetOffers(new Retarget(), $request);
+            $offer = $service->getRetargetOffers(new Retarget(), $id);
 
             return [
                 'offer' => $offer
