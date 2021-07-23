@@ -35,6 +35,7 @@ class BitrixService
         $data['city'] = isset($data['city']) ? htmlspecialchars(strip_tags($data['city']), ENT_QUOTES) : '';
         $data['caption'] = isset($data['caption']) ? htmlspecialchars(strip_tags($data['caption']), ENT_QUOTES) : '';
         $data['form_type'] = isset($data['form_type']) ? intval($data['form_type']) : '';
+        $data['gift'] = isset($data['gift']) ? htmlspecialchars(strip_tags($data['gift']), ENT_QUOTES) : '';
 
         $url = '';
         if (isset($data['url']) && count($data['url'])) {
@@ -86,6 +87,7 @@ class BitrixService
         $params['time'] = isset($data['time']) ? $data['time'] : '';
         $params['car'] = isset($data['car']) ? $data['car'] : '';
         $params['comment'] = isset($data['comment']) ? $data['comment'] : '';
+        $params['gift'] = isset($data['gift']) ? $data['gift'] : '';
 
         $params['city'] = isset($city[0]->title_ru) ? $city[0]->title_ru : '';
         $params['caption'] = isset($data['caption']) ? $data['caption'] : '';

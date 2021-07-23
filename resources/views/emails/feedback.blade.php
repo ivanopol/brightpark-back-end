@@ -11,6 +11,9 @@
     @endif
     <li>Город: <?php echo $city; ?></li>
     <li><a href="<?php echo $url; ?>"><?php echo $url; ?></a></li>
+    @if($gift)
+        <li>Подарок: {{$gift}}</li>
+    @endif
     <li>Комментарий: <?php echo $comment; ?></li>
 </ul>
 </body>
