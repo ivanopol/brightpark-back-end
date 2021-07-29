@@ -520,6 +520,30 @@ class SeoTableSeeder extends Seeder
                 'description' => 'В Брайт парке вы можете оформить рассрочку на сервис и запасти на комфортных для вас условиях!- Брайт Парк в <:CITY_DATIVE:>',
                 'city' => '0',
             ],
+            [
+                'url' => 'stocks/xray-za-180-rub-v-mesyac',
+                'title' => 'XRAY ЗА 180 РУБ. В МЕСЯЦ - Брайт Парк <:CITY:>',
+                'description' => 'Программа LADA Finance Максимум — это удобный и быстрый способ приобретения автомобил - Брайт Парк в <:CITY_DATIVE:>',
+                'city' => '0',
+            ],
+            [
+                'url' => 'stocks/zdorovyj-interes',
+                'title' => 'АКЦИЯ ЗДОРОВЫЙ ИНТЕРЕС - Брайт Парк <:CITY:>',
+                'description' => 'СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ ДЛЯ ВЛАДЕЛЬЦЕВ АВТОМОБИЛЕЙ LADA - Брайт Парк в <:CITY_DATIVE:>',
+                'city' => '0',
+            ],
+            [
+                'url' => 'stocks/lada-vesta-at-za-6600-rub-v-mesyac',
+                'title' => 'LADA VESTA AT ЗА 6600 РУБ. В МЕСЯЦ + КАСКО - Брайт Парк <:CITY:>',
+                'description' => 'Первоначальный взнос от 10%, Ежемесячный платеж до 2х раз ниже по сравнению с классическим автокредитом... - Брайт Парк в <:CITY_DATIVE:>',
+                'city' => '0',
+            ],
+            [
+                'url' => 'stocks/lada-granta-se-za-4100-rub-v-mesyac',
+                'title' => 'LADA GRANTA SE ЗА 4100 РУБ. В МЕСЯЦ + КАСКО - Брайт Парк <:CITY:>',
+                'description' => 'Первоначальный взнос от 10%, Ежемесячный платеж до 2х раз ниже по сравнению с классическим автокредитом... - Брайт Парк в <:CITY_DATIVE:>',
+                'city' => '0',
+            ],
         ];
         $news = [
             [
