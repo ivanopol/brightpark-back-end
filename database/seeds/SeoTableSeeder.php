@@ -544,6 +544,12 @@ class SeoTableSeeder extends Seeder
                 'description' => 'Первоначальный взнос от 10%, Ежемесячный платеж до 2х раз ниже по сравнению с классическим автокредитом... - Брайт Парк в <:CITY_DATIVE:>',
                 'city' => '0',
             ],
+            [
+                'url' => 'stocks/3000-rublej-za-kazhdogo-novogo-klienta',
+                'title' => '3000₽ за каждого нового клиента! - Брайт Парк <:CITY:>',
+                'description' => 'Подарите сертификат своим знакомым, друзьям или родственникам - Брайт Парк в <:CITY_DATIVE:>',
+                'city' => '5',
+            ],
         ];
         $news = [
             [
