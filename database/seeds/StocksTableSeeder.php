@@ -524,7 +524,7 @@ class StocksTableSeeder extends Seeder
             [
                 'title' => 'Сервис в рассрочку',
                 'text' => '<p>Официальный дилер LADA Брайт Парк предлагает рассрочку на 4 месяца на услуги сервиса и запчасти</p>
-                           <p>Подробности уточняйте по&nbsp;телефону: <span class="callibri_tel">+7 (342) 225-10-28.</span>.</p>
+                           <p>Подробности уточняйте по&nbsp;телефону: <span class="callibri_tel"><:PHONE:></span>.</p>
                          ',
                 'text_short' => 'Официальный дилер LADA Брайт Парк предлагает рассрочку на 4 месяца на услуги сервиса и запчасти.',
                 'preview' => '/images/stocks/service-rassrochka.jpg',
@@ -547,7 +547,7 @@ class StocksTableSeeder extends Seeder
                                <li>Возможность менять автомобиль на&nbsp;новый каждые 3-4 года</li>
                                <li>КАСКО в&nbsp;подарок</li>
                            </ul>
-                           <p>Подробности уточняйте по&nbsp;телефону: <span class="callibri_tel">+7 (342) 225-10-28.</span>.</p>
+                           <p>Подробности уточняйте по&nbsp;телефону: <span class="callibri_tel"><:PHONE:></span>.</p>
                          ',
                 'text_short' => 'Программа LADA Finance Максимум&nbsp;&mdash; это удобный и&nbsp;быстрый способ приобретения автомобиля. Просто выберете комфортный размер первоначального взноса и&nbsp;остаточного платежа для получения наиболее интересныхвыгодных финансовых условий именно для вас.',
                 'preview' => '/images/stocks/xray-za-180-rub-v-mesyac.jpg',
@@ -567,7 +567,7 @@ class StocksTableSeeder extends Seeder
                             <p>*скидка действует на&nbsp;любой тип планового технического обслуживания</p>
                             <h3>5% В МАГАЗИНАХ LADA DЕТАЛЬ</h3>
                             <p>на оригинальные запасные части и аксессуары LADA и бренда LECAR</p>
-                           <p>Подробности уточняйте по&nbsp;телефону: <span class="callibri_tel">+7 (342) 225-10-28.</span>.</p>
+                           <p>Подробности уточняйте по&nbsp;телефону: <span class="callibri_tel"><:PHONE:></span>.</p>
                          ',
                 'text_short' => 'СПЕЦИАЛЬНОЕ ПРЕДЛОЖЕНИЕ ДЛЯ ВЛАДЕЛЬЦЕВ АВТОМОБИЛЕЙ LADA',
                 'preview' => '/images/stocks/zdorovyj-interes.jpg',
@@ -590,7 +590,7 @@ class StocksTableSeeder extends Seeder
                                 <li>Возможность менять автомобиль на&nbsp;новый каждые 3-4 года</li>
                                 <li>КАСКО в&nbsp;подарок</li>
                             </ul>
-                           <p>Подробности уточняйте по&nbsp;телефону: <span class="callibri_tel">+7 (342) 225-10-28.</span>.</p>
+                           <p>Подробности уточняйте по&nbsp;телефону: <span class="callibri_tel"><:PHONE:></span>.</p>
                          ',
                 'text_short' => 'Первоначальный взнос от 10%, Ежемесячный платеж до 2х раз ниже по сравнению с классическим автокредитом, Остаточный платеж до 60%...',
                 'preview' => '/images/stocks/lada-vesta-at-za-6600-rub-v-mesyac.jpg',
@@ -613,7 +613,7 @@ class StocksTableSeeder extends Seeder
                                 <li>Возможность менять автомобиль на&nbsp;новый каждые 3-4 года</li>
                                 <li>КАСКО в&nbsp;подарок</li>
                             </ul>
-                           <p>Подробности уточняйте по&nbsp;телефону: <span class="callibri_tel">+7 (342) 225-10-28.</span>.</p>
+                           <p>Подробности уточняйте по&nbsp;телефону: <span class="callibri_tel"><:PHONE:></span>.</p>
                          ',
                 'text_short' => 'Первоначальный взнос от 10%, Ежемесячный платеж до 2х раз ниже по сравнению с классическим автокредитом, Остаточный платеж до 60%...',
                 'preview' => '/images/stocks/lada-granta-se-za-4100-rub-v-mesyac.jpg',
@@ -638,7 +638,7 @@ class StocksTableSeeder extends Seeder
                         <li>сигнализация с&nbsp;автозапуском</li>
                     </ul>
                     <h3>Выгодно Вам и&nbsp;Вашим друзьям!</h3>
-                    <p>По&nbsp;всем вопросам обращайтесь в&nbsp;салон по&nbsp;адресу : г. Екатеринбург, ул. Маневровая, 40&nbsp;или по&nbsp;телефону <span class="callibri_tel">(351) 958-56-58</span></p>
+                    <p>По&nbsp;всем вопросам обращайтесь в&nbsp;салон по&nbsp;адресу : г. Екатеринбург, ул. Маневровая, 40&nbsp;или по&nbsp;телефону <span class="callibri_tel"><:PHONE:></span></p>
                     <a href="/files/Приведи друга_правила.docx" class="event">Правила Акции (файл)</a>
                     ',
                 'text_short' => 'Подарите сертификат своим знакомым, друзьям или родственникам. Если кто-то из&nbsp;них купит у&nbsp;нас новый автомобиль LADA по&nbsp;данному сертификату в&nbsp;течение 30&nbsp;календарных дней, Вы&nbsp;получите денежное вознаграждение в&nbsp;размере <b>3000&nbsp;руб.',
