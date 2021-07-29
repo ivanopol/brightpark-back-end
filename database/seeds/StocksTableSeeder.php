@@ -646,8 +646,8 @@ class StocksTableSeeder extends Seeder
                 'slug' => '3000-rublej-za-kazhdogo-novogo-klienta',
                 'city_id' => 5,
                 'sort' => 32,
-                'date_begin' => '2021-07-29',
-                'date_end' => '2021-08-31',
+                'date_begin' => '2021-08-01',
+                'date_end' => '2021-10-01',
                 'active' => 1,
             ],
         ];
