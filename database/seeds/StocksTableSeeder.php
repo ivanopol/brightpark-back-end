@@ -270,7 +270,7 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 12,
                 'date_begin' => '2021-04-01',
-                'date_end' => '2021-04-30',
+                'date_end' => NULL,
                 'active' => 1,
             ],
             [
@@ -288,7 +288,7 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 13,
                 'date_begin' => '2021-04-01',
-                'date_end' => '2021-04-30',
+                'date_end' => NULL,
                 'active' => 1,
             ],
             [
@@ -312,7 +312,7 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 14,
                 'date_begin' => '2021-04-01',
-                'date_end' => '2021-04-30',
+                'date_end' => NULL,
                 'active' => 1,
             ],
             [
@@ -327,7 +327,7 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 15,
                 'date_begin' => '2021-04-01',
-                'date_end' => '2021-04-30',
+                'date_end' => NULL,
                 'active' => 1,
             ],
             [
@@ -342,7 +342,7 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 16,
                 'date_begin' => '2021-04-01',
-                'date_end' => '2021-04-30',
+                'date_end' => NULL,
                 'active' => 1,
             ],
             [
@@ -357,7 +357,7 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 17,
                 'date_begin' => '2021-04-01',
-                'date_end' => '2021-04-30',
+                'date_end' => NULL,
                 'active' => 1,
             ],
             [
@@ -373,7 +373,7 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 18,
                 'date_begin' => '2021-04-01',
-                'date_end' => '2021-04-30',
+                'date_end' => NULL,
                 'active' => 1,
             ],
             [
@@ -396,7 +396,7 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 19,
                 'date_begin' => '2021-04-01',
-                'date_end' => '2021-04-30',
+                'date_end' => NULL,
                 'active' => 1,
             ],
             [
@@ -411,7 +411,7 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 20,
                 'date_begin' => '2021-04-01',
-                'date_end' => '2021-04-30',
+                'date_end' => NULL,
                 'active' => 1,
             ],
             [
@@ -427,7 +427,7 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 21,
                 'date_begin' => '2021-04-01',
-                'date_end' => '2021-04-30',
+                'date_end' => NULL,
                 'active' => 1,
             ],
             [
@@ -447,7 +447,7 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 22,
                 'date_begin' => '2021-04-01',
-                'date_end' => '2021-04-30',
+                'date_end' => NULL,
                 'active' => 1,
             ],
             [
@@ -463,7 +463,7 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 23,
                 'date_begin' => '2021-04-01',
-                'date_end' => '2021-04-30',
+                'date_end' => NULL,
                 'active' => 1,
             ],
             [
@@ -480,7 +480,7 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 24,
                 'date_begin' => '2021-04-01',
-                'date_end' => '2021-04-30',
+                'date_end' => NULL,
                 'active' => 1,
             ],
             [
@@ -503,7 +503,7 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 25,
                 'date_begin' => '2021-03-02',
-                'date_end' => '2021-06-30',
+                'date_end' => NULL,
                 'active' => 1,
             ],
             [
@@ -518,7 +518,7 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 6,
                 'date_begin' => '2021-06-01',
-                'date_end' => '2021-06-30',
+                'date_end' => NULL,
                 'active' => 1,
             ],
             [
@@ -532,7 +532,7 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 7,
                 'date_begin' => '2021-06-01',
-                'date_end' => '2021-06-30',
+                'date_end' => NULL,
                 'active' => 1,
             ],
             [
@@ -555,7 +555,7 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 28,
                 'date_begin' => '2021-06-01',
-                'date_end' => '2021-07-31',
+                'date_end' => NULL,
                 'active' => 1,
             ],
             [
@@ -598,7 +598,7 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 30,
                 'date_begin' => '2021-07-01',
-                'date_end' => '2021-07-31',
+                'date_end' => NULL,
                 'active' => 1,
             ],
             [
@@ -621,7 +621,7 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 0,
                 'sort' => 31,
                 'date_begin' => '2021-07-01',
-                'date_end' => '2021-07-31',
+                'date_end' => NULL,
                 'active' => 1,
             ],
             [
