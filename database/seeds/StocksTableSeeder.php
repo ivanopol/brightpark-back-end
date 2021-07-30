@@ -639,7 +639,7 @@ class StocksTableSeeder extends Seeder
                     </ul>
                     <h3>Выгодно Вам и&nbsp;Вашим друзьям!</h3>
                     <p>По&nbsp;всем вопросам обращайтесь в&nbsp;салон по&nbsp;адресу : г. Екатеринбург, ул. Маневровая, 40&nbsp;или по&nbsp;телефону <span class="callibri_tel"><:PHONE:></span></p>
-                    <a href="/files/Приведи друга_правила.docx" class="event file-pdf">Правила Акции</a>
+                    <a href="/files/Приведи_друга_правила.pdf" class="event file-pdf">Правила Акции</a>
                     ',
                 'text_short' => 'Подарите сертификат своим знакомым, друзьям или родственникам. Если кто-то из&nbsp;них купит у&nbsp;нас новый автомобиль LADA по&nbsp;данному сертификату в&nbsp;течение 30&nbsp;календарных дней, Вы&nbsp;получите денежное вознаграждение в&nbsp;размере <b>3000&nbsp;руб.',
                 'preview' => '/images/stocks/3000-rublej-za-kazhdogo-novogo-klienta.jpg',
