@@ -146,6 +146,7 @@ class City extends Model
                 $scripts_ids_tmp['mailru'] = isset($scripts_ids[3]) && !empty($scripts_ids[3]) ? $scripts_ids[3] : '';
                 $scripts_ids_tmp['vk'] = isset($scripts_ids[4]) && !empty($scripts_ids[4]) ? $scripts_ids[4] : '';
                 $scripts_ids_tmp['calltouch'] = isset($scripts_ids[5]) && !empty($scripts_ids[5]) ? $scripts_ids[5] : '';
+                $scripts_ids_tmp['tiktok'] = isset($scripts_ids[6]) && !empty($scripts_ids[6]) ? $scripts_ids[6] : '';
 
                 $cities['active'] = [
                     'value' => $city->alias,
