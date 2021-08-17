@@ -12,6 +12,7 @@ class CarModelCarType extends Pivot
         'preview',
         'price',
         'special_price',
+        'credit_from',
         'image',
         'slogan',
         'count',

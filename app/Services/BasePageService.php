@@ -200,6 +200,7 @@ class BasePageService
             'car_attrs' => [
                 'price' => $price,
                 'special_price' => $special_price,
+                'credit_from' => $car_price->credit_from,
             ]
         ];
 
