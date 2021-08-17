@@ -18,6 +18,7 @@ class CreateCarModelCarTypeTable extends Migration
             $table->boolean('preview');
             $table->integer('price');
             $table->integer('special_price');
+            $table->integer('credit_from')->nullable();
             $table->integer('count');
             $table->string('image')->nullable();
             $table->string('slogan')->nullable();
