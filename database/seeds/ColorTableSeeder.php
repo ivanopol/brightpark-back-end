@@ -74,6 +74,137 @@ class ColorTableSeeder extends Seeder
                 'class' => 'color-coriander',
                 'is_active' => false
             ],
+            // Hatchback
+            [
+                'type_id' => 6,
+                'model_id' => 1,
+                'title' => 'Голубая планета',
+                'image' => '/images/colors/lada/granta/hachback/lada_granta_blue_planet.png',
+                'class' => 'color-blue-planet',
+                'is_active' => true
+            ],
+            [
+                'type_id' => 6,
+                'model_id' => 1,
+                'title' => 'Сердолик',
+                'image' => '/images/colors/lada/granta/hachback/lada_granta_cornelian.png',
+                'class' => 'color-cornelian',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 6,
+                'model_id' => 1,
+                'title' => 'Белое облако',
+                'image' => '/images/colors/lada/granta/hachback/lada_granta_white_cloud.png',
+                'class' => 'color-white-cloud',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 6,
+                'model_id' => 1,
+                'title' => 'Рислинг',
+                'image' => '/images/colors/lada/granta/hachback/lada_granta_riesling.png',
+                'class' => 'color-riesling',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 6,
+                'model_id' => 1,
+                'title' => 'Борнео',
+                'image' => '/images/colors/lada/granta/hachback/lada_granta_borneo.png',
+                'class' => 'color-borneo-dark',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 6,
+                'model_id' => 1,
+                'title' => 'Пантера',
+                'image' => '/images/colors/lada/granta/hachback/lada_granta_panther.png',
+                'class' => 'color-panther',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 6,
+                'model_id' => 1,
+                'title' => 'Техно',
+                'image' => '/images/colors/lada/granta/hachback/lada_granta_techno.png',
+                'class' => 'color-techno',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 6,
+                'model_id' => 1,
+                'title' => 'Кориандр',
+                'image' => '/images/colors/lada/granta/hachback/lada_granta_coriander.png',
+                'class' => 'color-coriander',
+                'is_active' => false
+            ],
+            // Universal
+            [
+                'type_id' => 3,
+                'model_id' => 1,
+                'title' => 'Голубая планета',
+                'image' => '/images/colors/lada/granta/universal/lada_granta_blue_planet.png',
+                'class' => 'color-blue-planet',
+                'is_active' => true
+            ],
+            [
+                'type_id' => 3,
+                'model_id' => 1,
+                'title' => 'Сердолик',
+                'image' => '/images/colors/lada/granta/universal/lada_granta_cornelian.png',
+                'class' => 'color-cornelian',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 3,
+                'model_id' => 1,
+                'title' => 'Белое облако',
+                'image' => '/images/colors/lada/granta/universal/lada_granta_white_cloud.png',
+                'class' => 'color-white-cloud',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 3,
+                'model_id' => 1,
+                'title' => 'Рислинг',
+                'image' => '/images/colors/lada/granta/universal/lada_granta_riesling.png',
+                'class' => 'color-riesling',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 3,
+                'model_id' => 1,
+                'title' => 'Борнео',
+                'image' => '/images/colors/lada/granta/universal/lada_granta_borneo.png',
+                'class' => 'color-borneo-dark',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 3,
+                'model_id' => 1,
+                'title' => 'Пантера',
+                'image' => '/images/colors/lada/granta/universal/lada_granta_panther.png',
+                'class' => 'color-panther',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 3,
+                'model_id' => 1,
+                'title' => 'Техно',
+                'image' => '/images/colors/lada/granta/universal/lada_granta_techno.png',
+                'class' => 'color-techno',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 3,
+                'model_id' => 1,
+                'title' => 'Кориандр',
+                'image' => '/images/colors/lada/granta/universal/lada_granta_coriander.png',
+                'class' => 'color-coriander',
+                'is_active' => false
+            ],
+
             // liftback
             [
                 'type_id' => 2,
