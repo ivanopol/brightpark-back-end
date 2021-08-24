@@ -729,10 +729,10 @@ class ColorTableSeeder extends Seeder
             [
                 'type_id' => 5,
                 'model_id' => 1,
-                'title' => 'Белое облако',
-                'image' => '/images/colors/lada/granta/drive_active/granta_drive_active_white_apple.png',
-                'class' => 'color-white-cloud',
-                'is_active' => true
+                'title' => 'Голубая планета',
+                'image' => '/images/colors/lada/granta/drive_active/granta_drive_active_blue_planet.png',
+                'class' => 'color-blue-planet',
+                'is_active' => false
             ],
             [
                 'type_id' => 5,
@@ -753,10 +753,10 @@ class ColorTableSeeder extends Seeder
             [
                 'type_id' => 5,
                 'model_id' => 1,
-                'title' => 'Голубая планета',
-                'image' => '/images/colors/lada/granta/drive_active/granta_drive_active_blue_planet.png',
-                'class' => 'color-blue-planet',
-                'is_active' => false
+                'title' => 'Белое облако',
+                'image' => '/images/colors/lada/granta/drive_active/granta_drive_active_white_apple.png',
+                'class' => 'color-white-cloud',
+                'is_active' => true
             ],
             [
                 'type_id' => 5,
