@@ -13,6 +13,14 @@ class ColorTableSeeder extends Seeder
             [
                 'type_id' => 1,
                 'model_id' => 1,
+                'title' => 'Рислинг',
+                'image' => '/images/colors/lada/granta/sedan/lada_granta_riesling.png',
+                'class' => 'color-riesling',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 1,
+                'model_id' => 1,
                 'title' => 'Голубая планета',
                 'image' => '/images/colors/lada/granta/sedan/lada_granta_blue_planet.png',
                 'class' => 'color-blue-planet',
@@ -40,14 +48,6 @@ class ColorTableSeeder extends Seeder
                 'title' => 'Пантера',
                 'image' => '/images/colors/lada/granta/sedan/lada_granta_panther.png',
                 'class' => 'color-panther',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 1,
-                'model_id' => 1,
-                'title' => 'Рислинг',
-                'image' => '/images/colors/lada/granta/sedan/lada_granta_riesling.png',
-                'class' => 'color-riesling',
                 'is_active' => false
             ],
             [
@@ -143,6 +143,14 @@ class ColorTableSeeder extends Seeder
             [
                 'type_id' => 3,
                 'model_id' => 1,
+                'title' => 'Рислинг',
+                'image' => '/images/colors/lada/granta/universal/lada_granta_riesling.png',
+                'class' => 'color-riesling',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 3,
+                'model_id' => 1,
                 'title' => 'Голубая планета',
                 'image' => '/images/colors/lada/granta/universal/lada_granta_blue_planet.png',
                 'class' => 'color-blue-planet',
@@ -162,14 +170,6 @@ class ColorTableSeeder extends Seeder
                 'title' => 'Белое облако',
                 'image' => '/images/colors/lada/granta/universal/lada_granta_white_cloud.png',
                 'class' => 'color-white-cloud',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 3,
-                'model_id' => 1,
-                'title' => 'Рислинг',
-                'image' => '/images/colors/lada/granta/universal/lada_granta_riesling.png',
-                'class' => 'color-riesling',
                 'is_active' => false
             ],
             [
@@ -209,18 +209,18 @@ class ColorTableSeeder extends Seeder
             [
                 'type_id' => 2,
                 'model_id' => 1,
-                'title' => 'Голубая планета',
-                'image' => '/images/colors/lada/granta/liftback/lada_granta_blue_planet.png',
-                'class' => 'color-blue-planet',
-                'is_active' => true
-            ],
-            [
-                'type_id' => 2,
-                'model_id' => 1,
                 'title' => 'Сердолик',
                 'image' => '/images/colors/lada/granta/liftback/lada_granta_cornelian.png',
                 'class' => 'color-cornelian',
                 'is_active' => false
+            ],
+            [
+                'type_id' => 2,
+                'model_id' => 1,
+                'title' => 'Голубая планета',
+                'image' => '/images/colors/lada/granta/liftback/lada_granta_blue_planet.png',
+                'class' => 'color-blue-planet',
+                'is_active' => true
             ],
             [
                 'type_id' => 2,
