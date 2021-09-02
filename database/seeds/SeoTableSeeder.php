@@ -562,6 +562,12 @@ class SeoTableSeeder extends Seeder
                 'description' => 'LADA Vesta - выгода до 148 000 рублей - Брайт Парк в <:CITY_DATIVE:>',
                 'city' => '0',
             ],
+            [
+                'url' => 'stocks/lada-v-taksi',
+                'title' => 'Лето вместе с  Брайт Парком! Покупай новую LADA по выгодам августа! - Брайт Парк <:CITY:>',
+                'description' => 'LADA Vesta - выгода до 148 000 рублей - Брайт Парк в <:CITY_DATIVE:>',
+                'city' => '0',
+            ],
         ];
         $news = [
             [
