@@ -53,6 +53,7 @@ class Stocks extends Model
         $contacts = Contacts::where('city_id', $city_id)->first();
 
         $patterns = [
+            '/<:CITY_URL:>/',
             '/<:CITY:>/',
             '/<:CITY_DATIVE:>/',
             '/<:REGION_DATIVE:>/',
@@ -61,6 +62,7 @@ class Stocks extends Model
         ];
 
         $replacements = [
+            $city->alias,
             $city->title_ru,
             $city->city_dative,
             $city->region_dative,

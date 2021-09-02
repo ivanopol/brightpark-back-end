@@ -550,6 +550,12 @@ class SeoTableSeeder extends Seeder
                 'description' => 'Подарите сертификат своим знакомым, друзьям или родственникам - Брайт Парк в <:CITY_DATIVE:>',
                 'city' => '5',
             ],
+            [
+                'url' => 'stocks/posle-dvuh-let-lyubov-tolko-nachinaetsya',
+                'title' => 'После двух лет любовь только начинается - Брайт Парк <:CITY:>',
+                'description' => 'Выгода в 20% на работы и запасные части при ТО и механическом ремонте - Брайт Парк в <:CITY_DATIVE:>',
+                'city' => '0',
+            ],
         ];
         $news = [
             [

@@ -650,6 +650,28 @@ class StocksTableSeeder extends Seeder
                 'date_end' => '2021-10-01',
                 'active' => 1,
             ],
+            [
+                'title' => 'После двух лет любовь только начинается',
+                'text' => '
+                    <ul>
+                        <li>Выгода в&nbsp;20% на&nbsp;работы и&nbsp;запасные части при&nbsp;ТО и&nbsp;механическом ремонте, включая регламентное ТО&nbsp;&mdash; для автомобилей старше 4&nbsp;лет</li>
+                        <li>Выгода в&nbsp;15% на&nbsp;работы и&nbsp;запасные части при&nbsp;ТО и&nbsp;механическом ремонте, включая регламентное ТО&nbsp;&mdash; для автомобилей от&nbsp;3&nbsp;до&nbsp;4&nbsp;лет</li>
+                        <li>Выгода в&nbsp;10% на&nbsp;запасные части при&nbsp;ТО и&nbsp;механическом ремонте, включая материалы для регламентного ТО&nbsp;&mdash; для автомобилей от&nbsp;2,5 до&nbsp;3&nbsp;лет</li>
+                        <li>Выгода&nbsp;10% на&nbsp;двигатели, коробки передач, мосты и&nbsp;раздаточные коробки, запасные части и&nbsp;услуги цеха восстановительного ремонта&nbsp;&mdash; для автомобилей старше 2,5 лет</li>
+                    </ul>
+                    <p>Программа распространяется на автомобили LADA от 2,5 лет.<br>
+                    <a href="/<:CITY_URL:>/service" class="event">Записаться на сервис</a>
+                    </p>
+                    ',
+                'text_short' => 'Выгода в 20% на работы и запасные части при ТО и механическом ремонте, включая регламентное ТО – для автомобилей старше 4 лет',
+                'preview' => '/images/stocks/posle-dvuh-let-lyubov-tolko-nachinaetsya.jpg',
+                'slug' => 'posle-dvuh-let-lyubov-tolko-nachinaetsya',
+                'city_id' => 0,
+                'sort' => 32,
+                'date_begin' => '2021-02-01',
+                'date_end' => '2021-12-31',
+                'active' => 1,
+            ],
         ];
 
         DB::table('stocks')->insert($stocks);
