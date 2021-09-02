@@ -81,7 +81,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 3,
                 'date_begin' => NULL,
                 'date_end' => NULL,
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'title' => 'WOW ТРЕЙД-ИН доплатим 40 000 Р к вашей цене',
@@ -216,7 +216,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 1,
                 'date_begin' => NULL,
                 'date_end' => NULL,
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'title' => 'Розыгрыш Телевизора',
@@ -271,7 +271,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 12,
                 'date_begin' => '2021-04-01',
                 'date_end' => NULL,
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'title' => 'Новая LADA без переплаты!',
@@ -289,7 +289,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 13,
                 'date_begin' => '2021-04-01',
                 'date_end' => NULL,
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'title' => 'Платим платежи за вас!',
@@ -313,7 +313,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 14,
                 'date_begin' => '2021-04-01',
                 'date_end' => NULL,
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'title' => 'Новый XRAY от 620 910 рублей!',
@@ -328,7 +328,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 15,
                 'date_begin' => '2021-04-01',
                 'date_end' => NULL,
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'title' => 'Особые условия для пенсионеров',
@@ -343,7 +343,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 16,
                 'date_begin' => '2021-04-01',
                 'date_end' => NULL,
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'title' => 'Ликвидация склада 2021',
@@ -358,7 +358,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 17,
                 'date_begin' => '2021-04-01',
                 'date_end' => NULL,
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'title' => 'Первый автомобиль',
@@ -374,7 +374,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 18,
                 'date_begin' => '2021-04-01',
                 'date_end' => NULL,
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'title' => 'Формула кредита в Брайт Парке',
@@ -397,7 +397,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 19,
                 'date_begin' => '2021-04-01',
                 'date_end' => NULL,
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'title' => 'Новая GRANTA от&nbsp;459&nbsp;810&nbsp;рублей!',
@@ -412,7 +412,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 20,
                 'date_begin' => '2021-04-01',
                 'date_end' => NULL,
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'title' => 'Держим &minus;15% на&nbsp;LADA!',
@@ -428,7 +428,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 21,
                 'date_begin' => '2021-04-01',
                 'date_end' => NULL,
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'title' => 'ВЕСЕННЯЯ КОЛЛЕКЦИЯ ПОДАРКОВ!',
@@ -448,7 +448,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 22,
                 'date_begin' => '2021-04-01',
                 'date_end' => NULL,
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'title' => 'Новая Vesta от&nbsp;651&nbsp;510&nbsp;рублей!',
@@ -464,7 +464,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 23,
                 'date_begin' => '2021-04-01',
                 'date_end' => NULL,
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'title' => 'WOW-обмен на&nbsp;новую LADA',
@@ -481,7 +481,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 24,
                 'date_begin' => '2021-04-01',
                 'date_end' => NULL,
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'title' => 'Трейд-ин LADA Selection для лояльных клиентов',
@@ -519,7 +519,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 6,
                 'date_begin' => '2021-06-01',
                 'date_end' => NULL,
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'title' => 'Сервис в рассрочку',
@@ -556,7 +556,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 28,
                 'date_begin' => '2021-06-01',
                 'date_end' => NULL,
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'title' => 'ЗДОРОВЫЙ ИНТЕРЕС',
@@ -599,7 +599,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 30,
                 'date_begin' => '2021-07-01',
                 'date_end' => NULL,
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'title' => 'LADA GRANTA SE&nbsp;ЗА&nbsp;4100&nbsp;РУБ. В&nbsp;МЕСЯЦ + КАСКО',
@@ -622,7 +622,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 31,
                 'date_begin' => '2021-07-01',
                 'date_end' => NULL,
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'title' => '3000₽ за&nbsp;каждого нового клиента!',
@@ -667,9 +667,26 @@ class StocksTableSeeder extends Seeder
                 'preview' => '/images/stocks/posle-dvuh-let-lyubov-tolko-nachinaetsya.jpg',
                 'slug' => 'posle-dvuh-let-lyubov-tolko-nachinaetsya',
                 'city_id' => 0,
-                'sort' => 32,
+                'sort' => 33,
                 'date_begin' => '2021-02-01',
                 'date_end' => '2021-12-31',
+                'active' => 1,
+            ],
+            [
+                'title' => 'Максимальная выгода на&nbsp;автомобили LADA',
+                'text' => '
+                    <p>Лето вместе с&nbsp;Брайт Парком! Покупай новую LADA по&nbsp;выгодам августа!<br>
+                    LADA Vesta - выгода до 148 000 рублей<br>
+                    LADA XRAY - выгода до 10 000 рублей</p>
+                    <p>Подробности уточняйте по&nbsp;телефону: <span class="callibri_tel"><:PHONE:></span>.</p>
+                    ',
+                'text_short' => 'Лето вместе с  Брайт Парком! Покупай новую LADA по выгодам августа!',
+                'preview' => '/images/stocks/maksimalnaya-vygoda-na-avtomobili-lada.jpg',
+                'slug' => 'maksimalnaya-vygoda-na-avtomobili-lada',
+                'city_id' => 0,
+                'sort' => 34,
+                'date_begin' => '2021-09-01',
+                'date_end' => NULL,
                 'active' => 1,
             ],
         ];

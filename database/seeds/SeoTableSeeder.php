@@ -556,6 +556,12 @@ class SeoTableSeeder extends Seeder
                 'description' => 'Выгода в 20% на работы и запасные части при ТО и механическом ремонте - Брайт Парк в <:CITY_DATIVE:>',
                 'city' => '0',
             ],
+            [
+                'url' => 'stocks/maksimalnaya-vygoda-na-avtomobili-lada',
+                'title' => 'Лето вместе с  Брайт Парком! Покупай новую LADA по выгодам августа! - Брайт Парк <:CITY:>',
+                'description' => 'LADA Vesta - выгода до 148 000 рублей - Брайт Парк в <:CITY_DATIVE:>',
+                'city' => '0',
+            ],
         ];
         $news = [
             [
