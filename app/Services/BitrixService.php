@@ -223,6 +223,7 @@ class BitrixService
         }
 
         if ( $data['comment'] ) {
+            $data['comment'] = str_replace('<br>', '', $data['comment']);
             $request['fields']['UF_CRM_1631279386943'] = $data['comment'];
         }
 
