@@ -222,6 +222,10 @@ class BitrixService
             $request['fields']['CONTACT_ID'] = $contactID;
         }
 
+        if ( $data['comment'] ) {
+            $request['fields']['COMMENTS'] = $data['comment'];
+        }
+
         if (isset($data['utm']) && count($data['utm'])) {
             foreach (['utm_campaign', 'utm_content', 'utm_medium', 'utm_source', 'utm_term', 'block', 'source', 'yclid'] as $label) {
                 if (isset($data['utm'][$label]) && !empty($data['utm'][$label])) {
