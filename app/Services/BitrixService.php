@@ -223,7 +223,7 @@ class BitrixService
         }
 
         if ( $data['comment'] ) {
-            $request['fields']['COMMENTS'] = $data['comment'];
+            $request['fields']['UF_CRM_1631277996907'] = $data['comment'];
         }
 
         if (isset($data['utm']) && count($data['utm'])) {
