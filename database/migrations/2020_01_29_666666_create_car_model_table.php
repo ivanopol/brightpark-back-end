@@ -16,6 +16,7 @@ class CreateCarModelTable extends Migration
             $table->string('slug');
             $table->text('description');
             $table->tinyInteger('sort');
+            $table->tinyInteger('sort2');
             $table->string('preview');
         });
         Artisan::call('db:seed', [

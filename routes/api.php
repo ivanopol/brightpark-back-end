@@ -16,6 +16,7 @@ use Illuminate\Http\Request;
 //Route::middleware(['cache.headers:private;max_age=3600', 'middleware' => 'throttle:5,10'])->group(function () {
     Route::get('/model_details', 'API\ModelController@model_details')->name('model_details');
     Route::get('/models_list', 'API\ModelController@index')->name('models_list');
+    Route::get('/cars_offer', 'API\ModelController@getCarsOffer')->name('cars_offer');
     Route::get('/carcasses', 'API\ModelController@carcasses')->name('carcasses');
     Route::get('/model', 'API\ModelController@model')->name('model');
     Route::post('/save_utm', 'API\ModelController@saveUtm')->name('save_utm');

@@ -30,6 +30,15 @@ class CarModel extends Model
     }
 
     /**
+     * Кузовы относящиеся к модели авто c превью.
+     */
+    public function cars_offer()
+    {
+        return $this->belongsToMany('App\CarType')->using('App\CarModelCarType')->withPivot('price', 'special_price', 'credit_from')->wherePivot('preview', 1);
+    }
+
+
+    /**
      * Кузовы относящиеся к модели авто без превью.
      */
     public function types()
@@ -39,7 +48,7 @@ class CarModel extends Model
 
     public function carcasses()
     {
-        return $this->belongsToMany('App\CarType')->using('App\CarModelCarType')->withPivot('image', 'price', 'special_price', 'slogan')->wherePivot('active', 1);
+        return $this->belongsToMany('App\CarType')->using('App\CarModelCarType')->withPivot('image', 'price', 'special_price', 'credit_from', 'slogan')->wherePivot('active', 1);
     }
 
     /**

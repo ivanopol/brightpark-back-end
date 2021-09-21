@@ -370,4 +370,45 @@ class ModelController extends Controller
 
         return Response::json(UtmLabel::create($data) ? ['status' => 'ok'] : ['status' => 'error']);
     }
+
+    /**
+     * Получаем список моделей с ценами и доп. информацией
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function getCarsOffer(): \Illuminate\Http\JsonResponse
+    {
+        $minutes = $this->cache_time;
+        $key = 'cars_offer';
+
+        $cars_offer = Cache::remember($key, $minutes, function ()  {
+            $output = [];
+
+            $cars = CarModel::select(['id', 'title', 'title_ru', 'slug'])->with('cars_offer')->orderBy('sort2', 'asc')->get();
+
+            foreach ($cars as $car) {
+                $output[] = [
+                    "id" => $car->id . '' . $car->cars_offer[0]->id,
+                    "model" => [
+                        "id" => $car->id,
+                        "slug" => $car->slug,
+                        "title" => $car->title,
+                        "titile_ru" => $car->title_ru,
+                    ],
+                    "type" => [
+                        "id" => $car->cars_offer[0]->id,
+                        "slug" => $car->cars_offer[0]->slug,
+                        "title" => $car->cars_offer[0]->title_en,
+                        "title_ru" => $car->cars_offer[0]->title_ru,
+                    ],
+                    "price" =>  $car->cars_offer[0]->pivot->special_price,
+                    "credit" =>  $car->cars_offer[0]->pivot->credit_from,
+                ];
+            }
+
+            return $output;
+        });
+
+        return Response::json($cars_offer);
+    }
 }
