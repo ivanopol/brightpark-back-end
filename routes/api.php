@@ -19,6 +19,7 @@ use Illuminate\Http\Request;
     Route::get('/cars_offer', 'API\ModelController@getCarsOffer')->name('cars_offer');
     Route::get('/carcasses', 'API\ModelController@carcasses')->name('carcasses');
     Route::get('/model', 'API\ModelController@model')->name('model');
+    Route::get('/model_new', 'API\ModelController@modelNew')->name('model_new');
     Route::post('/save_utm', 'API\ModelController@saveUtm')->name('save_utm');
     Route::get('/get_cars_list', 'API\ModelController@getCarsList');
     Route::get('/get_cars_brands', 'API\ModelController@getCarsBrands');

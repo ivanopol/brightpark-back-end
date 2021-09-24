@@ -5,12 +5,9 @@ namespace App\Services;
 
 
 use App\Retarget;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use Carbon\Carbon;
 use App\CarModel;
 use App\CarType;
-use App\City;
 use App\CarModelCarType;
 
 class BasePageService
@@ -61,6 +58,58 @@ class BasePageService
             'car_model' => $car_model,
             'car_type' => $car_type,
         ];
+    }
+
+    /**
+     * Данные для нового дизайна страницы моделей
+     *
+     * @param string $model Модель
+     * @param string $type Кузов
+     * @param string $city Город
+     * @return array данные для страницы модели
+     */
+    public function model_data_new(string $model, string $type, string $city) : array
+    {
+        $result = [];
+
+        $car_model = CarModel::where('slug', $model)->first();
+        $car_type = CarType::where('slug', $type)->first();
+
+        if (!$car_model || !$car_type) {
+            return [];
+        }
+
+        $condition = [
+            ['model_id', '=', $car_model->id],
+            ['type_id', '=', $car_type->id],
+        ];
+
+        $colors = DB::table('colors')->select('*')->where($condition)->get();
+        $price = CarModelCarType::select(['special_price as value', 'price as without_discount', 'credit_from as credit'])
+                        ->where('car_model_id', $car_model->id)
+                        ->where('car_type_id', $car_type->id)
+                        ->first();
+
+        $result = [
+            'model' => [
+                'slug' => $car_model->slug,
+                'title' => $car_model->title,
+                'title_ru' => $car_model->title_ru,
+            ],
+            'type' => [
+                'slug' => $car_type->slug,
+                'title' => $car_type->title_en,
+                'title_ru' => $car_type->title_ru,
+            ],
+            'price' => [
+                'value' => $price->value,
+                'without_discount' => $price->without_discount,
+                'credit' => $price->credit,
+            ],
+            'colors' => $colors,
+        ];
+
+        return $result;
     }
 
     /**

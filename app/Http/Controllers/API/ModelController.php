@@ -101,6 +101,38 @@ class ModelController extends Controller
         return Response::json($model);
     }
 
+
+    /**
+     * Выводит информацию по модели для нового дизайна
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function modelNew(Request $request) : \Illuminate\Http\JsonResponse
+    {
+        if (!$request->input('city') || !$request->input('model') || !$request->input('type') ) {
+            return Response::json(
+                [
+                    'status' => 'error',
+                    'message' => 'Отсутствуют параметры запроса'
+                ]);
+        }
+
+        $model = htmlspecialchars($request->input('model'));
+        $type = htmlspecialchars($request->input('type'));
+        $city = htmlspecialchars($request->input('city'));
+
+        $minutes = 1;// $this->cache_time;
+        $key = 'model_' . $model . '_' . $type . '_' . $city;
+
+        $result = Cache::remember($key, $minutes, function () use ($model, $type, $city) {
+            $service = new BasePageService();
+            return $service->model_data_new($model, $type, $city);
+        });
+
+        return Response::json($result);
+    }
+
     /**
      * Выводит информацию для сбытовой страницы
      *
