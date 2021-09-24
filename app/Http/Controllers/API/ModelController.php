@@ -122,7 +122,7 @@ class ModelController extends Controller
         $type = htmlspecialchars($request->input('type'));
         $city = htmlspecialchars($request->input('city'));
 
-        $minutes = 1;// $this->cache_time;
+        $minutes = $this->cache_time;
         $key = 'model_' . $model . '_' . $type . '_' . $city;
 
         $result = Cache::remember($key, $minutes, function () use ($model, $type, $city) {
