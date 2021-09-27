@@ -117,6 +117,42 @@ class BasePageService
     }
 
     /**
+     * Данные по кузовам для выбранной модели
+     *
+     * @param string $model Модель
+     * @param string $type Кузов
+     * @return array данные для страницы модели
+     */
+    public function model_bodies(string $model, string $type) : array
+    {
+        $result = [];
+
+        $car_model = CarModel::where('slug', $model)->first();
+
+        if (!$car_model) {
+            return [];
+        }
+
+        $bodies = DB::table('car_model_car_type')
+                    ->join('car_types', 'car_model_car_type.car_type_id', '=', 'car_types.id')
+                    ->select('car_types.title_ru', 'car_types.slug')
+                    ->where('car_model_car_type.car_model_id', '=', $car_model->id)
+                    ->where('car_model_car_type.active', '=', true)
+                    ->get()->toArray();
+
+        foreach($bodies as $key => $body) {
+            $result[] = [
+                'id' => $key,
+                'name' => $body->title_ru,
+                'path' => $body->slug,
+            ];
+        }
+
+
+        return $result;
+    }
+
+    /**
      * Ищем данные для страницы модели
      *
      * @param string $model Модель

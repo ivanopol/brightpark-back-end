@@ -134,6 +134,37 @@ class ModelController extends Controller
     }
 
     /**
+     * Возращается список кузовов для заданной модели
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function bodies(Request $request) : \Illuminate\Http\JsonResponse
+    {
+        if (!$request->input('model') || !$request->input('type') ) {
+            return Response::json(
+                [
+                    'status' => 'error',
+                    'message' => 'Отсутствуют параметры запроса'
+                ]);
+        }
+
+        $model = htmlspecialchars($request->input('model'));
+        $type = htmlspecialchars($request->input('type'));
+
+        $minutes = $this->cache_time;
+        $key = 'bodies_' . $model . '_' . $type;
+
+        $result = Cache::remember($key, $minutes, function () use ($model, $type) {
+            $service = new BasePageService();
+            return $service->model_bodies($model, $type);
+        });
+
+
+        return Response::json($result);
+    }
+
+    /**
      * Выводит информацию для сбытовой страницы
      *
      * @param  \Illuminate\Http\Request  $request
