@@ -89,6 +89,8 @@ class BasePageService
                         ->where('car_model_id', $car_model->id)
                         ->where('car_type_id', $car_type->id)
                         ->first();
+        $complectations = DB::table('complectations')->select('*')->where($condition)->orderBy('sort', 'asc')->get();
+        $features = DB::table('features')->select('*')->where($condition)->get();
 
         $result = [
             'model' => [
@@ -107,6 +109,8 @@ class BasePageService
                 'credit' => $price->credit,
             ],
             'colors' => $colors,
+            'complectations' => $complectations,
+            'features' => $features,
         ];
 
         return $result;

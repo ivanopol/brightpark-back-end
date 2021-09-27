@@ -457,6 +457,9 @@ class ComplectationTableSeeder extends Seeder
                 'price' => 771800,
                 'sort' => 8,
             ],
+        ];
+
+        $vesta = [
             // Vesta sedan
             [
                 'model_id' => 2,
@@ -893,8 +896,6 @@ class ComplectationTableSeeder extends Seeder
                 'sort' => 2,
             ],
         ];
-
-        $vesta = [];
 
         $complectations = array_merge($granta, $vesta);
         DB::table('complectations')->insert($complectations);
