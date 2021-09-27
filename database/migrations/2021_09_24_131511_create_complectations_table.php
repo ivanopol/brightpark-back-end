@@ -21,10 +21,10 @@ class CreateComplectationsTable extends Migration
             $table->foreign('model_id')->references('id')->on('car_models');
             $table->bigInteger('type_id')->unsigned();
             $table->foreign('type_id')->references('id')->on('car_types');
-            $table->string('engine', 20);
-            $table->string('flap', 20);
-            $table->string('capacity', 20);
-            $table->string('transmission', 20);
+            $table->string('engine', 20)->nullable();
+            $table->string('flap', 20)->nullable();
+            $table->string('capacity', 20)->nullable();
+            $table->string('transmission', 20)->nullable();
             $table->string('title', 100);
             $table->integer('price')->unsigned();
             $table->tinyInteger('sort')->unsigned();
