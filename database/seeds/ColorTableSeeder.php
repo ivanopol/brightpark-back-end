@@ -344,6 +344,47 @@ class ColorTableSeeder extends Seeder
                 'class' => 'color-platina',
                 'is_active' => false
             ],
+            // Vesta sport
+            [
+                'type_id' => 10,
+                'model_id' => 2,
+                'title' => 'Ледниковый',
+                'image' => '/images/colors/lada/vesta/sport/glacial.png',
+                'class' => 'color-platina',
+                'is_active' => true
+            ],
+            [
+                'type_id' => 10,
+                'model_id' => 2,
+                'title' => 'Сердолик',
+                'image' => '/images/colors/lada/vesta/sport/cornelian.png',
+                'class' => 'color-red-cornelian',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 10,
+                'model_id' => 2,
+                'title' => 'Дайвинг',
+                'image' => '/images/colors/lada/vesta/sport/daiving.png',
+                'class' => 'color-daiving',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 10,
+                'model_id' => 2,
+                'title' => 'Маэстро',
+                'image' => '/images/colors/lada/vesta/sport/maestro.png',
+                'class' => 'color-maestro',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 10,
+                'model_id' => 2,
+                'title' => 'Платина',
+                'image' => '/images/colors/lada/vesta/sport/platina.png',
+                'class' => 'color-platina',
+                'is_active' => false
+            ],
             // XRay
             // xray
             [
