@@ -276,7 +276,7 @@ class ColorTableSeeder extends Seeder
                 'type_id' => 1,
                 'model_id' => 2,
                 'title' => 'Ледниковый',
-                'image' => '/images/colors/lada/vesta/sedan/lada_vesta_sedan_white.png',
+                'image' => '/images/colors/lada/vesta/sedan/glacial.png',
                 'class' => 'color-white-glacial',
                 'is_active' => true
             ],
@@ -284,7 +284,7 @@ class ColorTableSeeder extends Seeder
                 'type_id' => 1,
                 'model_id' => 2,
                 'title' => 'Сердолик',
-                'image' => '/images/colors/lada/vesta/sedan/lada_vesta_sedan_red.png',
+                'image' => '/images/colors/lada/vesta/sedan/cornelian.png',
                 'class' => 'color-red-cornelian',
                 'is_active' => false
             ],
@@ -292,23 +292,15 @@ class ColorTableSeeder extends Seeder
                 'type_id' => 1,
                 'model_id' => 2,
                 'title' => 'Ангкор',
-                'image' => '/images/colors/lada/vesta/sedan/lada_vesta_sedan_brawn.png',
+                'image' => '/images/colors/lada/vesta/sedan/angkor.png',
                 'class' => 'color-angkor',
                 'is_active' => false
             ],
             [
                 'type_id' => 1,
                 'model_id' => 2,
-                'title' => 'Карфаген',
-                'image' => '/images/colors/lada/vesta/sedan/lada_vesta_sedan_carfagen.png',
-                'class' => 'color-carfagen',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 1,
-                'model_id' => 2,
                 'title' => 'Дайвинг',
-                'image' => '/images/colors/lada/vesta/sedan/lada_vesta_sedan_daiving.png',
+                'image' => '/images/colors/lada/vesta/sedan/daiving.png',
                 'class' => 'color-daiving',
                 'is_active' => false
             ],
@@ -316,23 +308,15 @@ class ColorTableSeeder extends Seeder
                 'type_id' => 1,
                 'model_id' => 2,
                 'title' => 'Фантом',
-                'image' => '/images/colors/lada/vesta/sedan/lada_vesta_sedan_phantom.png',
+                'image' => '/images/colors/lada/vesta/sedan/phantom.png',
                 'class' => 'color-phantom',
                 'is_active' => false
             ],
             [
                 'type_id' => 1,
                 'model_id' => 2,
-                'title' => 'Плутон',
-                'image' => '/images/colors/lada/vesta/sedan/lada_vesta_sedan_pluton.png',
-                'class' => 'color-pluton',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 1,
-                'model_id' => 2,
                 'title' => 'Маэстро',
-                'image' => '/images/colors/lada/vesta/sedan/lada_vesta_sedan_maestro.png',
+                'image' => '/images/colors/lada/vesta/sedan/maestro.png',
                 'class' => 'color-maestro',
                 'is_active' => false
             ],
@@ -340,7 +324,222 @@ class ColorTableSeeder extends Seeder
                 'type_id' => 1,
                 'model_id' => 2,
                 'title' => 'Платина',
-                'image' => '/images/colors/lada/vesta/sedan/lada_vesta_sedan_platina.png',
+                'image' => '/images/colors/lada/vesta/sedan/platina.png',
+                'class' => 'color-platina',
+                'is_active' => false
+            ],
+            // Vesta Cross
+            [
+                'type_id' => 4,
+                'model_id' => 2,
+                'title' => 'Ледниковый',
+                'image' => '/images/colors/lada/vesta/cross/glacial.png',
+                'class' => 'color-white-glacial',
+                'is_active' => true
+            ],
+            [
+                'type_id' => 4,
+                'model_id' => 2,
+                'title' => 'Марс',
+                'image' => '/images/colors/lada/vesta/cross/mars.png',
+                'class' => 'color-mars',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 4,
+                'model_id' => 2,
+                'title' => 'Сердолик',
+                'image' => '/images/colors/lada/vesta/cross/cornelian.png',
+                'class' => 'color-red-cornelian',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 4,
+                'model_id' => 2,
+                'title' => 'Ангкор',
+                'image' => '/images/colors/lada/vesta/cross/angkor.png',
+                'class' => 'color-angkor',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 4,
+                'model_id' => 2,
+                'title' => 'Дайвинг',
+                'image' => '/images/colors/lada/vesta/cross/daiving.png',
+                'class' => 'color-daiving',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 4,
+                'model_id' => 2,
+                'title' => 'Фантом',
+                'image' => '/images/colors/lada/vesta/cross/phantom.png',
+                'class' => 'color-phantom',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 4,
+                'model_id' => 2,
+                'title' => 'Маэстро',
+                'image' => '/images/colors/lada/vesta/cross/maestro.png',
+                'class' => 'color-maestro',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 4,
+                'model_id' => 2,
+                'title' => 'Платина',
+                'image' => '/images/colors/lada/vesta/cross/platina.png',
+                'class' => 'color-platina',
+                'is_active' => false
+            ],
+            // Vesta
+            // SW
+            [
+                'type_id' => 7,
+                'model_id' => 2,
+                'title' => 'Ледниковый',
+                'image' => '/images/colors/lada/vesta/sw/glacial.png',
+                'class' => 'color-white-glacial',
+                'is_active' => true
+            ],
+            [
+                'type_id' => 7,
+                'model_id' => 2,
+                'title' => 'Сердолик',
+                'image' => '/images/colors/lada/vesta/sw/cornelian.png',
+                'class' => 'color-red-cornelian',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 7,
+                'model_id' => 2,
+                'title' => 'Ангкор',
+                'image' => '/images/colors/lada/vesta/sw/angkor.png',
+                'class' => 'color-angkor',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 7,
+                'model_id' => 2,
+                'title' => 'Дайвинг',
+                'image' => '/images/colors/lada/vesta/sw/daiving.png',
+                'class' => 'color-daiving',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 7,
+                'model_id' => 2,
+                'title' => 'Фантом',
+                'image' => '/images/colors/lada/vesta/sw/phantom.png',
+                'class' => 'color-phantom',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 7,
+                'model_id' => 2,
+                'title' => 'Маэстро',
+                'image' => '/images/colors/lada/vesta/sw/maestro.png',
+                'class' => 'color-maestro',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 7,
+                'model_id' => 2,
+                'title' => 'Платина',
+                'image' => '/images/colors/lada/vesta/sw/platina.png',
+                'class' => 'color-platina',
+                'is_active' => false
+            ],
+            // Vesta
+            // SW CROSS
+            [
+                'type_id' => 8,
+                'model_id' => 2,
+                'title' => 'Ледниковый',
+                'image' => '/images/colors/lada/vesta/sw_cross/glacial.png',
+                'class' => 'color-white-glacial',
+                'is_active' => true
+            ],
+            [
+                'type_id' => 8,
+                'model_id' => 2,
+                'title' => 'Марс',
+                'image' => '/images/colors/lada/vesta/sw_cross/mars.png',
+                'class' => 'color-mars',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 8,
+                'model_id' => 2,
+                'title' => 'Сердолик',
+                'image' => '/images/colors/lada/vesta/sw_cross/cornelian.png',
+                'class' => 'color-red-cornelian',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 8,
+                'model_id' => 2,
+                'title' => 'Ангкор',
+                'image' => '/images/colors/lada/vesta/sw_cross/angkor.png',
+                'class' => 'color-angkor',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 8,
+                'model_id' => 2,
+                'title' => 'Дайвинг',
+                'image' => '/images/colors/lada/vesta/sw_cross/daiving.png',
+                'class' => 'color-daiving',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 8,
+                'model_id' => 2,
+                'title' => 'Фантом',
+                'image' => '/images/colors/lada/vesta/sw_cross/phantom.png',
+                'class' => 'color-phantom',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 8,
+                'model_id' => 2,
+                'title' => 'Маэстро',
+                'image' => '/images/colors/lada/vesta/sw_cross/maestro.png',
+                'class' => 'color-maestro',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 8,
+                'model_id' => 2,
+                'title' => 'Платина',
+                'image' => '/images/colors/lada/vesta/sw_cross/platina.png',
+                'class' => 'color-platina',
+                'is_active' => false
+            ],
+            // Vesta
+            // CNG
+            [
+                'type_id' => 9,
+                'model_id' => 2,
+                'title' => 'Ледниковый',
+                'image' => '/images/colors/lada/vesta/cng/glacial.png',
+                'class' => 'color-white-glacial',
+                'is_active' => true
+            ],
+            [
+                'type_id' => 9,
+                'model_id' => 2,
+                'title' => 'Сердолик',
+                'image' => '/images/colors/lada/vesta/cng/cornelian.png',
+                'class' => 'color-red-cornelian',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 9,
+                'model_id' => 2,
+                'title' => 'Платина',
+                'image' => '/images/colors/lada/vesta/cng/platina.png',
                 'class' => 'color-platina',
                 'is_active' => false
             ],
@@ -350,7 +549,7 @@ class ColorTableSeeder extends Seeder
                 'model_id' => 2,
                 'title' => 'Ледниковый',
                 'image' => '/images/colors/lada/vesta/sport/glacial.png',
-                'class' => 'color-platina',
+                'class' => 'color-white-glacial',
                 'is_active' => true
             ],
             [
@@ -829,188 +1028,6 @@ class ColorTableSeeder extends Seeder
                 'title' => 'Кориандр',
                 'image' => '/images/colors/lada/granta/drive_active/granta_drive_active_coriander.png',
                 'class' => 'color-coriander',
-                'is_active' => false
-            ],
-            // Vesta
-            // SW
-            [
-                'type_id' => 7,
-                'model_id' => 2,
-                'title' => 'Ледниковый',
-                'image' => '/images/colors/lada/vesta/sw/vesta_sw_lednikovyy.png',
-                'class' => 'color-white-glacial',
-                'is_active' => true
-            ],
-            [
-                'type_id' => 7,
-                'model_id' => 2,
-                'title' => 'Сердолик',
-                'image' => '/images/colors/lada/vesta/sw/vesta_sw_serdolyk.png',
-                'class' => 'color-red-cornelian',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 7,
-                'model_id' => 2,
-                'title' => 'Ангкор',
-                'image' => '/images/colors/lada/vesta/sw/vesta_sw_angkor.png',
-                'class' => 'color-angkor',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 7,
-                'model_id' => 2,
-                'title' => 'Карфаген',
-                'image' => '/images/colors/lada/vesta/sw/vesta_sw_karfagen.png',
-                'class' => 'color-carfagen',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 7,
-                'model_id' => 2,
-                'title' => 'Дайвинг',
-                'image' => '/images/colors/lada/vesta/sw/vesta_sw_dayving.png',
-                'class' => 'color-daiving',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 7,
-                'model_id' => 2,
-                'title' => 'Фантом',
-                'image' => '/images/colors/lada/vesta/sw/vesta_sw_fantom.png',
-                'class' => 'color-phantom',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 7,
-                'model_id' => 2,
-                'title' => 'Плутон',
-                'image' => '/images/colors/lada/vesta/sw/vesta_sw_pluton.png',
-                'class' => 'color-pluton',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 7,
-                'model_id' => 2,
-                'title' => 'Маэстро',
-                'image' => '/images/colors/lada/vesta/sw/vesta_sw_maestro.png',
-                'class' => 'color-maestro',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 7,
-                'model_id' => 2,
-                'title' => 'Платина',
-                'image' => '/images/colors/lada/vesta/sw/vesta_sw_platina.png',
-                'class' => 'color-platina',
-                'is_active' => false
-            ],
-            // Vesta
-            // SW CROSS
-            [
-                'type_id' => 8,
-                'model_id' => 2,
-                'title' => 'Ледниковый',
-                'image' => '/images/colors/lada/vesta/sw_cross/vesta_sw_cross_lednikovyy.png',
-                'class' => 'color-white-glacial',
-                'is_active' => true
-            ],
-            [
-                'type_id' => 8,
-                'model_id' => 2,
-                'title' => 'Марс',
-                'image' => '/images/colors/lada/vesta/sw_cross/vesta_sw_cross_mars.png',
-                'class' => 'color-red-mars',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 8,
-                'model_id' => 2,
-                'title' => 'Сердолик',
-                'image' => '/images/colors/lada/vesta/sw_cross/vesta_sw_cross_serdolyk.png',
-                'class' => 'color-red-cornelian',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 8,
-                'model_id' => 2,
-                'title' => 'Ангкор',
-                'image' => '/images/colors/lada/vesta/sw_cross/vesta_sw_cross_angkor.png',
-                'class' => 'color-angkor',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 8,
-                'model_id' => 2,
-                'title' => 'Карфаген',
-                'image' => '/images/colors/lada/vesta/sw_cross/vesta_sw_cross_karfagen.png',
-                'class' => 'color-carfagen',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 8,
-                'model_id' => 2,
-                'title' => 'Дайвинг',
-                'image' => '/images/colors/lada/vesta/sw_cross/vesta_sw_cross_dayving.png',
-                'class' => 'color-daiving',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 8,
-                'model_id' => 2,
-                'title' => 'Фантом',
-                'image' => '/images/colors/lada/vesta/sw_cross/vesta_sw_cross_fantom.png',
-                'class' => 'color-phantom',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 8,
-                'model_id' => 2,
-                'title' => 'Плутон',
-                'image' => '/images/colors/lada/vesta/sw_cross/vesta_sw_cross_pluton.png',
-                'class' => 'color-pluton',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 8,
-                'model_id' => 2,
-                'title' => 'Маэстро',
-                'image' => '/images/colors/lada/vesta/sw_cross/vesta_sw_cross_maestro.png',
-                'class' => 'color-maestro',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 8,
-                'model_id' => 2,
-                'title' => 'Платина',
-                'image' => '/images/colors/lada/vesta/sw_cross/vesta_sw_cross_platina.png',
-                'class' => 'color-platina',
-                'is_active' => false
-            ],
-            // Vesta
-            // CNG
-            [
-                'type_id' => 9,
-                'model_id' => 2,
-                'title' => 'Ледниковый',
-                'image' => '/images/colors/lada/vesta/cng/lada_vesta_cng_lednikovyy.png',
-                'class' => 'color-white-glacial',
-                'is_active' => true
-            ],
-            [
-                'type_id' => 9,
-                'model_id' => 2,
-                'title' => 'Черная жемчужина',
-                'image' => '/images/colors/lada/vesta/cng/lada_vesta_cng_chornaya_zhemchuzhina.png',
-                'class' => 'color-black-pearl',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 9,
-                'model_id' => 2,
-                'title' => 'Платина',
-                'image' => '/images/colors/lada/vesta/cng/lada_vesta_cng_platina.png',
-                'class' => 'color-platina',
                 'is_active' => false
             ],
             // Niva
