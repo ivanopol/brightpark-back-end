@@ -41,7 +41,7 @@ class CarModelCarTypeTableSeeder extends Seeder
                 'count'=>0,
                 'image' => '/images/slider/mini/granta/mobile/lada_granta_universal.png',
                 'slogan' => 'Увеличенный вместительный багажник',
-                'active' => 0,
+                'active' => 1,
             ],
             [
                 'car_model_id' => '1',
@@ -53,7 +53,7 @@ class CarModelCarTypeTableSeeder extends Seeder
                 'count'=>0,
                 'image' => '/images/slider/mini/granta/mobile/lada_granta_cross.png',
                 'slogan' => 'Увеличенный дорожный просвет, практичный багажник',
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'car_model_id' => '1',
