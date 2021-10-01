@@ -92,6 +92,17 @@ class BasePageService
         $complectations = DB::table('complectations')->select('*')->where($condition)->orderBy('sort', 'asc')->get();
         $features = DB::table('features')->select('*')->where($condition)->get();
 
+        $about_result = DB::table('model_about')->select('*')->where($condition)->get()->toArray();
+
+        foreach ($about_result as $key => $row) {
+            $about[$row->type] = [
+                'image' => $row->image,
+                'image_mobile' => $row->image_mobile,
+                'title' => $row->title,
+                'description' => $row->description,
+            ];
+        }
+
         $result = [
             'model' => [
                 'slug' => $car_model->slug,
@@ -111,7 +122,44 @@ class BasePageService
             'colors' => $colors,
             'complectations' => $complectations,
             'features' => $features,
+            'about' => $about,
         ];
+
+        return $result;
+    }
+
+    /**
+     * Данные для блока "О модели"
+     *
+     * @param string $model Модель
+     * @param string $type Кузов
+     * @return array данные для страницы модели
+     */
+    public function model_data_about(string $model, string $type) : array
+    {
+        $result = [];
+
+        $car_model = CarModel::where('slug', $model)->first();
+        $car_type = CarType::where('slug', $type)->first();
+
+        if (!$car_model || !$car_type) {
+            return [];
+        }
+
+        $condition = [
+            ['model_id', '=', $car_model->id],
+            ['type_id', '=', $car_type->id],
+        ];
+
+        $model_about = DB::table('model_about')->select('*')->where($condition)->get()->toArray();
+
+        foreach ($model_about as $key => $row) {
+            $result[$row->type] = [
+                'image' => $row->image,
+                'title' => $row->title,
+                'description' => $row->description,
+            ];
+        }
 
         return $result;
     }

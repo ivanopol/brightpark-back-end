@@ -134,6 +134,38 @@ class ModelController extends Controller
     }
 
     /**
+     * Получаем информацию для блока "О модели"
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function modelAbout(Request $request) : \Illuminate\Http\JsonResponse
+    {
+        if ( !$request->input('model') || !$request->input('type') ) {
+            return Response::json(
+                [
+                    'status' => 'error',
+                    'message' => 'Отсутствуют параметры запроса'
+                ]);
+        }
+
+        $model = htmlspecialchars($request->input('model'));
+        $type = htmlspecialchars($request->input('type'));
+
+
+        $minutes = $this->cache_time;
+        $key = 'model_about_' . $model . '_' . $type;
+        $minutes = 0;
+
+        $result = Cache::remember($key, $minutes, function () use ($model, $type) {
+            $service = new BasePageService();
+            return $service->model_data_about($model, $type);
+        });
+
+        return Response::json($result);
+    }
+
+    /**
      * Возращается список кузовов для заданной модели
      *
      * @param  \Illuminate\Http\Request  $request
