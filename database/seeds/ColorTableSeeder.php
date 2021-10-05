@@ -630,8 +630,8 @@ class ColorTableSeeder extends Seeder
                 'type_id' => 20,
                 'model_id' => 3,
                 'title' => 'Серое плато',
-                'image' => '/images/colors/lada/xray/xray/lada_xray_platina.png',
-                'class' => 'color-platina',
+                'image' => '/images/colors/lada/xray/xray/gray_plateau.png',
+                'class' => 'color-gray-plateau',
                 'is_active' => false
             ],
             [
@@ -656,7 +656,7 @@ class ColorTableSeeder extends Seeder
                 'type_id' => 4,
                 'model_id' => 3,
                 'title' => 'Ледниковый',
-                'image' => '/images/colors/lada/xray/cross/red_alloy.png',
+                'image' => '/images/colors/lada/xray/cross/glacial.png',
                 'class' => 'color-white-glacial',
                 'is_active' => false
             ],
