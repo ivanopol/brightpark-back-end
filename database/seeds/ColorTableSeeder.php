@@ -589,24 +589,24 @@ class ColorTableSeeder extends Seeder
             [
                 'type_id' => 20,
                 'model_id' => 3,
-                'title' => 'Ледниковый',
-                'image' => '/images/colors/lada/xray/xray/lada_xray_glacial.png',
-                'class' => 'color-white-glacial',
+                'title' => 'Красный сплав',
+                'image' => '/images/colors/lada/xray/xray/red_alloy.png',
+                'class' => 'color-red-alloy',
                 'is_active' => true
             ],
             [
                 'type_id' => 20,
                 'model_id' => 3,
-                'title' => 'Огненно-красный',
-                'image' => '/images/colors/lada/xray/xray/lada_xray_fiery_red.png',
-                'class' => 'color-fiery-red',
+                'title' => 'Ледниковый',
+                'image' => '/images/colors/lada/xray/xray/glacial.png',
+                'class' => 'color-white-glacial',
                 'is_active' => false
             ],
             [
                 'type_id' => 20,
                 'model_id' => 3,
                 'title' => 'Серый базальт',
-                'image' => '/images/colors/lada/xray/xray/lada_xray_basalt_gray.png',
+                'image' => '/images/colors/lada/xray/xray/basalt_gray.png',
                 'class' => 'color-basalt-gray',
                 'is_active' => false
             ],
@@ -614,24 +614,98 @@ class ColorTableSeeder extends Seeder
                 'type_id' => 20,
                 'model_id' => 3,
                 'title' => 'Пума',
-                'image' => '/images/colors/lada/xray/xray/lada_xray_light_brown_cougar.png',
+                'image' => '/images/colors/lada/xray/xray/brown_cougar.png',
                 'class' => 'color-light-brown-cougar',
                 'is_active' => false
             ],
             [
                 'type_id' => 20,
                 'model_id' => 3,
-                'title' => 'Черная жемчужина',
-                'image' => '/images/colors/lada/xray/xray/lada_xray_black_pearl.png',
-                'class' => 'color-black-pearl',
+                'title' => 'Лазурно-синий',
+                'image' => '/images/colors/lada/xray/xray/sky_blue.png',
+                'class' => 'color-sky-blue',
                 'is_active' => false
             ],
             [
                 'type_id' => 20,
                 'model_id' => 3,
-                'title' => 'Платина',
+                'title' => 'Серое плато',
                 'image' => '/images/colors/lada/xray/xray/lada_xray_platina.png',
                 'class' => 'color-platina',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 20,
+                'model_id' => 3,
+                'title' => 'Черная жемчужина',
+                'image' => '/images/colors/lada/xray/xray/black_pearl.png',
+                'class' => 'color-black-pearl',
+                'is_active' => false
+            ],
+            // XRay
+            // cross
+            [
+                'type_id' => 4,
+                'model_id' => 3,
+                'title' => 'Красный сплав',
+                'image' => '/images/colors/lada/xray/cross/red_alloy.png',
+                'class' => 'color-red-alloy',
+                'is_active' => true
+            ],
+            [
+                'type_id' => 4,
+                'model_id' => 3,
+                'title' => 'Ледниковый',
+                'image' => '/images/colors/lada/xray/cross/red_alloy.png',
+                'class' => 'color-white-glacial',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 4,
+                'model_id' => 3,
+                'title' => 'Серый базальт',
+                'image' => '/images/colors/lada/xray/cross/basalt_gray.png',
+                'class' => 'color-basalt-gray',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 4,
+                'model_id' => 3,
+                'title' => 'Янтарь',
+                'image' => '/images/colors/lada/xray/cross/amber.png',
+                'class' => 'color-amber',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 4,
+                'model_id' => 3,
+                'title' => 'Пума',
+                'image' => '/images/colors/lada/xray/cross/brown_cougar.png',
+                'class' => 'color-light-brown-cougar',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 4,
+                'model_id' => 3,
+                'title' => 'Лазурно-синий',
+                'image' => '/images/colors/lada/xray/cross/sky_blue.png',
+                'class' => 'color-sky-blue',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 4,
+                'model_id' => 3,
+                'title' => 'Серое плато',
+                'image' => '/images/colors/lada/xray/cross/gray_plateau.png',
+                'class' => 'color-gray-plateau',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 4,
+                'model_id' => 3,
+                'title' => 'Черная жемчужина',
+                'image' => '/images/colors/lada/xray/cross/black_pearl.png',
+                'class' => 'color-black-pearl',
                 'is_active' => false
             ],
             // 4x4
@@ -895,72 +969,6 @@ class ColorTableSeeder extends Seeder
                 'type_id' => 4,
                 'title' => 'Платина',
                 'image' => '/images/colors/lada/largus/cross/largus_platinum.png',
-                'class' => 'color-platina',
-                'is_active' => false
-            ],
-            // XRay
-            // cross
-            [
-                'type_id' => 4,
-                'model_id' => 3,
-                'title' => 'Ледниковый',
-                'image' => '/images/colors/lada/xray/cross/xray_cross_glacial.png',
-                'class' => 'color-white-glacial',
-                'is_active' => true
-            ],
-            [
-                'type_id' => 4,
-                'model_id' => 3,
-                'title' => 'Огненно-красный',
-                'image' => '/images/colors/lada/xray/cross/xray_cross_fiery_red.png',
-                'class' => 'color-fiery-red',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 4,
-                'model_id' => 3,
-                'title' => 'Серый базальт',
-                'image' => '/images/colors/lada/xray/cross/xray_cross_basalt_gray.png',
-                'class' => 'color-basalt-gray',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 4,
-                'model_id' => 3,
-                'title' => 'Янтарь',
-                'image' => '/images/colors/lada/xray/cross/xray_cross_amber.png',
-                'class' => 'color-amber',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 4,
-                'model_id' => 3,
-                'title' => 'Пума',
-                'image' => '/images/colors/lada/xray/cross/xray_cross_light_brown_cougar.png',
-                'class' => 'color-light-brown-cougar',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 4,
-                'model_id' => 3,
-                'title' => 'Лазурно синий',
-                'image' => '/images/colors/lada/xray/cross/xray_cross_sky_blue.png',
-                'class' => 'color-sky-blue',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 4,
-                'model_id' => 3,
-                'title' => 'Черная жемчужина',
-                'image' => '/images/colors/lada/xray/cross/xray_cross_black_pearl.png',
-                'class' => 'color-black-pearl',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 4,
-                'model_id' => 3,
-                'title' => 'Платина',
-                'image' => '/images/colors/lada/xray/cross/xray_cross_platina.png',
                 'class' => 'color-platina',
                 'is_active' => false
             ],
