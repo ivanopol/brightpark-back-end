@@ -94,13 +94,17 @@ class BasePageService
 
         $about_result = DB::table('model_about')->select('*')->where($condition)->get()->toArray();
 
-        foreach ($about_result as $key => $row) {
-            $about[$row->type] = [
-                'image' => $row->image,
-                'image_mobile' => $row->image_mobile,
-                'title' => $row->title,
-                'description' => $row->description,
-            ];
+        $about = [];
+
+        if ( $about_result) {
+            foreach ($about_result as $key => $row) {
+                $about[$row->type] = [
+                    'image' => $row->image,
+                    'image_mobile' => $row->image_mobile,
+                    'title' => $row->title,
+                    'description' => $row->description,
+                ];
+            }
         }
 
         $result = [
