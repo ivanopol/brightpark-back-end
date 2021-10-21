@@ -257,7 +257,7 @@ class CarModelCarTypeTableSeeder extends Seeder
                 'count'=>0,
                 'image' => '/images/slider/mini/largus/mobile/lada_largus_cross.png',
                 'slogan' => 'Сжатый природный газ (метан), сниженные затраты на топливо',
-                'active' => 0,
+                'active' => 1,
             ],
             [
                 'car_model_id' => '5',
