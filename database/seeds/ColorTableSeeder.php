@@ -919,57 +919,65 @@ class ColorTableSeeder extends Seeder
             [
                 'model_id' => 5,
                 'type_id' => 4,
-                'title' => 'Ледниковый',
-                'image' => '/images/colors/lada/largus/cross/largus_white_ice.png',
-                'class' => 'color-white-ice',
+                'title' => 'Красный сплав',
+                'image' => '/images/colors/lada/largus/cross/red_alloy.png',
+                'class' => 'color-red-alloy',
                 'is_active' => true
             ],
             [
                 'model_id' => 5,
                 'type_id' => 4,
-                'title' => 'Красный сплав',
-                'image' => '/images/colors/lada/largus/cross/largus_alloy_red.png',
-                'class' => 'color-red-alloy',
+                'title' => 'Каракумы',
+                'image' => '/images/colors/lada/largus/cross/karakum.png',
+                'class' => 'color-karakum',
                 'is_active' => false
             ],
             [
                 'model_id' => 5,
                 'type_id' => 4,
                 'title' => 'Серый базальт',
-                'image' => '/images/colors/lada/largus/cross/largus_basalt_gray.png',
+                'image' => '/images/colors/lada/largus/cross/basalt_gray.png',
                 'class' => 'color-basalt-gray',
                 'is_active' => false
             ],
             [
                 'model_id' => 5,
                 'type_id' => 4,
-                'title' => 'Кашемир',
-                'image' => '/images/colors/lada/largus/cross/largus_cashmere_brown.png',
-                'class' => 'color-cashemer',
+                'title' => 'Брюн',
+                'image' => '/images/colors/lada/largus/cross/brune.png',
+                'class' => 'color-brune',
                 'is_active' => false
             ],
             [
                 'model_id' => 5,
                 'type_id' => 4,
                 'title' => 'Лазурно-синий',
-                'image' => '/images/colors/lada/largus/cross/largus_sky_blue.png',
+                'image' => '/images/colors/lada/largus/cross/sky_blue.png',
                 'class' => 'color-sky-blue',
                 'is_active' => false
             ],
             [
                 'model_id' => 5,
                 'type_id' => 4,
+                'title' => 'Серое плато',
+                'image' => '/images/colors/lada/largus/cross/gray_plateau.png',
+                'class' => 'color-gray-plateau',
+                'is_active' => false
+            ],
+            [
+                'model_id' => 5,
+                'type_id' => 4,
                 'title' => 'Черная жемчужина',
-                'image' => '/images/colors/lada/largus/cross/largus_black_pearl.png',
+                'image' => '/images/colors/lada/largus/cross/black_pearl.png',
                 'class' => 'color-black-pearl',
                 'is_active' => false
             ],
             [
                 'model_id' => 5,
                 'type_id' => 4,
-                'title' => 'Платина',
-                'image' => '/images/colors/lada/largus/cross/largus_platinum.png',
-                'class' => 'color-platina',
+                'title' => 'Ледниковый',
+                'image' => '/images/colors/lada/largus/cross/glacial.png',
+                'class' => 'color-white-glacial',
                 'is_active' => false
             ],
             // Granta
