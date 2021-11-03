@@ -72,12 +72,14 @@ class BitrixService
         }
 
         $emailFrom = 'site@brightpark.ru';
-
         $emailsTo = 'ivanopol777@mail.ru,';
+
+        $is_service = false;
         if ($data['form_type'] === 1) {
             $emailsTo .= $city[0]->callback_emails;
         } elseif ($data['form_type'] === 2) {
             $emailsTo .= $city[0]->callback_service_emails;
+            $is_service = true;
         }
 
         $emailsTo = str_replace(' ', '', $emailsTo);
@@ -116,6 +118,11 @@ class BitrixService
                 }
             }
         });
+
+        //Если заявка с сервиса, то не создаем лида
+        if ($is_service) {
+            return false;
+        }
 
         // Ищем есть ли лиды или контакты с таким номером в Битриксе, если есть
         // Ставим признак "Повторный лид"
