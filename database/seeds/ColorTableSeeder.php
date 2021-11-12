@@ -708,96 +708,6 @@ class ColorTableSeeder extends Seeder
                 'class' => 'color-black-pearl',
                 'is_active' => false
             ],
-            // 4x4
-            // 3 doors
-            [
-                'type_id' => 11,
-                'model_id' => 4,
-                'title' => 'Белое облако',
-                'image' => '/images/colors/lada/4x4/three_doors/4x4_white_cloud.png',
-                'class' => 'color-white-cloud',
-                'is_active' => true
-            ],
-            [
-                'type_id' => 11,
-                'model_id' => 4,
-                'title' => 'Несси 2',
-                'image' => '/images/colors/lada/4x4/three_doors/4x4_nessi_2.png',
-                'class' => 'color-nessi-2',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 11,
-                'model_id' => 4,
-                'title' => 'Пантера',
-                'image' => '/images/colors/lada/4x4/three_doors/4x4_panthera.png',
-                'class' => 'color-panthera',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 11,
-                'model_id' => 4,
-                'title' => 'Бенефис',
-                'image' => '/images/colors/lada/4x4/three_doors/4x4_benefis.png',
-                'class' => 'color-benefis',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 11,
-                'model_id' => 4,
-                'title' => 'Барокко',
-                'image' => '/images/colors/lada/4x4/three_doors/4x4_barokko.png',
-                'class' => 'color-barokko',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 11,
-                'model_id' => 4,
-                'title' => 'Голубая планета',
-                'image' => '/images/colors/lada/4x4/three_doors/4x4_blue_planet.png',
-                'class' => 'color-blue-planet',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 11,
-                'model_id' => 4,
-                'title' => 'Терра',
-                'image' => '/images/colors/lada/4x4/three_doors/4x4_terra.png',
-                'class' => 'color-terra',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 11,
-                'model_id' => 4,
-                'title' => 'Борнео',
-                'image' => '/images/colors/lada/4x4/three_doors/4x4_borneo.png',
-                'class' => 'color-borneo-dark',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 11,
-                'model_id' => 4,
-                'title' => 'Снежная королева',
-                'image' => '/images/colors/lada/4x4/three_doors/4x4_snow_queen.png',
-                'class' => 'color-snow-queen',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 11,
-                'model_id' => 4,
-                'title' => 'Кориандр',
-                'image' => '/images/colors/lada/4x4/three_doors/4x4_coriander.png',
-                'class' => 'color-coriander-dark',
-                'is_active' => false
-            ],
-            [
-                'type_id' => 11,
-                'model_id' => 4,
-                'title' => 'Камуфляж джунгли',
-                'image' => '/images/colors/lada/4x4/three_doors/4x4_camouflage_jungle.png',
-                'class' => 'color-camouflage-jungle',
-                'is_active' => false
-            ],
             // Largus
             // универсал
             [
@@ -1046,7 +956,7 @@ class ColorTableSeeder extends Seeder
                 'class' => 'color-coriander',
                 'is_active' => false
             ],
-            // Niva
+            // 4x4
             [
                 'type_id' => 22,
                 'model_id' => 6,
@@ -1119,6 +1029,7 @@ class ColorTableSeeder extends Seeder
                 'class' => 'color-iceberg',
                 'is_active' => false
             ],
+            // 4x4 5 doors
             [
                 'model_id' => 4,
                 'type_id' => 13,
@@ -1262,6 +1173,122 @@ class ColorTableSeeder extends Seeder
                 'title' => 'Снежная королева',
                 'image' => '/images/colors/lada/4x4/niva_off_road/lada_niva_snow_queen.png',
                 'class' => 'color-snow-queen-2',
+                'is_active' => false
+            ],
+            // Niva Legend
+            // 3 doors
+            [
+                'type_id' => 11,
+                'model_id' => 7,
+                'title' => 'Барокко',
+                'image' => '/images/colors/lada/niva-legend/3dv/baroque.png',
+                'class' => 'color-barokko',
+                'is_active' => true
+            ],
+            [
+                'type_id' => 11,
+                'model_id' => 7,
+                'title' => 'Борнео',
+                'image' => '/images/colors/lada/niva-legend/3dv/borneo.png',
+                'class' => 'color-borneo-2',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 11,
+                'model_id' => 7,
+                'title' => 'Снежная королева',
+                'image' => '/images/colors/lada/niva-legend/3dv/snow_qeen.png',
+                'class' => 'color-snow-queen-2',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 11,
+                'model_id' => 7,
+                'title' => 'Кориандр',
+                'image' => '/images/colors/lada/niva-legend/3dv/coriander.png',
+                'class' => 'color-coriander',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 11,
+                'model_id' => 7,
+                'title' => 'Белое облако',
+                'image' => '/images/colors/lada/niva-legend/3dv/white_cloud.png',
+                'class' => 'color-white-cloud',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 11,
+                'model_id' => 7,
+                'title' => 'Несси 2',
+                'image' => '/images/colors/lada/niva-legend/3dv/nessie_2.png',
+                'class' => 'color-nessi-2',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 11,
+                'model_id' => 7,
+                'title' => 'Пантера',
+                'image' => '/images/colors/lada/niva-legend/3dv/panther.png',
+                'class' => 'color-panthera',
+                'is_active' => false
+            ],
+            // Niva Legend
+            // 5 doors
+            [
+                'type_id' => 13,
+                'model_id' => 7,
+                'title' => 'Барокко',
+                'image' => '/images/colors/lada/niva-legend/5dv/baroque.png',
+                'class' => 'color-barokko',
+                'is_active' => true
+            ],
+            [
+                'type_id' => 13,
+                'model_id' => 7,
+                'title' => 'Борнео',
+                'image' => '/images/colors/lada/niva-legend/5dv/borneo.png',
+                'class' => 'color-borneo-2',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 13,
+                'model_id' => 7,
+                'title' => 'Снежная королева',
+                'image' => '/images/colors/lada/niva-legend/5dv/snow_qeen.png',
+                'class' => 'color-snow-queen-2',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 13,
+                'model_id' => 7,
+                'title' => 'Кориандр',
+                'image' => '/images/colors/lada/niva-legend/5dv/coriander.png',
+                'class' => 'color-coriander',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 13,
+                'model_id' => 7,
+                'title' => 'Белое облако',
+                'image' => '/images/colors/lada/niva-legend/5dv/white_cloud.png',
+                'class' => 'color-white-cloud',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 13,
+                'model_id' => 7,
+                'title' => 'Несси 2',
+                'image' => '/images/colors/lada/niva-legend/5dv/nessie_2.png',
+                'class' => 'color-nessi-2',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 13,
+                'model_id' => 7,
+                'title' => 'Пантера',
+                'image' => '/images/colors/lada/niva-legend/5dv/panther.png',
+                'class' => 'color-panthera',
                 'is_active' => false
             ],
             // Niva Off-road
