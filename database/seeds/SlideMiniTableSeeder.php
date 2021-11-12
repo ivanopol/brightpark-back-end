@@ -222,7 +222,7 @@ class SlideMiniTableSeeder extends Seeder
                 'image' => '/images/slider/mini/4x4/mobile/lada_niva.png',
                 'alt' => 'Лада Niva',
                 'title' => 'Niva',
-                'active' => true,
+                'active' => false,
             ],
             [
                 'model_id' => 6,
@@ -230,7 +230,7 @@ class SlideMiniTableSeeder extends Seeder
                 'image' => '/images/slider/mini/4x4/mobile/lada_niva_extravaganza.png',
                 'alt' => 'Лада Niva Off-road',
                 'title' => 'Niva Off-road',
-                'active' => true,
+                'active' => false,
             ],
             [
                 'model_id' => 6,
