@@ -37,8 +37,8 @@ class CarModelTableSeeder extends Seeder
                 'preview' => '/images/photos/models/xray/xray.png',
             ],
             [
-                'title' => 'Legend',
-                'title_ru' => 'Legend',
+                'title' => '4x4',
+                'title_ru' => '4x4',
                 'slug' => Str::slug('4x4'),
                 'description' => 'LADA 4&times;4&nbsp;|&nbsp;Legend &mdash; легендарный автомобиль, который не&nbsp;может жить без сильных ощущений. Он&nbsp;силен, оборотист и&nbsp;неприхотлив. Его призвание&nbsp;&mdash; бездорожье, но&nbsp;он&nbsp;прекрасно себя чувствует и&nbsp;в&nbsp;городских джунглях. Принципы данной модели: уникальная проходимость, надежность и&nbsp;простота обслуживания.',
                 'sort' => 5,
@@ -55,13 +55,22 @@ class CarModelTableSeeder extends Seeder
                 'preview' => '/images/photos/models/largus/largus.png',
             ],
             [
-                'title' => 'Niva',
-                'title_ru' => 'Нива',
+                'title' => 'Niva Travel',
+                'title_ru' => 'Нива Travel',
                 'slug' => Str::slug('Niva'),
                 'description' => 'Отправляйтесь в путешествие по горам и городам! Потрясающие внедорожные возможности LADA Niva открывают перед вами все пути.',
                 'sort' => 6,
                 'sort2' => 5,
                 'preview' => '/images/photos/models/niva/travel/niva_travel.png',
+            ],
+            [
+                'title' => 'Niva Legend',
+                'title_ru' => 'Нива Legend',
+                'slug' => Str::slug('Niva-Legend'),
+                'description' => '',
+                'sort' => 5,
+                'sort2' => 6,
+                'preview' => '',
             ],
         ];
 
