@@ -47,8 +47,8 @@ class GeoController extends Controller
         $models_full = [];
 
         foreach ($models_list as $item) {
-            $models[] = $item->slug;
             if (count($item->types_preview) ) {
+                $models[] = $item->slug;
                 $models_full[] = [
                     'model_slug' => $item->slug,
                     'type_slug' => $item->types_preview[0]->slug,
