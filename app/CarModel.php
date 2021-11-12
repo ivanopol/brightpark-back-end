@@ -12,6 +12,7 @@ class CarModel extends Model
         'slug',
         'description',
         'sort',
+        'sort2',
         'preview',
     ];
     /**
