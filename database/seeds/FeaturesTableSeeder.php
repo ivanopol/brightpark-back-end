@@ -872,7 +872,125 @@ class FeaturesTableSeeder extends Seeder
             ],
         ];
 
-        $features = array_merge($granta, $vesta);
+        // Niva Legend
+        $niva_legend = [
+            // Three doors
+            [
+                'model_id' => 7,
+                'type_id' => 11,
+                'name' => 'Универсал',
+                'title' => 'Кузов',
+                'icon' => 'body',
+            ],
+            [
+                'model_id' => 7,
+                'type_id' => 11,
+                'name' => 'Передний',
+                'title' => 'Привод',
+                'icon' => 'drive',
+            ],
+            [
+                'model_id' => 7,
+                'type_id' => 11,
+                'name' => '1.7 л',
+                'title' => 'объём двигателя',
+                'icon' => 'engine',
+            ],
+            [
+                'model_id' => 7,
+                'type_id' => 11,
+                'name' => 'MT',
+                'title' => 'коробка двигателя',
+                'icon' => 'transmission',
+            ],
+            [
+                'model_id' => 7,
+                'type_id' => 11,
+                'name' => '4',
+                'title' => 'места',
+                'icon' => 'seats',
+            ],
+            [
+                'model_id' => 7,
+                'type_id' => 11,
+                'name' => 'Бензин',
+                'title' => 'топливо',
+                'icon' => 'fuel_type',
+            ],
+            [
+                'model_id' => 7,
+                'type_id' => 11,
+                'name' => 'от 8,3л / 100км',
+                'title' => 'расход топлива',
+                'icon' => 'fuel',
+            ],
+            [
+                'model_id' => 7,
+                'type_id' => 11,
+                'name' => 'до 142 км/ч',
+                'title' => 'макс. скорост',
+                'icon' => 'speed',
+            ],
+            // Five doors
+            [
+                'model_id' => 7,
+                'type_id' => 13,
+                'name' => 'Универсал',
+                'title' => 'Кузов',
+                'icon' => 'body',
+            ],
+            [
+                'model_id' => 7,
+                'type_id' => 13,
+                'name' => 'Передний',
+                'title' => 'Привод',
+                'icon' => 'drive',
+            ],
+            [
+                'model_id' => 7,
+                'type_id' => 13,
+                'name' => '1.7 л',
+                'title' => 'объём двигателя',
+                'icon' => 'engine',
+            ],
+            [
+                'model_id' => 7,
+                'type_id' => 13,
+                'name' => 'MT',
+                'title' => 'коробка двигателя',
+                'icon' => 'transmission',
+            ],
+            [
+                'model_id' => 7,
+                'type_id' => 13,
+                'name' => '5',
+                'title' => 'места',
+                'icon' => 'seats',
+            ],
+            [
+                'model_id' => 7,
+                'type_id' => 13,
+                'name' => 'Бензин',
+                'title' => 'топливо',
+                'icon' => 'fuel_type',
+            ],
+            [
+                'model_id' => 7,
+                'type_id' => 13,
+                'name' => 'от 8,3л / 100км',
+                'title' => 'расход топлива',
+                'icon' => 'fuel',
+            ],
+            [
+                'model_id' => 7,
+                'type_id' => 13,
+                'name' => 'до 137 км/ч',
+                'title' => 'макс. скорост',
+                'icon' => 'speed',
+            ],
+        ];
+
+        $features = array_merge($granta, $vesta, $niva_legend);
         DB::table('features')->insert($features);
     }
 }
