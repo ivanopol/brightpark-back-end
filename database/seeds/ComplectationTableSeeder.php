@@ -1160,7 +1160,7 @@ class ComplectationTableSeeder extends Seeder
                 'transmission' => '5МТ',
                 'title' => 'Comfort Light',
                 'price' => 875900,
-                'sort' => 1,
+                'sort' => 2,
             ],
             [
                 'model_id' => 5,
@@ -1171,7 +1171,7 @@ class ComplectationTableSeeder extends Seeder
                 'transmission' => '5МТ',
                 'title' => 'Comfort',
                 'price' => 884900,
-                'sort' => 1,
+                'sort' => 3,
             ],
             [
                 'model_id' => 5,
@@ -1182,7 +1182,7 @@ class ComplectationTableSeeder extends Seeder
                 'transmission' => '5МТ',
                 'title' => 'Comfort Light',
                 'price' => 895900,
-                'sort' => 1,
+                'sort' => 4,
             ],
             [
                 'model_id' => 5,
@@ -1193,7 +1193,7 @@ class ComplectationTableSeeder extends Seeder
                 'transmission' => '5МТ',
                 'title' => 'Comfort',
                 'price' => 904900,
-                'sort' => 1,
+                'sort' => 5,
             ],
             [
                 'model_id' => 5,
@@ -1204,7 +1204,7 @@ class ComplectationTableSeeder extends Seeder
                 'transmission' => '5МТ',
                 'title' => 'Comfort',
                 'price' => 904900,
-                'sort' => 1,
+                'sort' => 6,
             ],
             [
                 'model_id' => 5,
@@ -1215,7 +1215,7 @@ class ComplectationTableSeeder extends Seeder
                 'transmission' => '5МТ',
                 'title' => 'Luxe Light',
                 'price' => 958900,
-                'sort' => 1,
+                'sort' => 7,
             ],
             [
                 'model_id' => 5,
@@ -1226,7 +1226,7 @@ class ComplectationTableSeeder extends Seeder
                 'transmission' => '5МТ',
                 'title' => 'Luxe',
                 'price' => 978900,
-                'sort' => 1,
+                'sort' => 8,
             ],
             // Largus Cross
             [
@@ -1249,7 +1249,7 @@ class ComplectationTableSeeder extends Seeder
                 'transmission' => '5МТ',
                 'title' => 'Comfort',
                 'price' => 959900,
-                'sort' => 1,
+                'sort' => 2,
             ],
             [
                 'model_id' => 5,
@@ -1260,7 +1260,7 @@ class ComplectationTableSeeder extends Seeder
                 'transmission' => '5МТ',
                 'title' => 'Luxe Light',
                 'price' => 998900,
-                'sort' => 1,
+                'sort' => 3,
             ],
             [
                 'model_id' => 5,
@@ -1271,11 +1271,105 @@ class ComplectationTableSeeder extends Seeder
                 'transmission' => '5МТ',
                 'title' => 'Luxe',
                 'price' => 1018900,
-                'sort' => 1,
+                'sort' => 4,
             ],
         ];
 
-        $complectations = array_merge($granta, $vesta);
+        // Niva legend
+        $niva_legend = [
+            // Three doors
+            [
+                'model_id' => 7,
+                'type_id' => 11,
+                'engine' => '1,7 л',
+                'flap' => '8-кл.',
+                'capacity' => '83 л.с.',
+                'transmission' => '5МТ',
+                'title' => 'Classic',
+                'price' => 659900,
+                'sort' => 1,
+            ],
+            [
+                'model_id' => 7,
+                'type_id' => 11,
+                'engine' => '1,7 л',
+                'flap' => '8-кл.',
+                'capacity' => '83 л.с.',
+                'transmission' => '5МТ',
+                'title' => '[BLACK]',
+                'price' => 744900,
+                'sort' => 2,
+            ],
+            [
+                'model_id' => 7,
+                'type_id' => 11,
+                'engine' => '1,7 л',
+                'flap' => '8-кл.',
+                'capacity' => '83 л.с.',
+                'transmission' => '5МТ',
+                'title' => 'Luxe',
+                'price' => 676900,
+                'sort' => 3,
+            ],
+            [
+                'model_id' => 7,
+                'type_id' => 11,
+                'engine' => '1,7 л',
+                'flap' => '8-кл.',
+                'capacity' => '83 л.с.',
+                'transmission' => '5МТ',
+                'title' => 'Urban',
+                'price' => 735900,
+                'sort' => 4,
+            ],
+            // Five doors
+            [
+                'model_id' => 7,
+                'type_id' => 13,
+                'engine' => '1,7 л',
+                'flap' => '8-кл.',
+                'capacity' => '83 л.с.',
+                'transmission' => '5МТ',
+                'title' => 'Classic',
+                'price' => 747900,
+                'sort' => 1,
+            ],
+            [
+                'model_id' => 7,
+                'type_id' => 13,
+                'engine' => '1,7 л',
+                'flap' => '8-кл.',
+                'capacity' => '83 л.с.',
+                'transmission' => '5МТ',
+                'title' => '[BLACK]',
+                'price' => 832900,
+                'sort' => 2,
+            ],
+            [
+                'model_id' => 7,
+                'type_id' => 13,
+                'engine' => '1,7 л',
+                'flap' => '8-кл.',
+                'capacity' => '83 л.с.',
+                'transmission' => '5МТ',
+                'title' => 'Luxe',
+                'price' => 764900,
+                'sort' => 3,
+            ],
+            [
+                'model_id' => 7,
+                'type_id' => 13,
+                'engine' => '1,7 л',
+                'flap' => '8-кл.',
+                'capacity' => '83 л.с.',
+                'transmission' => '5МТ',
+                'title' => 'Urban',
+                'price' => 823900,
+                'sort' => 4,
+            ],
+        ];
+
+        $complectations = array_merge($granta, $vesta,  $niva_legend);
         DB::table('complectations')->insert($complectations);
     }
 }
