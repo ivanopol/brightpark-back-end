@@ -482,6 +482,10 @@ class ModelController extends Controller
             $cars = CarModel::select(['id', 'title', 'title_ru', 'slug'])->with('cars_offer')->orderBy('sort2', 'asc')->get();
 
             foreach ($cars as $car) {
+                if (!$car->cars_offer->count()) {
+                    continue;
+                }
+
                 $output[] = [
                     "id" => $car->id . '' . $car->cars_offer[0]->id,
                     "model" => [
