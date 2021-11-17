@@ -364,7 +364,7 @@ class CarModelCarTypeTableSeeder extends Seeder
                 'credit_from' => 6026,
                 'count'=>0,
                 'image' => '/images/slider/mini/4x4/lada_4x4_three.png',
-                'slogan' => '',
+                'slogan' => 'Новое имя для легенды',
                 'active' => 1,
             ],
             [
@@ -376,7 +376,7 @@ class CarModelCarTypeTableSeeder extends Seeder
                 'credit_from' => 6772,
                 'count'=>0,
                 'image' => '/images/slider/mini/4x4/lada_4x4_five.png',
-                'slogan' => '',
+                'slogan' => 'Полный привод, кузов из оцинкованной стали, 5-ти дверный внедорожник',
                 'active' => 1,
             ],
         ];

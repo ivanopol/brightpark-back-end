@@ -885,7 +885,7 @@ class FeaturesTableSeeder extends Seeder
             [
                 'model_id' => 7,
                 'type_id' => 11,
-                'name' => 'Передний',
+                'name' => 'Полный',
                 'title' => 'Привод',
                 'icon' => 'drive',
             ],
@@ -942,7 +942,7 @@ class FeaturesTableSeeder extends Seeder
             [
                 'model_id' => 7,
                 'type_id' => 13,
-                'name' => 'Передний',
+                'name' => 'Полный',
                 'title' => 'Привод',
                 'icon' => 'drive',
             ],
