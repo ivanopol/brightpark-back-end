@@ -32,7 +32,19 @@ class ModelController extends Controller
         $key = 'car_models';
 
         $models = Cache::remember($key, $minutes, function () {
-            return CarModel::with('types_preview')->orderBy('sort', 'asc')->get();
+            $output = [];
+
+            $car_models = CarModel::with('types_preview')->orderBy('sort', 'asc')->get();
+
+            foreach($car_models as $car) {
+                if (!$car->cars_offer->count()) {
+                    continue;
+                }
+
+                $output[] = $car;
+            }
+
+            return $output;
         });
 
         return Response::json($models);
