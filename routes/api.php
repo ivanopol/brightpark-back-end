@@ -20,6 +20,7 @@ use Illuminate\Http\Request;
     Route::get('/carcasses', 'API\ModelController@carcasses')->name('carcasses');
     Route::get('/model', 'API\ModelController@model')->name('model');
     Route::get('/model_new', 'API\ModelController@modelNew')->name('model_new');
+    Route::post('/verify_model', 'API\ModelController@verifyModel')->name('verify_model');
     Route::get('/bodies', 'API\ModelController@bodies')->name('bodies');
     Route::get('/model_about', 'API\ModelController@modelAbout')->name('model_about');
     Route::post('/save_utm', 'API\ModelController@saveUtm')->name('save_utm');

@@ -145,6 +145,35 @@ class ModelController extends Controller
         return Response::json($result);
     }
 
+    /*
+     * Проверяем данные урл для страницы модели авто
+     *
+     */
+    public function verifyModel(Request $request)
+    {
+        if (!$request->input('city') || !$request->input('model') || !$request->input('type') ) {
+            return Response::json(
+                [
+                    'status' => 'error',
+                    'message' => 'Отсутствуют параметры запроса'
+                ]);
+        }
+
+        $model = htmlspecialchars($request->input('model'));
+        $type = htmlspecialchars($request->input('type'));
+        $city = htmlspecialchars($request->input('city'));
+
+        $minutes = $this->cache_time;
+        $key = 'model-verify_' . $model . '_' . $type ;
+
+        $result = Cache::remember($key, $minutes, function () use ($model, $type, $city) {
+            $service = new BasePageService();
+            return $service->model_verify($model, $type, $city);
+        });
+
+        return Response::json($result);
+    }
+
     /**
      * Получаем информацию для блока "О модели"
      *

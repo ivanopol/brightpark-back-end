@@ -74,33 +74,36 @@ class BasePageService
 
         $car_model = CarModel::where('slug', $model)->first();
         $car_type = CarType::where('slug', $type)->first();
-        $status = CarModelCarType::select('active')
-            ->where('car_model_id', $car_model->id)
-            ->where('car_type_id', $car_type->id)
-            ->where('active', true)
-            ->first();
+
+        if ($car_model && $car_type) {
+            $status = CarModelCarType::select('active')
+                ->where('car_model_id', $car_model->id)
+                ->where('car_type_id', $car_type->id)
+                ->where('active', true)
+                ->first();
+        }
 
         if (!$car_model || !$car_type || !$status['active']) {
             return [
-            'model' =>[
-                'slug' => '',
-                'title' => '',
-                'title_ru' => '',
-            ],
-            'type' => [
-                'slug' => '',
-                'title' => '',
-                'title_ru' => '',
-            ],
-            'price' => [
-                'value' => '',
-                'without_discount' => '',
-                'credit' => '',
-            ],
-            'colors' => [],
-            'complectations' =>'',
-            'features' => '',
-            'about' => '',
+                'model' =>[
+                    'slug' => '',
+                    'title' => '',
+                    'title_ru' => '',
+                ],
+                'type' => [
+                    'slug' => '',
+                    'title' => '',
+                    'title_ru' => '',
+                ],
+                'price' => [
+                    'value' => '',
+                    'without_discount' => '',
+                    'credit' => '',
+                ],
+                'colors' => [],
+                'complectations' =>'',
+                'features' => '',
+                'about' => '',
             ];
         }
 
@@ -155,6 +158,36 @@ class BasePageService
         ];
 
         return $result;
+    }
+
+    /**
+     * Проверием модель и кузов авто
+     *
+     * @param string $model Модель
+     * @param string $type Кузов
+     * @param string $city Город
+     * @return boolean
+     */
+    public function model_verify(string $model, string $type, string $city) : bool
+    {
+        $car_model = CarModel::where('slug', $model)->first();
+        $car_type = CarType::where('slug', $type)->first();
+
+        if (!$car_model || !$car_type) {
+            return false;
+        }
+
+        $result = CarModelCarType::select('*')
+            ->where('car_model_id', $car_model->id)
+            ->where('car_type_id', $car_type->id)
+            ->where('active', 1)
+            ->first();
+
+        if (!$result) {
+            return false;
+        }
+
+        return true;
     }
 
     /**
