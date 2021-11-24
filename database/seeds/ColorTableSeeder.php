@@ -1295,10 +1295,42 @@ class ColorTableSeeder extends Seeder
             [
                 'type_id' => 24,
                 'model_id' => 6,
-                'title' => 'Техно',
-                'image' => '/images/colors/lada/niva/travel/lada_niva_travel.png',
-                'class' => 'color-techno',
+                'title' => 'Амазония',
+                'image' => '/images/colors/lada/niva/travel/amazonia.png',
+                'class' => 'color-amazonia',
                 'is_active' => true
+            ],
+            [
+                'type_id' => 24,
+                'model_id' => 6,
+                'title' => 'Техно',
+                'image' => '/images/colors/lada/niva/travel/techno.png',
+                'class' => 'color-techno-2',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 24,
+                'model_id' => 6,
+                'title' => 'Борнео',
+                'image' => '/images/colors/lada/niva/travel/borneo.png',
+                'class' => 'color-borneo-2',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 24,
+                'model_id' => 6,
+                'title' => 'Снежная королева',
+                'image' => '/images/colors/lada/niva/travel/snow_queen.png',
+                'class' => 'color-snow-queen-2',
+                'is_active' => false
+            ],
+            [
+                'type_id' => 24,
+                'model_id' => 6,
+                'title' => 'Айсберг',
+                'image' => '/images/colors/lada/niva/travel/iceberg.png',
+                'class' => 'color-iceberg',
+                'is_active' => false
             ],
         ];
 
