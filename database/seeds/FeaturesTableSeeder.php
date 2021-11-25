@@ -990,7 +990,67 @@ class FeaturesTableSeeder extends Seeder
             ],
         ];
 
-        $features = array_merge($granta, $vesta, $niva_legend);
+        // Niva Travel
+        $niva_travel = [
+            [
+                'model_id' => 6,
+                'type_id' => 24,
+                'name' => 'Универсал',
+                'title' => 'Кузов',
+                'icon' => 'body',
+            ],
+            [
+                'model_id' => 6,
+                'type_id' => 24,
+                'name' => 'Полный',
+                'title' => 'Привод',
+                'icon' => 'drive',
+            ],
+            [
+                'model_id' => 6,
+                'type_id' => 24,
+                'name' => '1.7 л',
+                'title' => 'объём двигателя',
+                'icon' => 'engine',
+            ],
+            [
+                'model_id' => 6,
+                'type_id' => 24,
+                'name' => '5MT',
+                'title' => 'коробка двигателя',
+                'icon' => 'transmission',
+            ],
+            [
+                'model_id' => 6,
+                'type_id' => 24,
+                'name' => '5',
+                'title' => 'места',
+                'icon' => 'seats',
+            ],
+            [
+                'model_id' => 6,
+                'type_id' => 24,
+                'name' => 'Бензин',
+                'title' => 'топливо',
+                'icon' => 'fuel_type',
+            ],
+            [
+                'model_id' => 6,
+                'type_id' => 24,
+                'name' => 'от 8,5л / 100км',
+                'title' => 'расход топлива',
+                'icon' => 'fuel',
+            ],
+            [
+                'model_id' => 6,
+                'type_id' => 24,
+                'name' => 'до 140 км/ч',
+                'title' => 'макс. скорост',
+                'icon' => 'speed',
+            ],
+        ];
+
+        $features = array_merge($granta, $vesta, $niva_legend, $niva_travel);
         DB::table('features')->insert($features);
     }
 }
