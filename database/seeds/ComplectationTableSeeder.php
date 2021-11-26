@@ -1369,7 +1369,65 @@ class ComplectationTableSeeder extends Seeder
             ],
         ];
 
-        $complectations = array_merge($granta, $vesta,  $niva_legend);
+        $niva_travel = [
+            [
+                'model_id' => 6,
+                'type_id' => 24,
+                'engine' => '1,7 л',
+                'flap' => '8-кл.',
+                'capacity' => '80 л.с.',
+                'transmission' => '5МТ',
+                'title' => 'Classic',
+                'price' => 831900,
+                'sort' => 1,
+            ],
+            [
+                'model_id' => 6,
+                'type_id' => 24,
+                'engine' => '1,7 л',
+                'flap' => '8-кл.',
+                'capacity' => '80 л.с.',
+                'transmission' => '5МТ',
+                'title' => 'Comfort',
+                'price' => 888900,
+                'sort' => 2,
+            ],
+            [
+                'model_id' => 6,
+                'type_id' => 24,
+                'engine' => '1,7 л',
+                'flap' => '8-кл.',
+                'capacity' => '80 л.с.',
+                'transmission' => '5МТ',
+                'title' => 'Comfort Off-road',
+                'price' => 932900,
+                'sort' => 3,
+            ],
+            [
+                'model_id' => 6,
+                'type_id' => 24,
+                'engine' => '1,7 л',
+                'flap' => '8-кл.',
+                'capacity' => '80 л.с.',
+                'transmission' => '5МТ',
+                'title' => 'Luxe',
+                'price' => 974900,
+                'sort' => 4,
+            ],
+            [
+                'model_id' => 6,
+                'type_id' => 24,
+                'engine' => '1,7 л',
+                'flap' => '8-кл.',
+                'capacity' => '80 л.с.',
+                'transmission' => '5МТ',
+                'title' => 'Luxe Off-road',
+                'price' => 993900,
+                'sort' => 5,
+            ],
+        ];
+
+        $complectations = array_merge($granta, $vesta,  $niva_legend, $niva_travel);
         DB::table('complectations')->insert($complectations);
     }
 }
