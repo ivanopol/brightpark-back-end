@@ -176,18 +176,6 @@ class CarModelCarTypeTableSeeder extends Seeder
                 'active' => 1,
             ],
             [
-                'car_model_id' => '4',
-                'car_type_id' => '11',
-                'preview' => false,
-                'price' => 649900,
-                'special_price' => 649900,
-                'credit_from' => 6026,
-                'count'=>0,
-                'image' => '/images/slider/mini/4x4/mobile/lada_4x4_three.png',
-                'slogan' => 'Полный привод, кузов из оцинкованной стали, внедорожник',
-                'active' => 0,
-            ],
-            [
                 'car_model_id' => '5',
                 'car_type_id' => '3',
                 'preview' => true,
