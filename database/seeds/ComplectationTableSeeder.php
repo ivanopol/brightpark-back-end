@@ -21,7 +21,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Comfort Light',
-                'price' => 719900,
+                'price' => 775900,
                 'sort' => 1,
             ],
             [
@@ -32,7 +32,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Comfort',
-                'price' => 726900,
+                'price' => 782900,
                 'sort' => 2,
             ],
             // hatchback
@@ -44,7 +44,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '90 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Classic',
-                'price' => 577500,
+                'price' => 638500,
                 'sort' => 1,
             ],
             [
@@ -55,7 +55,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '90 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Comfort Light',
-                'price' => 618500,
+                'price' => 679500,
                 'sort' => 2,
             ],
             [
@@ -66,7 +66,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '90 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Comfort',
-                'price' => 625500,
+                'price' => 686500,
                 'sort' => 3,
             ],
             [
@@ -77,7 +77,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '98 л.с.',
                 'transmission' => '4AТ',
                 'title' => 'Comfort',
-                'price' => 715500,
+                'price' => 776500,
                 'sort' => 4,
             ],
             [
@@ -88,7 +88,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '98 л.с.',
                 'transmission' => '4AТ',
                 'title' => 'Luxe',
-                'price' => 759800,
+                'price' => 825800,
                 'sort' => 5,
             ],
             // liftback
@@ -100,7 +100,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '90 л.с.',
                 'transmission' => '5MT',
                 'title' => 'Standard',
-                'price' => 553900,
+                'price' => 609900,
                 'sort' => 1,
             ],
             [
@@ -111,7 +111,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '90 л.с.',
                 'transmission' => '5MT',
                 'title' => 'Classic',
-                'price' => 582500,
+                'price' => 641500,
                 'sort' => 2,
             ],
             [
@@ -122,7 +122,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '90 л.с.',
                 'transmission' => '5MT',
                 'title' => 'Comfort Light',
-                'price' => 623500,
+                'price' => 682500,
                 'sort' => 3,
             ],
             [
@@ -133,7 +133,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '90 л.с.',
                 'transmission' => '5MT',
                 'title' => 'Comfort',
-                'price' => 630500,
+                'price' => 689500,
                 'sort' => 4,
             ],
             [
@@ -144,7 +144,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '90 л.с.',
                 'transmission' => '5MT',
                 'title' => '#CLUB',
-                'price' => 652900,
+                'price' => 711900,
                 'sort' => 5,
             ],
             [
@@ -155,7 +155,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '90 л.с.',
                 'transmission' => '5MT',
                 'title' => 'Luxe',
-                'price' => 674800,
+                'price' => 738800,
                 'sort' => 6,
             ],
             [
@@ -166,7 +166,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5MT',
                 'title' => 'Comfort Light',
-                'price' => 648500,
+                'price' => 707500,
                 'sort' => 7,
             ],
             [
@@ -177,7 +177,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5MT',
                 'title' => 'Comfort',
-                'price' => 655500,
+                'price' => 714500,
                 'sort' => 8,
             ],
             [
@@ -188,7 +188,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5MT',
                 'title' => '#CLUB',
-                'price' => 677900,
+                'price' => 736900,
                 'sort' => 9,
             ],
             [
@@ -199,7 +199,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5MT',
                 'title' => 'Luxe',
-                'price' => 699800,
+                'price' => 763800,
                 'sort' => 10,
             ],
             [
@@ -210,7 +210,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '98 л.с.',
                 'transmission' => '4AT',
                 'title' => 'Comfort',
-                'price' => 720500,
+                'price' => 779500,
                 'sort' => 11,
             ],
             [
@@ -221,7 +221,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '98 л.с.',
                 'transmission' => '4AT',
                 'title' => 'Luxe',
-                'price' => 764800,
+                'price' => 828800,
                 'sort' => 12,
             ],
             // sedan
@@ -233,7 +233,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '90 л.с.',
                 'transmission' => '5MT',
                 'title' => 'Standard',
-                'price' => 531900,
+                'price' => 587900,
                 'sort' => 1,
             ],
             [
@@ -244,7 +244,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '90 л.с.',
                 'transmission' => '5MT',
                 'title' => 'Classic',
-                'price' => 562500,
+                'price' => 621500,
                 'sort' => 2,
             ],
             [
@@ -255,7 +255,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '90 л.с.',
                 'transmission' => '5MT',
                 'title' => 'Comfort Light',
-                'price' => 603500,
+                'price' => 662500,
                 'sort' => 3,
             ],
             [
@@ -266,7 +266,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '90 л.с.',
                 'transmission' => '5MT',
                 'title' => 'Comfort',
-                'price' => 610500,
+                'price' => 669500,
                 'sort' => 4,
             ],
             [
@@ -277,7 +277,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '90 л.с.',
                 'transmission' => '5MT',
                 'title' => '#CLUB',
-                'price' => 632900,
+                'price' => 691900,
                 'sort' => 5,
             ],
             [
@@ -288,7 +288,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '90 л.с.',
                 'transmission' => '5MT',
                 'title' => 'Luxe',
-                'price' => 654800,
+                'price' => 718800,
                 'sort' => 6,
             ],
             [
@@ -299,7 +299,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5MT',
                 'title' => 'Comfort Light',
-                'price' => 628500,
+                'price' => 687500,
                 'sort' => 7,
             ],
             [
@@ -310,7 +310,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5MT',
                 'title' => 'Comfort',
-                'price' => 635500,
+                'price' => 694500,
                 'sort' => 8,
             ],
             [
@@ -321,7 +321,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5MT',
                 'title' => '#CLUB',
-                'price' => 657900,
+                'price' => 716900,
                 'sort' => 9,
             ],
             [
@@ -332,7 +332,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5MT',
                 'title' => 'Luxe',
-                'price' => 679800,
+                'price' => 743800,
                 'sort' => 10,
             ],
             [
@@ -343,7 +343,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '98 л.с.',
                 'transmission' => '4AT',
                 'title' => 'Comfort Light',
-                'price' => 693500,
+                'price' => 752500,
                 'sort' => 11,
             ],
             [
@@ -354,7 +354,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '98 л.с.',
                 'transmission' => '4AT',
                 'title' => 'Comfort',
-                'price' => 700500,
+                'price' => 759500,
                 'sort' => 12,
             ],
             [
@@ -365,7 +365,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '98 л.с.',
                 'transmission' => '4AT',
                 'title' => 'Luxe',
-                'price' => 744800,
+                'price' => 808800,
                 'sort' => 13,
             ],
             // universal
@@ -377,7 +377,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '90 л.с.',
                 'transmission' => '5MT',
                 'title' => 'Standard',
-                'price' => 560900,
+                'price' => 613900,
                 'sort' => 1,
             ],
             [
@@ -388,7 +388,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '90 л.с.',
                 'transmission' => '5MT',
                 'title' => 'Classic',
-                'price' => 589500,
+                'price' => 620500,
                 'sort' => 2,
             ],
             [
@@ -399,7 +399,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '90 л.с.',
                 'transmission' => '5MT',
                 'title' => 'Comfort Light',
-                'price' => 630500,
+                'price' => 686500,
                 'sort' => 3,
             ],
             [
@@ -410,7 +410,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '90 л.с.',
                 'transmission' => '5MT',
                 'title' => 'Comfort',
-                'price' => 637500,
+                'price' => 693500,
                 'sort' => 4,
             ],
             [
@@ -421,7 +421,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5MT',
                 'title' => 'Comfort',
-                'price' => 662500,
+                'price' => 718500,
                 'sort' => 5,
             ],
             [
@@ -432,7 +432,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5MT',
                 'title' => 'Luxe',
-                'price' => 706800,
+                'price' => 767800,
                 'sort' => 6,
             ],
             [
@@ -443,7 +443,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '98 л.с.',
                 'transmission' => '4AT',
                 'title' => 'Comfort',
-                'price' => 727500,
+                'price' => 783500,
                 'sort' => 7,
             ],
             [
@@ -454,7 +454,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '98 л.с.',
                 'transmission' => '4AT',
                 'title' => 'Luxe',
-                'price' => 771800,
+                'price' => 832800,
                 'sort' => 8,
             ],
         ];
@@ -469,7 +469,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Classic',
-                'price' => 783900,
+                'price' => 835900,
                 'sort' => 1,
             ],
             [
@@ -480,7 +480,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Comfort Light',
-                'price' => 833900,
+                'price' => 885900,
                 'sort' => 2,
             ],
             [
@@ -491,7 +491,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Comfort',
-                'price' => 844900,
+                'price' => 896900,
                 'sort' => 3,
             ],
             [
@@ -501,8 +501,8 @@ class ComplectationTableSeeder extends Seeder
                 'flap' => '16-кл.',
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
-                'title' => 'Luxe EnjoY Pro',
-                'price' => 967900,
+                'title' => 'Luxe EnjoY',
+                'price' => 1000900,
                 'sort' => 4,
             ],
             [
@@ -512,8 +512,8 @@ class ComplectationTableSeeder extends Seeder
                 'flap' => '16-кл.',
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
-                'title' => 'Exclusive',
-                'price' => 1023900,
+                'title' => 'Luxe EnjoY Pro',
+                'price' => 1019900,
                 'sort' => 5,
             ],
             [
@@ -521,10 +521,10 @@ class ComplectationTableSeeder extends Seeder
                 'type_id' => 1,
                 'engine' => '1,6 л',
                 'flap' => '16-кл.',
-                'capacity' => '113 л.с.',
-                'transmission' => 'АТ',
-                'title' => 'Comfort Light',
-                'price' => 933900,
+                'capacity' => '106 л.с.',
+                'transmission' => '5МТ',
+                'title' => 'Exclusive',
+                'price' => 1075900,
                 'sort' => 6,
             ],
             [
@@ -534,8 +534,8 @@ class ComplectationTableSeeder extends Seeder
                 'flap' => '16-кл.',
                 'capacity' => '113 л.с.',
                 'transmission' => 'АТ',
-                'title' => 'Comfort',
-                'price' => 944900,
+                'title' => 'Comfort Light',
+                'price' => 985900,
                 'sort' => 7,
             ],
             [
@@ -545,8 +545,8 @@ class ComplectationTableSeeder extends Seeder
                 'flap' => '16-кл.',
                 'capacity' => '113 л.с.',
                 'transmission' => 'АТ',
-                'title' => 'Luxe EnjoY Pro',
-                'price' => 1067900,
+                'title' => 'Comfort',
+                'price' => 996900,
                 'sort' => 8,
             ],
             [
@@ -556,9 +556,20 @@ class ComplectationTableSeeder extends Seeder
                 'flap' => '16-кл.',
                 'capacity' => '113 л.с.',
                 'transmission' => 'АТ',
-                'title' => 'Exclusive',
-                'price' => 1123900,
+                'title' => 'Luxe EnjoY Pro',
+                'price' => 1119900,
                 'sort' => 9,
+            ],
+            [
+                'model_id' => 2,
+                'type_id' => 1,
+                'engine' => '1,6 л',
+                'flap' => '16-кл.',
+                'capacity' => '113 л.с.',
+                'transmission' => 'АТ',
+                'title' => 'Exclusive',
+                'price' => 1175900,
+                'sort' => 10,
             ],
             // Vesta Cross
             [
@@ -569,7 +580,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Comfort',
-                'price' => 931900,
+                'price' => 983900,
                 'sort' => 1,
             ],
             [
@@ -580,7 +591,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
                 'title' => '[BLACK]',
-                'price' => 966900,
+                'price' => 1018900,
                 'sort' => 2,
             ],
             [
@@ -590,19 +601,19 @@ class ComplectationTableSeeder extends Seeder
                 'flap' => '16-кл.',
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
-                'title' => 'Luxe EnjoY Pro',
-                'price' => 1042900,
+                'title' => 'Luxe EnjoY',
+                'price' => 1075900,
                 'sort' => 3,
             ],
             [
                 'model_id' => 2,
                 'type_id' => 4,
-                'engine' => '1,8 л',
+                'engine' => '1,6 л',
                 'flap' => '16-кл.',
-                'capacity' => '122 л.с.',
+                'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
-                'title' => 'Comfort',
-                'price' => 956900,
+                'title' => 'Luxe EnjoY Pro',
+                'price' => 1094900,
                 'sort' => 4,
             ],
             [
@@ -612,19 +623,19 @@ class ComplectationTableSeeder extends Seeder
                 'flap' => '16-кл.',
                 'capacity' => '122 л.с.',
                 'transmission' => '5МТ',
-                'title' => 'Luxe EnjoY Pro',
-                'price' => 1067900,
+                'title' => 'Comfort',
+                'price' => 1008900,
                 'sort' => 5,
             ],
             [
                 'model_id' => 2,
                 'type_id' => 4,
-                'engine' => '1,6 л',
+                'engine' => '1,8 л',
                 'flap' => '16-кл.',
-                'capacity' => '113 л.с.',
-                'transmission' => 'АТ',
-                'title' => 'Comfort',
-                'price' => 1021900,
+                'capacity' => '122 л.с.',
+                'transmission' => '5МТ',
+                'title' => 'Luxe EnjoY Pro',
+                'price' => 1119900,
                 'sort' => 6,
             ],
             [
@@ -634,8 +645,8 @@ class ComplectationTableSeeder extends Seeder
                 'flap' => '16-кл.',
                 'capacity' => '113 л.с.',
                 'transmission' => 'АТ',
-                'title' => '[BLACK]',
-                'price' => 1056900,
+                'title' => 'Comfort',
+                'price' => 1073900,
                 'sort' => 7,
             ],
             [
@@ -645,9 +656,20 @@ class ComplectationTableSeeder extends Seeder
                 'flap' => '16-кл.',
                 'capacity' => '113 л.с.',
                 'transmission' => 'АТ',
-                'title' => 'Luxe EnjoY Pro',
-                'price' => 1132900,
+                'title' => '[BLACK]',
+                'price' => 1108900,
                 'sort' => 8,
+            ],
+            [
+                'model_id' => 2,
+                'type_id' => 4,
+                'engine' => '1,6 л',
+                'flap' => '16-кл.',
+                'capacity' => '113 л.с.',
+                'transmission' => 'АТ',
+                'title' => 'Luxe EnjoY Pro',
+                'price' => 1184900,
+                'sort' => 9,
             ],
             // Vesta SW
             [
@@ -658,7 +680,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Classic Start',
-                'price' => 880900,
+                'price' => 927900,
                 'sort' => 1,
             ],
             [
@@ -669,7 +691,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Comfort Light',
-                'price' => 897900,
+                'price' => 944900,
                 'sort' => 2,
             ],
             [
@@ -680,7 +702,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Comfort',
-                'price' => 908900,
+                'price' => 955900,
                 'sort' => 3,
             ],
             [
@@ -690,8 +712,8 @@ class ComplectationTableSeeder extends Seeder
                 'flap' => '16-кл.',
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
-                'title' => 'Luxe EnjoY Pro',
-                'price' => 1034900,
+                'title' => 'Luxe EnjoY',
+                'price' => 1062900,
                 'sort' => 4,
             ],
             [
@@ -701,8 +723,8 @@ class ComplectationTableSeeder extends Seeder
                 'flap' => '16-кл.',
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
-                'title' => 'Exclusive',
-                'price' => 1090900,
+                'title' => 'Luxe EnjoY Pro',
+                'price' => 1081900,
                 'sort' => 5,
             ],
             [
@@ -710,10 +732,10 @@ class ComplectationTableSeeder extends Seeder
                 'type_id' => 7,
                 'engine' => '1,6 л',
                 'flap' => '16-кл.',
-                'capacity' => '113 л.с.',
-                'transmission' => 'АТ',
-                'title' => 'Comfort Light',
-                'price' => 997900,
+                'capacity' => '106 л.с.',
+                'transmission' => '5МТ',
+                'title' => 'Exclusive',
+                'price' => 1137900,
                 'sort' => 6,
             ],
             [
@@ -723,8 +745,8 @@ class ComplectationTableSeeder extends Seeder
                 'flap' => '16-кл.',
                 'capacity' => '113 л.с.',
                 'transmission' => 'АТ',
-                'title' => 'Comfort',
-                'price' => 1008900,
+                'title' => 'Comfort Light',
+                'price' => 1044900,
                 'sort' => 7,
             ],
             [
@@ -734,8 +756,8 @@ class ComplectationTableSeeder extends Seeder
                 'flap' => '16-кл.',
                 'capacity' => '113 л.с.',
                 'transmission' => 'АТ',
-                'title' => 'Luxe EnjoY Pro',
-                'price' => 1134900,
+                'title' => 'Comfort',
+                'price' => 1055900,
                 'sort' => 8,
             ],
             [
@@ -745,9 +767,20 @@ class ComplectationTableSeeder extends Seeder
                 'flap' => '16-кл.',
                 'capacity' => '113 л.с.',
                 'transmission' => 'АТ',
-                'title' => 'Exclusive',
-                'price' => 1190900,
+                'title' => 'Luxe EnjoY Pro',
+                'price' => 1181900,
                 'sort' => 9,
+            ],
+            [
+                'model_id' => 2,
+                'type_id' => 7,
+                'engine' => '1,6 л',
+                'flap' => '16-кл.',
+                'capacity' => '113 л.с.',
+                'transmission' => 'АТ',
+                'title' => 'Exclusive',
+                'price' => 1237900,
+                'sort' => 10,
             ],
             // Vesta SW Cross
             [
@@ -758,7 +791,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Comfort',
-                'price' => 995900,
+                'price' => 1042900,
                 'sort' => 1,
             ],
             [
@@ -769,7 +802,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
                 'title' => '[BLACK]',
-                'price' => 1030900,
+                'price' => 1077900,
                 'sort' => 2,
             ],
             [
@@ -779,19 +812,19 @@ class ComplectationTableSeeder extends Seeder
                 'flap' => '16-кл.',
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
-                'title' => 'Luxe EnjoY Pro',
-                'price' => 1109900,
+                'title' => 'Luxe EnjoY ',
+                'price' => 1137900,
                 'sort' => 3,
             ],
             [
                 'model_id' => 2,
                 'type_id' => 8,
-                'engine' => '1,8 л',
+                'engine' => '1,6 л',
                 'flap' => '16-кл.',
-                'capacity' => '122 л.с.',
+                'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
-                'title' => 'Comfort',
-                'price' => 1020900,
+                'title' => 'Luxe EnjoY Pro',
+                'price' => 1156900,
                 'sort' => 4,
             ],
             [
@@ -801,19 +834,19 @@ class ComplectationTableSeeder extends Seeder
                 'flap' => '16-кл.',
                 'capacity' => '122 л.с.',
                 'transmission' => '5МТ',
-                'title' => 'Luxe EnjoY Pro',
-                'price' => 1134900,
+                'title' => 'Comfort',
+                'price' => 1067900,
                 'sort' => 5,
             ],
             [
                 'model_id' => 2,
                 'type_id' => 8,
-                'engine' => '1,6 л',
+                'engine' => '1,8 л',
                 'flap' => '16-кл.',
-                'capacity' => '113 л.с.',
-                'transmission' => 'АТ',
-                'title' => 'Comfort',
-                'price' => 1085900,
+                'capacity' => '122 л.с.',
+                'transmission' => '5МТ',
+                'title' => 'Luxe EnjoY Pro',
+                'price' => 1181900,
                 'sort' => 6,
             ],
             [
@@ -823,8 +856,8 @@ class ComplectationTableSeeder extends Seeder
                 'flap' => '16-кл.',
                 'capacity' => '113 л.с.',
                 'transmission' => 'АТ',
-                'title' => '[BLACK]',
-                'price' => 1120900,
+                'title' => 'Comfort',
+                'price' => 1132900,
                 'sort' => 7,
             ],
             [
@@ -834,9 +867,20 @@ class ComplectationTableSeeder extends Seeder
                 'flap' => '16-кл.',
                 'capacity' => '113 л.с.',
                 'transmission' => 'АТ',
-                'title' => 'Luxe EnjoY Pro',
-                'price' => 1199900,
+                'title' => '[BLACK]',
+                'price' => 1167900,
                 'sort' => 8,
+            ],
+            [
+                'model_id' => 2,
+                'type_id' => 8,
+                'engine' => '1,6 л',
+                'flap' => '16-кл.',
+                'capacity' => '113 л.с.',
+                'transmission' => 'АТ',
+                'title' => 'Luxe EnjoY Pro',
+                'price' => 1246900,
+                'sort' => 9,
             ],
             // Vesta CNG
             [
@@ -847,7 +891,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => NULL,
                 'transmission' => '5МТ',
                 'title' => 'Classic Start',
-                'price' => 983900,
+                'price' => 1030900,
                 'sort' => 1,
             ],
             [
@@ -858,7 +902,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => NULL,
                 'transmission' => '5МТ',
                 'title' => 'Comfort',
-                'price' => 1014900,
+                'price' => 1061900,
                 'sort' => 2,
             ],
             [
@@ -869,7 +913,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => NULL,
                 'transmission' => '5МТ',
                 'title' => 'Luxe EnjoY',
-                'price' => 1109900,
+                'price' => 1156900,
                 'sort' => 3,
             ],
             // Vesta Sport
@@ -881,7 +925,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '145 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Luxe',
-                'price' => 1209900,
+                'price' => 1256900,
                 'sort' => 1,
             ],
             [
@@ -892,7 +936,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '145 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Luxe EnjoY Pro',
-                'price' => 1265900,
+                'price' => 1312900,
                 'sort' => 2,
             ],
             // Xray
@@ -904,7 +948,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Standard',
-                'price' => 761900,
+                'price' => 802900,
                 'sort' => 1,
             ],
             [
@@ -915,7 +959,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Classic Air conditioner',
-                'price' => 799900,
+                'price' => 837900,
                 'sort' => 2,
             ],
             [
@@ -926,7 +970,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Comfort Light',
-                'price' => 824900,
+                'price' => 862900,
                 'sort' => 3,
             ],
             [
@@ -937,7 +981,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Comfort',
-                'price' => 832900,
+                'price' => 870900,
                 'sort' => 4,
             ],
             [
@@ -948,7 +992,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
                 'title' => '#CLUB',
-                'price' => 857900,
+                'price' => 895900,
                 'sort' => 5,
             ],
             [
@@ -958,8 +1002,8 @@ class ComplectationTableSeeder extends Seeder
                 'flap' => '16-кл.',
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
-                'title' => 'Luxe',
-                'price' => 884900,
+                'title' => '#CLUB EnjoY',
+                'price' => 924900,
                 'sort' => 6,
             ],
             [
@@ -968,9 +1012,9 @@ class ComplectationTableSeeder extends Seeder
                 'engine' => '1,6 л',
                 'flap' => '16-кл.',
                 'capacity' => '106 л.с.',
-                'transmission' => '5AМТ',
-                'title' => 'Comfort Light',
-                'price' => 854900,
+                'transmission' => '5МТ',
+                'title' => 'Luxe',
+                'price' => 951900,
                 'sort' => 7,
             ],
             [
@@ -980,8 +1024,8 @@ class ComplectationTableSeeder extends Seeder
                 'flap' => '16-кл.',
                 'capacity' => '106 л.с.',
                 'transmission' => '5AМТ',
-                'title' => 'Comfort',
-                'price' => 862900,
+                'title' => 'Comfort Light',
+                'price' => 892900,
                 'sort' => 8,
             ],
             [
@@ -991,8 +1035,8 @@ class ComplectationTableSeeder extends Seeder
                 'flap' => '16-кл.',
                 'capacity' => '106 л.с.',
                 'transmission' => '5AМТ',
-                'title' => '#CLUB',
-                'price' => 887900,
+                'title' => 'Comfort',
+                'price' => 900900,
                 'sort' => 9,
             ],
             [
@@ -1002,9 +1046,31 @@ class ComplectationTableSeeder extends Seeder
                 'flap' => '16-кл.',
                 'capacity' => '106 л.с.',
                 'transmission' => '5AМТ',
-                'title' => 'Luxe Prestige',
-                'price' => 970900,
+                'title' => '#CLUB',
+                'price' => 925900,
                 'sort' => 10,
+            ],
+            [
+                'model_id' => 3,
+                'type_id' => 20,
+                'engine' => '1,6 л',
+                'flap' => '16-кл.',
+                'capacity' => '106 л.с.',
+                'transmission' => '5AМТ',
+                'title' => '#CLUB EnjoY',
+                'price' => 954900,
+                'sort' => 11,
+            ],
+            [
+                'model_id' => 3,
+                'type_id' => 20,
+                'engine' => '1,6 л',
+                'flap' => '16-кл.',
+                'capacity' => '106 л.с.',
+                'transmission' => '5AМТ',
+                'title' => 'Luxe Prestige',
+                'price' => 1008900,
+                'sort' => 12,
             ],
             // Xray Cross
             [
@@ -1015,7 +1081,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Classic',
-                'price' => 858900,
+                'price' => 898900,
                 'sort' => 1,
             ],
             [
@@ -1026,7 +1092,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Comfort Light',
-                'price' => 935900,
+                'price' => 978900,
                 'sort' => 2,
             ],
             [
@@ -1037,7 +1103,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Comfort',
-                'price' => 943900,
+                'price' => 986900,
                 'sort' => 3,
             ],
             [
@@ -1048,7 +1114,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '122 л.с.',
                 'transmission' => '5МТ',
                 'title' => '[BLACK]',
-                'price' => 1036900,
+                'price' => 1079900,
                 'sort' => 4,
             ],
             [
@@ -1059,7 +1125,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '122 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Luxe',
-                'price' => 1038900,
+                'price' => 1110900,
                 'sort' => 5,
             ],
             [
@@ -1070,7 +1136,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '122 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Instinct',
-                'price' => 1117900,
+                'price' => 1160900,
                 'sort' => 6,
             ],
             [
@@ -1081,7 +1147,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '113 л.с.',
                 'transmission' => 'AT',
                 'title' => 'Classic Optima',
-                'price' => 1005900,
+                'price' => 1045900,
                 'sort' => 7,
             ],
             [
@@ -1092,7 +1158,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '113 л.с.',
                 'transmission' => 'AT',
                 'title' => 'Comfort Light',
-                'price' => 1045900,
+                'price' => 1088900,
                 'sort' => 8,
             ],
             [
@@ -1103,7 +1169,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '113 л.с.',
                 'transmission' => 'AT',
                 'title' => 'Comfort',
-                'price' => 1053900,
+                'price' => 1096900,
                 'sort' => 9,
             ],
             [
@@ -1114,7 +1180,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '113 л.с.',
                 'transmission' => 'AT',
                 'title' => '[BLACK]',
-                'price' => 1101900,
+                'price' => 1144900,
                 'sort' => 10,
             ],
             [
@@ -1125,7 +1191,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '113 л.с.',
                 'transmission' => 'AT',
                 'title' => 'Luxe',
-                'price' => 1103900,
+                'price' => 1175900,
                 'sort' => 11,
             ],
             [
@@ -1136,7 +1202,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '113 л.с.',
                 'transmission' => 'AT',
                 'title' => 'Instinct',
-                'price' => 1182900,
+                'price' => 1225900,
                 'sort' => 12,
             ],
             // Largus Universal
@@ -1148,7 +1214,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '90 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Classic',
-                'price' => 780900,
+                'price' => 812900,
                 'sort' => 1,
             ],
             [
@@ -1159,7 +1225,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '90 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Comfort Light',
-                'price' => 875900,
+                'price' => 907900,
                 'sort' => 2,
             ],
             [
@@ -1170,7 +1236,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '90 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Comfort',
-                'price' => 884900,
+                'price' => 916900,
                 'sort' => 3,
             ],
             [
@@ -1181,7 +1247,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Comfort Light',
-                'price' => 895900,
+                'price' => 927900,
                 'sort' => 4,
             ],
             [
@@ -1192,7 +1258,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Comfort',
-                'price' => 904900,
+                'price' => 936900,
                 'sort' => 5,
             ],
             [
@@ -1202,19 +1268,8 @@ class ComplectationTableSeeder extends Seeder
                 'flap' => '16-кл.',
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
-                'title' => 'Comfort',
-                'price' => 904900,
-                'sort' => 6,
-            ],
-            [
-                'model_id' => 5,
-                'type_id' => 3,
-                'engine' => '1,6 л',
-                'flap' => '16-кл.',
-                'capacity' => '106 л.с.',
-                'transmission' => '5МТ',
                 'title' => 'Luxe Light',
-                'price' => 958900,
+                'price' => 990900,
                 'sort' => 7,
             ],
             [
@@ -1225,7 +1280,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Luxe',
-                'price' => 978900,
+                'price' => 1010900,
                 'sort' => 8,
             ],
             // Largus Cross
@@ -1237,7 +1292,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Comfort Light',
-                'price' => 950900,
+                'price' => 982900,
                 'sort' => 1,
             ],
             [
@@ -1248,7 +1303,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Comfort',
-                'price' => 959900,
+                'price' => 991900,
                 'sort' => 2,
             ],
             [
@@ -1259,7 +1314,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Luxe Light',
-                'price' => 998900,
+                'price' => 1030900,
                 'sort' => 3,
             ],
             [
@@ -1270,7 +1325,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '106 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Luxe',
-                'price' => 1018900,
+                'price' => 1050900,
                 'sort' => 4,
             ],
         ];
@@ -1286,7 +1341,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '83 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Classic',
-                'price' => 659900,
+                'price' => 675900,
                 'sort' => 1,
             ],
             [
@@ -1297,7 +1352,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '83 л.с.',
                 'transmission' => '5МТ',
                 'title' => '[BLACK]',
-                'price' => 744900,
+                'price' => 760900,
                 'sort' => 2,
             ],
             [
@@ -1308,7 +1363,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '83 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Luxe',
-                'price' => 676900,
+                'price' => 692900,
                 'sort' => 3,
             ],
             [
@@ -1319,7 +1374,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '83 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Urban',
-                'price' => 735900,
+                'price' => 751900,
                 'sort' => 4,
             ],
             // Five doors
@@ -1331,7 +1386,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '83 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Classic',
-                'price' => 747900,
+                'price' => 755900,
                 'sort' => 1,
             ],
             [
@@ -1342,7 +1397,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '83 л.с.',
                 'transmission' => '5МТ',
                 'title' => '[BLACK]',
-                'price' => 832900,
+                'price' => 840900,
                 'sort' => 2,
             ],
             [
@@ -1353,7 +1408,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '83 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Luxe',
-                'price' => 764900,
+                'price' => 772900,
                 'sort' => 3,
             ],
             [
@@ -1364,7 +1419,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '83 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Urban',
-                'price' => 823900,
+                'price' => 831900,
                 'sort' => 4,
             ],
         ];
@@ -1378,7 +1433,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '80 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Classic',
-                'price' => 831900,
+                'price' => 858900,
                 'sort' => 1,
             ],
             [
@@ -1389,7 +1444,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '80 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Comfort',
-                'price' => 888900,
+                'price' => 915900,
                 'sort' => 2,
             ],
             [
@@ -1400,7 +1455,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '80 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Comfort Off-road',
-                'price' => 932900,
+                'price' => 959900,
                 'sort' => 3,
             ],
             [
@@ -1411,7 +1466,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '80 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Luxe',
-                'price' => 974900,
+                'price' => 1001900,
                 'sort' => 4,
             ],
             [
@@ -1422,7 +1477,7 @@ class ComplectationTableSeeder extends Seeder
                 'capacity' => '80 л.с.',
                 'transmission' => '5МТ',
                 'title' => 'Luxe Off-road',
-                'price' => 993900,
+                'price' => 1020900,
                 'sort' => 5,
             ],
         ];
