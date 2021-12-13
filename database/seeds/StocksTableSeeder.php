@@ -717,7 +717,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 35,
                 'date_begin' => '2021-09-01',
                 'date_end' => NULL,
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'title' => 'ВЗГЛЯНИТЕ НА СЕЗОН ПО-НОВОМУ',
