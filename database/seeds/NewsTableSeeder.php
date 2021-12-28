@@ -671,6 +671,8 @@ class NewsTableSeeder extends Seeder
                             <p>Все призы уже нашли своих обладателей!</p>
                             <p>Напоминаем, что видеоролики остались доступны в наших соц.сетях: Вконтакте и Инстаграм. Советуем вам посмотреть их вместе с вашими детьми! </p>
                             <p>И не забудьте подписаться, чтобы быть в курсе следующих мероприятий! </p>
+                            <p><a href="https://www.instagram.com/perm_skoda/" class="event" target="_blank">Инстаграм</a></p>
+                            <p><a href="https://vk.com/perm_skoda" class="event" target="_blank">Вконтакте</a></p>
                           ',
                 'text_short' => 'Уже 10 лет в семейном бренде ŠKODA существует традиция – проводить мероприятие для юных участников дорожного движение- ŠKODA Кроха. В этом году событие было проведено в режиме онлайн, но не утратило своего полезного предназначения.',
                 'preview' => '/images/news/skoda-kroha-v-kamskoj-doline-pomozhet-nauchit-rebenka-pdd.jpg',
