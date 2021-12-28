@@ -351,6 +351,12 @@ class ModelController extends Controller
 
         $news = Cache::remember($key, $minutes, function () use ($city_id)  {
             $news = News::whereIn('city_id', [0, $city_id])->orderBy('id', 'desc')->get();
+            foreach ($news as $key => $item) {
+                if ( $item->slug === 'skoda-kroha-v-kamskoj-doline-pomozhet-nauchit-rebenka-pdd' ) {
+                    unset($news[$key]);
+                    break;
+                }
+            }
             return $news;
         });
 
