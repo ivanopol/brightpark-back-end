@@ -504,7 +504,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 25,
                 'date_begin' => '2021-03-02',
                 'date_end' => NULL,
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'title' => 'Детали лета',
@@ -576,7 +576,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 29,
                 'date_begin' => '2021-07-21',
                 'date_end' => '2021-09-15',
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'title' => 'LADA VESTA AT&nbsp;ЗА&nbsp;6600&nbsp;РУБ. В&nbsp;МЕСЯЦ + КАСКО',
@@ -766,6 +766,27 @@ class StocksTableSeeder extends Seeder
                 'sort' => 36,
                 'date_begin' => '2021-09-15',
                 'date_end' => '2021-12-31',
+                'active' => 1,
+            ],
+            [
+                'title' => 'СЧАСТЛИВЫЕ ЧАСЫ',
+                'text' => '
+                    <p><b>Скидка 10% на ТО-1, ТО-2</b> при посещении во вторник, четверг и воскресенье!</p>
+                    <p><b>Мойка* автомобиля в ПОДАРОК</b> при прохождении ТО </p>
+                    <p>Выгодный сервис в Брайт Парке!</p>
+                    <h3>ЗАПИСАТЬСЯ В СЕРВИСНЫЙ ЦЕНТР</h3>
+                    <p>* Техническая мойка<br>
+                    ** Предложение действует для всех моделей автомобилей LADA. Акция действует до 28.02.2022 г., не суммируется с другими акциями.<br>
+                    Подробности и условия уточняйте у мастеров-консультантов.</p>
+                    <p>Подробности уточняйте по&nbsp;телефону: <span class="callibri_tel"><:PHONE:></span>.</p>
+                    ',
+                'text_short' => 'Скидка 10% на ТО-1, ТО-2 при посещении во вторник, четверг и воскресенье!',
+                'preview' => '/images/stocks/schastlivye-chasy.jpg',
+                'slug' => 'schastlivye-chasy',
+                'city_id' => 0,
+                'sort' => 37,
+                'date_begin' => '2021-12-28',
+                'date_end' => '2022-02-22',
                 'active' => 1,
             ],
         ];
