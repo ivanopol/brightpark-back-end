@@ -679,6 +679,15 @@ class NewsTableSeeder extends Seeder
                 'slug' => 'skoda-kroha-v-kamskoj-doline-pomozhet-nauchit-rebenka-pdd',
                 'city_id' => 0,
             ],
+            [
+                'title' => 'БРАЙТ ПАРК ПОЗДРАВЛЯЕТ ВСЕХ КЛИЕНТОВ С НОВЫМ ГОДОМ!',
+                'text' => '<p>Поздравляем вас с наступающим Новым 2022 годом! И говорим спасибо за то, что вы были с нами весь этот год, следили за новостями и акциями и принимали участие в событиях LADA БРАЙТ ПАРК!</p>
+                            <p>Желаем еще больше радостных событий, ровных дорог и здоровья вам и вашим близким! Увидимся в следующем году!</p>',
+                'text_short' => 'Поздравляем вас с наступающим Новым 2022 годом!',
+                'preview' => '/images/news/brajt-park-pozdravlyaet-vsekh-klientov-s-novym-godom.jpg',
+                'slug' => 'brajt-park-pozdravlyaet-vsekh-klientov-s-novym-godom',
+                'city_id' => 0,
+            ],
         ];
         DB::table('news')->insert($news);
     }
