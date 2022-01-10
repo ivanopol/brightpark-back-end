@@ -613,7 +613,13 @@ class SeoTableSeeder extends Seeder
             [
                 'url' => 'stocks/lada-vesta-za-5700-rub-v-mesyac',
                 'title' => 'LADA VESTA ЗА 5700 РУБ. В МЕСЯЦ - Брайт Парк <:CITY:>',
-                'description' => 'LADA VESTA ЗА 5700 РУБ. В МЕСЯЦ - Брайт Парк в <:CITY_DATIVE:>',
+                'description' => 'Выбирайте комфортный размер первоначального взноса и остаточного платежа для получения наиболее интересных финансовых условий - Брайт Парк в <:CITY_DATIVE:>',
+                'city' => '0',
+            ],
+            [
+                'url' => 'stocks/lada-vesta-sw-za-6300-rub-v-mesyac',
+                'title' => 'LADA VESTA SW ЗА 6300 РУБ. В МЕСЯЦ - Брайт Парк <:CITY:>',
+                'description' => 'Программа LADA Finance Максимум - это максимально удобный и быстрый способ приобретения автомобиля LADA уже сейчас. - Брайт Парк в <:CITY_DATIVE:>',
                 'city' => '0',
             ],
         ];
