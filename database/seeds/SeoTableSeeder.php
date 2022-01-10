@@ -610,6 +610,12 @@ class SeoTableSeeder extends Seeder
                 'description' => 'Скидка 10% на ТО-1, ТО-2 при посещении во вторник, четверг и воскресенье! - Брайт Парк в <:CITY_DATIVE:>',
                 'city' => '0',
             ],
+            [
+                'url' => 'stocks/lada-vesta-za-5700-rub-v-mesyac',
+                'title' => 'LADA VESTA ЗА 5700 РУБ. В МЕСЯЦ - Брайт Парк <:CITY:>',
+                'description' => 'LADA VESTA ЗА 5700 РУБ. В МЕСЯЦ - Брайт Парк в <:CITY_DATIVE:>',
+                'city' => '0',
+            ],
         ];
         $news = [
             [
