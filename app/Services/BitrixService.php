@@ -75,15 +75,21 @@ class BitrixService
         $emailsTo = 'dmitriy.ivanov@brightpark.ru,';
 
         $is_service = false;
-        if ($data['form_type'] === 1) {
-            $emailsTo .= 'new-cars@brightpark.ru';
-        } elseif ($data['form_type'] === 2) {
-            $emailsTo .= $city[0]->callback_service_emails;
-            $is_service = true;
-        } elseif ($data['form_type'] === 3) {
-            $emailsTo .= 'tradein@brightpark.ru';
-        } elseif ($data['form_type'] === 4) {
-            $emailsTo .= 'carhunter@brightpark.ru';
+
+        switch ($data['form_type']) {
+            case 1:
+                $emailsTo .= 'new-cars@brightpark.ru';
+            break;
+            case 2:
+                $emailsTo .= $city[0]->callback_service_emails;
+                $is_service = true;
+            break;
+            case 3:
+                $emailsTo .= 'tradein@brightpark.ru';
+            break;
+            case 4:
+                $emailsTo .= 'carhunter@brightpark.ru';
+            break;
         }
 
         $emailsTo = str_replace(' ', '', $emailsTo);
