@@ -71,15 +71,19 @@ class BitrixService
             throw new Exception();
         }
 
-        $emailFrom = 'site@brightpark.ru';
-        $emailsTo = 'ivanopol777@mail.ru,';
+        $emailFrom = 'admin@brightpark.ru';
+        $emailsTo = 'dmitriy.ivanov@brightpark.ru,';
 
         $is_service = false;
         if ($data['form_type'] === 1) {
-            $emailsTo .= $city[0]->callback_emails;
+            $emailsTo .= 'new-cars@brightpark.ru';
         } elseif ($data['form_type'] === 2) {
             $emailsTo .= $city[0]->callback_service_emails;
             $is_service = true;
+        } elseif ($data['form_type'] === 3) {
+            $emailsTo .= 'tradein@brightpark.ru';
+        } elseif ($data['form_type'] === 4) {
+            $emailsTo .= 'carhunter@brightpark.ru';
         }
 
         $emailsTo = str_replace(' ', '', $emailsTo);
