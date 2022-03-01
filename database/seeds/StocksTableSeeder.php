@@ -787,7 +787,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 37,
                 'date_begin' => '2021-12-28',
                 'date_end' => '2022-02-22',
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'title' => 'LADA VESTA ЗА 5700 РУБ. В МЕСЯЦ',
@@ -808,7 +808,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 38,
                 'date_begin' => '2022-01-10',
                 'date_end' => '2022-02-02',
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'title' => 'LADA VESTA SW ЗА 6300 РУБ. В МЕСЯЦ',
@@ -829,7 +829,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 39,
                 'date_begin' => '2022-01-10',
                 'date_end' => '2022-02-02',
-                'active' => 1,
+                'active' => 0,
             ],
         ];
 
