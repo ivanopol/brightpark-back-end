@@ -622,6 +622,12 @@ class SeoTableSeeder extends Seeder
                 'description' => 'Программа LADA Finance Максимум - это максимально удобный и быстрый способ приобретения автомобиля LADA уже сейчас. - Брайт Парк в <:CITY_DATIVE:>',
                 'city' => '0',
             ],
+            [
+                'url' => 'stocks/kruglosutochnaya-podderzhka-vashego-avtomobilya',
+                'title' => 'КРУГЛОСУТОЧНАЯ ПОДДЕРЖКА ВАШЕГО АВТОМОБИЛЯ - Брайт Парк <:CITY:>',
+                'description' => 'Эта программа обеспечения технической поддержки вас и вашего автомобиля при любых обстоятельствах 24/7 на всей территории РФ - Брайт Парк в <:CITY_DATIVE:>',
+                'city' => '0',
+            ],
         ];
         $news = [
             [
