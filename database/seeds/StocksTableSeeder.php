@@ -867,8 +867,8 @@ class StocksTableSeeder extends Seeder
                 'slug' => 'kruglosutochnaya-podderzhka-vashego-avtomobilya',
                 'city_id' => 0,
                 'sort' => 40,
-                'date_begin' => NULL,
-                'date_end' => NULL,
+                'date_begin' => '2022-02-01',
+                'date_end' => '2022-12-31',
                 'active' => 1,
             ],
         ];
