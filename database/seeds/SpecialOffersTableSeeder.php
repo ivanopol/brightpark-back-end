@@ -15,9 +15,9 @@ class SpecialOffersTableSeeder extends Seeder
                 'description'=>'',
                 'count'=>17,
                 'is_active'=>true,
-                'img_mobile' => '/images/main/mobile/rate.jpg',
-                'img_tablet' => '/images/main/tablet/rate.jpg',
-                'img_desktop' => '/images/main/desktop/rate.jpg',
+                'img_mobile' => '/images/main/mobile/tvoya-novaya-lada.jpg',
+                'img_tablet' => '/images/main/tablet/tvoya-novaya-lada.jpg',
+                'img_desktop' => '/images/main/desktop/tvoya-novaya-lada.jpg',
             ],
 
             [
