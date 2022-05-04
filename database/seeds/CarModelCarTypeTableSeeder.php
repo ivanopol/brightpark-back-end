@@ -154,7 +154,7 @@ class CarModelCarTypeTableSeeder extends Seeder
             [
                 'car_model_id' => '3',
                 'car_type_id' => '20',
-                'preview' => false,
+                'preview' => true,
                 'price' => 1106900,
                 'special_price' => 1106900,
                 'credit_from' => 0,
@@ -166,7 +166,7 @@ class CarModelCarTypeTableSeeder extends Seeder
             [
                 'car_model_id' => '3',
                 'car_type_id' => '4',
-                'preview' => true,
+                'preview' => false,
                 'price' => 1249900,
                 'special_price' => 1249900,
                 'credit_from' => 0,
