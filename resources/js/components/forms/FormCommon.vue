@@ -10,7 +10,7 @@
                 </label>
             </div>
             <button :id="form_id + '_button'" :click="send" class="event" :class="{preloader : blocked}" v-bind:disabled="isButtonDisabled">{{button_text}}</button>
-            <a :id="form_id + '_call'" :href="'tel:' + cities.active.phone" :data-goal="goal_call" @click="sendGoals(goal_call)" class="btn btn-primary callibri_phone btn-position green event">Позвонить</a>
+            <a :id="form_id + '_call'" :href="'tel:' + cities.active.phone" :data-goal="goal_call" @click="sendGoals(goal_call)" class="btn btn-primary calltouch_phone btn-position green event">Позвонить</a>
 
             <div class="validation-message-wrap">
                 <div class="model-choose-text warning validation-message" v-show="error">

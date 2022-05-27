@@ -11,7 +11,7 @@
                         </ul>
                         <div class="service__contacts-wrap">
                             <a :id="'service__' + service.alias + '__button'" class="btn btn-primary btn-position event" v-on:click.prevent="show(service.title, service.alias)">Записаться</a>
-                            <a :id="'service__' + service.alias + '__call'" :href="'tel:' + cities.active.phone" class="btn btn-primary callibri_phone btn-position green event">Позвонить</a>
+                            <a :id="'service__' + service.alias + '__call'" :href="'tel:' + cities.active.phone" class="btn btn-primary calltouch_phone btn-position green event">Позвонить</a>
                         </div>
                     </template>
                 </badger-accordion-item>
