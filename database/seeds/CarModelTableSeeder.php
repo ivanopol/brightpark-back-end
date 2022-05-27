@@ -70,7 +70,7 @@ class CarModelTableSeeder extends Seeder
                 'description' => '',
                 'sort' => 5,
                 'sort2' => 6,
-                'preview' => '',
+                'preview' => '/images/slider/mini/4x4/lada_4x4_three.png',
             ],
         ];
 
