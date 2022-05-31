@@ -78,14 +78,12 @@ class BitrixService
 
         switch ($data['form_type']) {
             case 1:
+            case 3:
                 $emailsTo .= 'new-cars@brightpark.ru';
             break;
             case 2:
                 $emailsTo .= $city[0]->callback_service_emails;
                 $is_service = true;
-            break;
-            case 3:
-                $emailsTo .= 'tradein@brightpark.ru';
             break;
             case 4:
                 $emailsTo .= 'carhunter@brightpark.ru';
