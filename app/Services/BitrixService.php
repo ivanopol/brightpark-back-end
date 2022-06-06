@@ -186,8 +186,11 @@ class BitrixService
             $erc_list[] = $erc['ID'];
         }
 
-        $responsible_id = $erc_list[ mt_rand(0, count($erc_list) - 1) ];
-
+        if (count($erc_list)) {
+            $responsible_id = $erc_list[mt_rand(0, count($erc_list) - 1)];
+        } else {
+            $responsible_id = 1374;
+        }
 
         $info = 'Создан новый лид #ID_SUSH# и к нему прикреплено дело #ID_JOB#';
 
