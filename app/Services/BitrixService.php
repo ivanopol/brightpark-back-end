@@ -168,7 +168,7 @@ class BitrixService
             ]
         ];
 
-        $curl = curl_init();
+/*        $curl = curl_init();
         curl_setopt_array($curl, [
             CURLOPT_SSL_VERIFYPEER => 0,
             CURLOPT_POST => 1,
@@ -189,8 +189,10 @@ class BitrixService
         if (count($erc_list)) {
             $responsible_id = $erc_list[mt_rand(0, count($erc_list) - 1)];
         } else {
-            $responsible_id = 1374;
-        }
+            $responsible_id = 8054;
+        }*/
+
+        $responsible_id = 8054; // Яна Злобина
 
         $info = 'Создан новый лид #ID_SUSH# и к нему прикреплено дело #ID_JOB#';
 
