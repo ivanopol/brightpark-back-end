@@ -1012,7 +1012,7 @@ class StocksTableSeeder extends Seeder
                         <li>Магнитогорск - 8(3519) 51-58-56</li>
                     </ul>
                 ',
-                'text_short' => 'До 31.05 в наших автосалонах действует специальная программа «Гарантия Отличной Ставки» от ПАО «Совкомбанк» для держателей карт рассрочки «Халва»!',
+                'text_short' => 'Брайт Парк запускает новую акцию для новых клиентов сервисного центра!',
                 'preview' => '/images/stocks/skidka-20-dlya-novyh-klientov.jpg',
                 'slug' => 'skidka-20-dlya-novyh-klientov',
                 'city_id' => 0,
