@@ -400,7 +400,7 @@ class ModelController extends Controller
             $result = [];
             $stocks = Stocks::where('slug', $stocks_slug)->first();
 
-            if (!$stocks) {
+            if (!$stocks || !intval($stocks->active)) {
                 return new \stdClass();
             }
 
