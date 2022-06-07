@@ -943,7 +943,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 43,
                 'date_begin' => '2022-06-01',
                 'date_end' => '2022-06-30',
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'title' => 'Вы ждали, вы хотели, мы смогли! Кредит на новую LADA от 5,7%!',
