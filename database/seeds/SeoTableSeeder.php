@@ -670,6 +670,12 @@ class SeoTableSeeder extends Seeder
                 'description' => 'Брайт Парк запускает новую акцию для новых клиентов сервисного центра! - Брайт Парк в <:CITY_DATIVE:>',
                 'city' => '0',
             ],
+            [
+                'url' => 'stocks/letnyaya-programma-granta-finance',
+                'title' => 'ЛЕТНЯЯ ПРОГРАММА GRANTA FINANCE - Брайт Парк <:CITY:>',
+                'description' => 'Брайт Парк заботится о том, чтобы каждый смог позволить себе новый автомобиль - Брайт Парк в <:CITY_DATIVE:>',
+                'city' => '0',
+            ],
         ];
         $news = [
             [
