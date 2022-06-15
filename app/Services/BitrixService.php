@@ -115,21 +115,19 @@ class BitrixService
             }
         }
 
-        Mail::send('emails.feedback', $params, function($message) use ($emailsTo, $emailFrom, $subject) {
-            $emails = explode(',', $emailsTo);
+        // Если заявка с сервиса, то не отправляем письмо
+        if (!$is_service) {
+            Mail::send('emails.feedback', $params, function($message) use ($emailsTo, $emailFrom, $subject) {
+                $emails = explode(',', $emailsTo);
 
-            foreach ($emails as $key => $email) {
-                if (!$key) {
-                    $message->to($email)->subject($subject)->from($emailFrom, 'Брайт Парк');
-                } else {
-                    $message->cc($email)->subject($subject)->from($emailFrom, 'Брайт Парк');
+                foreach ($emails as $key => $email) {
+                    if (!$key) {
+                        $message->to($email)->subject($subject)->from($emailFrom, 'Брайт Парк');
+                    } else {
+                        $message->cc($email)->subject($subject)->from($emailFrom, 'Брайт Парк');
+                    }
                 }
-            }
-        });
-
-        //Если заявка с сервиса, то не создаем лида
-        if ($is_service) {
-            return false;
+            });
         }
 
         // Ищем есть ли лиды или контакты с таким номером в Битриксе, если есть
@@ -168,6 +166,7 @@ class BitrixService
             ]
         ];
 
+        // Получение ответственного по отделу ЕРЦ
 /*        $curl = curl_init();
         curl_setopt_array($curl, [
             CURLOPT_SSL_VERIFYPEER => 0,
@@ -212,10 +211,25 @@ class BitrixService
             $datetime = $data['date'] . ' ' . $data['time'] . ':00';
         }
 
+        $title = 'Test lid';
+        if ($is_service) {
+            $caption = '';
+            switch ($data['caption']) {
+                case 'Заявка на сервис. Диагностика':
+                case 'Заявка на сервис. Новые клиенты':
+                    $caption = $data['caption'];
+                    break;
+                default:
+                    $caption = 'Заявка на сервис';
+                    break;
+            }
+            $title = $caption;
+        }
+
         // Добавление лида
         $request = [
             'fields' => [
-                "TITLE" => 'Test lid', //название формы на сайте
+                "TITLE" => $title, //название формы на сайте
                 "STATUS_ID" => "NEW",
                 "OPENED" => "Y",
                 "ASSIGNED_BY_ID" => $responsible_id,
