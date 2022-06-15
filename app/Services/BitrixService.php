@@ -213,6 +213,7 @@ class BitrixService
 
         $title = 'Test lid';
         if ($is_service) {
+            $responsible_id = 1221; // Ответственный для сервиса Юля Лазарева
             $caption = '';
             switch ($data['caption']) {
                 case 'Заявка на сервис. Диагностика':
