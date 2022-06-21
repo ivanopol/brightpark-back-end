@@ -244,6 +244,10 @@ class BitrixService
             'params' => ["REGISTER_SONET_EVENT" => "Y"],
         ];
 
+        if ($is_service) {
+            $request['fields']['UF_CRM_1604059429'] = 5833;
+        }
+
         if ($datetime) {
             $date_test_drive =  new \DateTimeImmutable($datetime);
             $date_test_drive2 = $date_test_drive->modify('+1 hour');
