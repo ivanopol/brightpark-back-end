@@ -231,6 +231,7 @@ class BitrixService
         $request = [
             'fields' => [
                 "TITLE" => $title, //название формы на сайте
+                "UF_CRM_MGO_CC_TAG_ID" => $title,
                 "STATUS_ID" => "NEW",
                 "OPENED" => "Y",
                 "ASSIGNED_BY_ID" => $responsible_id,
