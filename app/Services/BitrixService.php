@@ -88,6 +88,9 @@ class BitrixService
             case 4:
                 $emailsTo .= 'carhunter@brightpark.ru';
             break;
+            case 5:
+                $emailsTo .= 'nmr@brightpark.ru';
+            break;
         }
 
         $emailsTo = str_replace(' ', '', $emailsTo);
