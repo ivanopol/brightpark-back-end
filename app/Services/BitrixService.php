@@ -89,7 +89,7 @@ class BitrixService
                 $emailsTo .= 'carhunter@brightpark.ru';
             break;
             case 5:
-                $emailsTo .= 'nmr@brightpark.ru';
+                $emailsTo .= 'service@brightpark.ru';
             break;
         }
 
