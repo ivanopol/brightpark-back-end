@@ -75,6 +75,8 @@ class BitrixService
         $emailsTo = 'dmitriy.ivanov@brightpark.ru,';
 
         $is_service = false;
+        $no_lead = false;
+        $resp_id = 0;
 
         switch ($data['form_type']) {
             case 1:
@@ -88,8 +90,17 @@ class BitrixService
             case 4:
                 $emailsTo .= 'carhunter@brightpark.ru';
             break;
-            case 5:
+            case 5: // Вайбер / Сервис
                 $emailsTo .= 'service@brightpark.ru';
+                $resp_id = 1073;
+            break;
+            case 6: // Вайбер / Пролонгация
+                $emailsTo .= 'nmr@brightpark.ru';
+                $no_lead = true;
+            break;
+            case 7: // Вайбер / Отдел продаж
+                $emailsTo .= 'new-cars@brightpark.ru';
+                $resp_id = 856;
             break;
         }
 
@@ -118,7 +129,6 @@ class BitrixService
             }
         }
 
-        // Если заявка с сервиса, то не отправляем письмо
         if (!$is_service) {
             Mail::send('emails.feedback', $params, function($message) use ($emailsTo, $emailFrom, $subject) {
                 $emails = explode(',', $emailsTo);
@@ -228,6 +238,14 @@ class BitrixService
                     break;
             }
             $title = $caption;
+        }
+
+        if ($no_lead) {
+            return false;
+        }
+
+        if ($resp_id) {
+            $responsible_id = $resp_id;
         }
 
         // Добавление лида
