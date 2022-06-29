@@ -86,12 +86,14 @@ class BitrixService
             case 2:
                 $emailsTo .= $city[0]->callback_service_emails;
                 $is_service = true;
+                $resp_id = 1221;
             break;
             case 4:
                 $emailsTo .= 'carhunter@brightpark.ru';
             break;
             case 5: // Вайбер / Сервис
                 $emailsTo .= 'service@brightpark.ru';
+                $is_service = true;
                 $resp_id = 1073;
             break;
             case 6: // Вайбер / Пролонгация
@@ -226,7 +228,7 @@ class BitrixService
 
         $title = 'Test lid';
         if ($is_service) {
-            $responsible_id = 1221; // Ответственный для сервиса Юля Лазарева
+            $responsible_id = $resp_id; // Ответственный для сервиса Юля Лазарева
             $caption = '';
             switch ($data['caption']) {
                 case 'Заявка на сервис. Диагностика':
