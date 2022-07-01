@@ -499,7 +499,7 @@ class SeoTableSeeder extends Seeder
             [
                 'url' => 'stocks/skidka-10-v-den-obrashcheniya',
                 'title' => 'Скидка 10% в день обращения! - Брайт Парк <:CITY:>',
-                'description' => 'Крутые весенние акции в сервисных центрах Брайт Парка продолжаются! - Брайт Парк в <:CITY_DATIVE:>',
+                'description' => 'Крутые акции в сервисных центрах Брайт Парка продолжаются! - Брайт Парк в <:CITY_DATIVE:>',
                 'city' => '0',
             ],
             [
