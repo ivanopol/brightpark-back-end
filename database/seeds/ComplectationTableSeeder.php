@@ -20,8 +20,8 @@ class ComplectationTableSeeder extends Seeder
                 'flap' => '8-кл.',
                 'capacity' => '90 л.с.',
                 'transmission' => '5MT',
-                'title' => 'Standard',
-                'price' => 727900,
+                'title' => 'Classic\'22',
+                'price' => 678300,
                 'sort' => 1,
             ],
             [
@@ -164,8 +164,8 @@ class ComplectationTableSeeder extends Seeder
                 'flap' => '8-кл.',
                 'capacity' => '90 л.с.',
                 'transmission' => '5MT',
-                'title' => 'Standard',
-                'price' => 749900,
+                'title' => 'Classic\'22',
+                'price' => 698300,
                 'sort' => 1,
             ],
             [
@@ -353,8 +353,8 @@ class ComplectationTableSeeder extends Seeder
                 'flap' => '8-кл.',
                 'capacity' => '90 л.с.',
                 'transmission' => '5MT',
-                'title' => 'Standard',
-                'price' => 753900,
+                'title' => 'Classic\'22',
+                'price' => 705300,
                 'sort' => 1,
             ],
             [
