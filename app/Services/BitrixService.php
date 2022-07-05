@@ -233,10 +233,10 @@ class BitrixService
             switch ($data['caption']) {
                 case 'Заявка на сервис. Диагностика':
                 case 'Заявка на сервис. Новые клиенты':
-                    $caption = $data['caption'];
+                    $caption = isset($city[0]->title_ru) ? $city[0]->title_ru . ' ' . $data['caption'] : $data['caption'];
                     break;
                 default:
-                    $caption = 'Заявка на сервис';
+                    $caption = isset($city[0]->title_ru) ? $city[0]->title_ru . ' Заявка на сервис' : 'Заявка на сервис';
                     break;
             }
             $title = $caption;
