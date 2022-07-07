@@ -762,6 +762,12 @@ class SeoTableSeeder extends Seeder
                 'description' => 'Поздравляем вас с наступающим Новым 2022 годом!',
                 'city' => '0',
             ],
+            [
+                'url' => 'news/vazhnaya-informaciya-dlya-vladelcev-lada',
+                'title' => 'Важная информация для владельцев LADA – Брайт Парк в <:CITY_DATIVE:>',
+                'description' => 'В связи с изменениями, внесенными в Решение Комиссии Таможенного союза от 09.12.2011 №877 "О принятии технического регламента Таможенного союза"',
+                'city' => '0',
+            ],
         ];
         $both = array_merge($news, $stocks, $models, $pages);
         DB::table('seo')->insert($both);
