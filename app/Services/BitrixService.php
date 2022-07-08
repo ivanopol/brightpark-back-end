@@ -77,6 +77,7 @@ class BitrixService
         $is_service = false;
         $no_lead = false;
         $resp_id = 0;
+        $responsible_id = 35253; // Ответственная ЕРЦ Черемных Елена
         $source_id = "SELF";
 
         switch ($data['form_type']) {
@@ -184,33 +185,6 @@ class BitrixService
                 "IS_ONLINE" => "Y",
             ]
         ];
-
-        // Получение ответственного по отделу ЕРЦ
-/*        $curl = curl_init();
-        curl_setopt_array($curl, [
-            CURLOPT_SSL_VERIFYPEER => 0,
-            CURLOPT_POST => 1,
-            CURLOPT_RETURNTRANSFER => 1,
-            CURLOPT_URL => 'https://team.brightpark.ru/rest/1071/hbibccfa9fyugrlv/user.get.json',
-            CURLOPT_POSTFIELDS => http_build_query($request),
-        ]);
-
-        $erc_online = curl_exec($curl);
-        curl_close($curl);
-        $erc_online = json_decode($erc_online, 1);
-        $erc_list = [];
-
-        foreach ($erc_online['result'] as $erc) {
-            $erc_list[] = $erc['ID'];
-        }
-
-        if (count($erc_list)) {
-            $responsible_id = $erc_list[mt_rand(0, count($erc_list) - 1)];
-        } else {
-            $responsible_id = 8054;
-        }*/
-
-        $responsible_id = 8054; // Яна Злобина
 
         $info = 'Создан новый лид #ID_SUSH# и к нему прикреплено дело #ID_JOB#';
 
