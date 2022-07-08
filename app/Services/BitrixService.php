@@ -77,6 +77,7 @@ class BitrixService
         $is_service = false;
         $no_lead = false;
         $resp_id = 0;
+        $source_id = "SELF";
 
         switch ($data['form_type']) {
             case 1:
@@ -95,14 +96,17 @@ class BitrixService
                 $emailsTo .= 'service@brightpark.ru';
                 $is_service = true;
                 $resp_id = 1073;
+                $source_id = 'WEBFORM';
             break;
             case 6: // Вайбер / Пролонгация
                 $emailsTo .= 'nmr@brightpark.ru';
                 $no_lead = true;
+                $source_id = 'WEBFORM';
             break;
             case 7: // Вайбер / Отдел продаж
                 $emailsTo .= 'new-cars@brightpark.ru';
                 $resp_id = 856;
+                $source_id = 'WEBFORM';
             break;
         }
 
@@ -268,7 +272,7 @@ class BitrixService
                 "ASSIGNED_BY_ID" => $responsible_id,
                 "UF_CRM_1471411617" => '40', // источник=lada-rostov.ru
                 "UF_CRM_MT_REFERER" => $referer,
-                "SOURCE_ID" => "SELF",
+                "SOURCE_ID" => $source_id,
                 "NAME" => $data['name'], //имя из поля
                 "PHONE" => [["VALUE" => $phone, "VALUE_TYPE" => "MOBILE"]],
             ],
