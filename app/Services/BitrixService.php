@@ -239,7 +239,15 @@ class BitrixService
                     $caption = isset($city[0]->title_ru) ? $city[0]->title_ru . ' Заявка на сервис' : 'Заявка на сервис';
                     break;
             }
+
+            if ($data['form_type'] == 5) {
+                $caption .= '. Вайбер';
+            }
             $title = $caption;
+        }
+
+        if ($data['form_type'] == 6 || $data['form_type'] == 7) {
+            $title .= '. Вайбер';
         }
 
         if ($no_lead) {
