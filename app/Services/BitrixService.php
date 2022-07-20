@@ -88,7 +88,7 @@ class BitrixService
             case 2:
                 $emailsTo .= $city[0]->callback_service_emails;
                 $is_service = true;
-                $resp_id = 1221;
+                $resp_id = 1221; // Юлия Лазарева
             break;
             case 4:
                 $emailsTo .= 'carhunter@brightpark.ru';
@@ -96,7 +96,7 @@ class BitrixService
             case 5: // Вайбер / Сервис
                 $emailsTo .= 'service@brightpark.ru';
                 $is_service = true;
-                $resp_id = 1073;
+                $resp_id = 1073;  // Оксана Килина
                 $source_id = 'WEBFORM';
             break;
             case 6: // Вайбер / Пролонгация
@@ -106,7 +106,7 @@ class BitrixService
             break;
             case 7: // Вайбер / Отдел продаж
                 $emailsTo .= 'new-cars@brightpark.ru';
-                $resp_id = 856;
+                $resp_id = 856; // Софья Гоблиб
                 $source_id = 'WEBFORM';
             break;
         }
@@ -206,7 +206,6 @@ class BitrixService
 
         $title = 'Test lid';
         if ($is_service) {
-            $responsible_id = $resp_id; // Ответственный для сервиса Юля Лазарева
             $caption = '';
             switch ($data['caption']) {
                 case 'Заявка на сервис. Диагностика':
