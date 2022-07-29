@@ -208,6 +208,7 @@ class BitrixService
         if ($is_service) {
             $caption = '';
             switch ($data['caption']) {
+                case 'Заявка на сервис. Баннер скидки до 70%':
                 case 'Заявка на сервис. Диагностика':
                 case 'Заявка на сервис. Новые клиенты':
                     $caption = isset($city[0]->title_ru) ? $city[0]->title_ru . ' ' . $data['caption'] : $data['caption'];
