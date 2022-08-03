@@ -31,6 +31,7 @@ class BitrixService
 
         $data['date'] = isset($data['date']) ? htmlspecialchars(strip_tags($data['date']), ENT_QUOTES) : '';
         $data['time'] = isset($data['time']) ? htmlspecialchars(strip_tags($data['time']), ENT_QUOTES) : '';
+        $data['gift'] = isset($data['gift']) ? htmlspecialchars(strip_tags($data['gift']), ENT_QUOTES) : '';
         $data['car'] = isset($data['car']) ? htmlspecialchars(strip_tags($data['car']), ENT_QUOTES) : '';
 
         $data['responsible_id'] = isset($data['responsible_id']) ? intval($data['responsible_id']) : '';
@@ -119,6 +120,7 @@ class BitrixService
         $params['phone'] = isset($data['phone']) ? $data['phone'] : '';
         $params['date'] = isset($data['date']) ? $data['date'] : '';
         $params['time'] = isset($data['time']) ? $data['time'] : '';
+        $params['gift'] = isset($data['gift']) ? $data['gift'] : '';
         $params['car'] = isset($data['car']) ? $data['car'] : '';
         $params['comment'] = isset($data['comment']) ? $data['comment'] : '';
         $params['gift'] = isset($data['gift']) ? $data['gift'] : '';
@@ -205,6 +207,7 @@ class BitrixService
         }
 
         $title = $data['caption'] ? $data['caption'] : 'Test lid';
+
         if ($is_service) {
             $caption = '';
             switch ($data['caption']) {
@@ -260,7 +263,11 @@ class BitrixService
         if ($datetime) {
             $date_1 =  new \DateTimeImmutable($datetime);
             $date_1 = $date_1->modify('+1 hour');
-            $request['fields']['UF_CRM_MT_PRIMECHENI'] = $date_1->format('d.m.Y H:i:s');
+            $gift = '';
+            if (isset($data['gift']) && $data['gift']) {
+                $gift = ', подарок: ' . $data['gift'];
+            }
+            $request['fields']['UF_CRM_MT_PRIMECHENI'] = 'Дата перезвона: ' . $date_1->format('d.m.Y H:i:s') . $gift;
         }
 
         if ($data['car']) {

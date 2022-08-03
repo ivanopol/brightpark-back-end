@@ -6,6 +6,9 @@
     @if($date)
         <li>Дата: {{$date}} <?php echo ($time) ? ", " . $time : ""; ?></li>
     @endif
+    @if($gift)
+        <li>Подарок: {{$gift}}</li>
+    @endif
     @if($car)
         <li>Автомобиль: {{$car}}</li>
     @endif
