@@ -204,7 +204,7 @@ class BitrixService
             $datetime = $data['date'] . ' ' . $data['time'] . ':00';
         }
 
-        $title = 'Test lid';
+        $title = $data['caption'] ? $data['caption'] : 'Test lid';
         if ($is_service) {
             $caption = '';
             switch ($data['caption']) {
