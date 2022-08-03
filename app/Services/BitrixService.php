@@ -258,9 +258,9 @@ class BitrixService
         }
 
         if ($datetime) {
-            $date_test_drive =  new \DateTimeImmutable($datetime);
-            $date_test_drive2 = $date_test_drive->modify('+1 hour');
-            $request['fields']['UF_CRM_1491831660'] = $date_test_drive2->format('d.m.Y H:i:s');
+            $date_1 =  new \DateTimeImmutable($datetime);
+            $date_1 = $date_1->modify('+1 hour');
+            $request['fields']['UF_CRM_MT_PRIMECHENI'] = $date_1->format('d.m.Y H:i:s');
         }
 
         if ($data['car']) {
