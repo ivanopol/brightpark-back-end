@@ -98,17 +98,18 @@ class BitrixService
                 $emailsTo .= 'service@brightpark.ru';
                 $is_service = true;
                 $resp_id = 1073;  // Оксана Килина
-                $source_id = 'WEBFORM';
+                $source_id = '11';
+                $channel = 'Viber';
             break;
             case 6: // Вайбер / Пролонгация
                 $emailsTo .= 'nmr@brightpark.ru';
                 $no_lead = true;
-                $source_id = 'WEBFORM';
+                $source_id = '11';
             break;
             case 7: // Вайбер / Отдел продаж
                 $emailsTo .= 'new-cars@brightpark.ru';
                 $resp_id = 856; // Софья Гоблиб
-                $source_id = 'WEBFORM';
+                $source_id = '11';
             break;
         }
 
@@ -211,16 +212,6 @@ class BitrixService
         if ($is_service) {
             $caption = '';
             $caption = isset($city[0]->title_ru) ? $city[0]->title_ru . ' ' . $data['caption'] : $data['caption'];
-/*            switch ($data['caption']) {
-                case 'Заявка на сервис. Баннер скидки до 70%':
-                case 'Заявка на сервис. Диагностика':
-                case 'Заявка на сервис. Новые клиенты':
-                    $caption = isset($city[0]->title_ru) ? $city[0]->title_ru . ' ' . $data['caption'] : $data['caption'];
-                    break;
-                default:
-                    $caption = isset($city[0]->title_ru) ? $city[0]->title_ru . ' Заявка на сервис' : 'Заявка на сервис';
-                    break;
-            }*/
 
             if ($data['form_type'] == 5) {
                 $caption .= '. Вайбер';
@@ -259,6 +250,11 @@ class BitrixService
 
         if ($is_service) {
             $request['fields']['UF_CRM_1604059429'] = 5833;
+
+            if ($channel) {
+                $request['fields']['UF_CRM_MGO_CC_CHANNEL_TYPE'] = $channel;
+
+            }
         }
 
         if ($datetime) {
