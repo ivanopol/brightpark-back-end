@@ -105,11 +105,13 @@ class BitrixService
                 $emailsTo .= 'nmr@brightpark.ru';
                 $no_lead = true;
                 $source_id = '11';
+                $channel = 'Viber';
             break;
             case 7: // Вайбер / Отдел продаж
                 $emailsTo .= 'new-cars@brightpark.ru';
                 $resp_id = 856; // Софья Гоблиб
                 $source_id = '11';
+                $channel = 'Viber';
             break;
         }
 
@@ -212,10 +214,6 @@ class BitrixService
         if ($is_service) {
             $caption = '';
             $caption = isset($city[0]->title_ru) ? $city[0]->title_ru . ' ' . $data['caption'] : $data['caption'];
-
-            if ($data['form_type'] == 5) {
-                $caption .= '. Вайбер';
-            }
             $title = $caption;
         }
 
@@ -253,7 +251,6 @@ class BitrixService
 
             if ($channel) {
                 $request['fields']['UF_CRM_MGO_CC_CHANNEL_TYPE'] = $channel;
-
             }
         }
 
