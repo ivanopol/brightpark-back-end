@@ -210,7 +210,8 @@ class BitrixService
 
         if ($is_service) {
             $caption = '';
-            switch ($data['caption']) {
+            $caption = isset($city[0]->title_ru) ? $city[0]->title_ru . ' ' . $data['caption'] : $data['caption'];
+/*            switch ($data['caption']) {
                 case 'Заявка на сервис. Баннер скидки до 70%':
                 case 'Заявка на сервис. Диагностика':
                 case 'Заявка на сервис. Новые клиенты':
@@ -219,7 +220,7 @@ class BitrixService
                 default:
                     $caption = isset($city[0]->title_ru) ? $city[0]->title_ru . ' Заявка на сервис' : 'Заявка на сервис';
                     break;
-            }
+            }*/
 
             if ($data['form_type'] == 5) {
                 $caption .= '. Вайбер';
