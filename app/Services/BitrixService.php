@@ -30,6 +30,7 @@ class BitrixService
         $data['comment'] = str_replace('w--', '<br>', $data['comment']);
 
         $data['date'] = isset($data['date']) ? htmlspecialchars(strip_tags($data['date']), ENT_QUOTES) : '';
+        $data['date_sending'] = isset($data['date_sending']) ? htmlspecialchars(strip_tags($data['date_sending']), ENT_QUOTES) : '';
         $data['time'] = isset($data['time']) ? htmlspecialchars(strip_tags($data['time']), ENT_QUOTES) : '';
         $data['gift'] = isset($data['gift']) ? htmlspecialchars(strip_tags($data['gift']), ENT_QUOTES) : '';
         $data['car'] = isset($data['car']) ? htmlspecialchars(strip_tags($data['car']), ENT_QUOTES) : '';
@@ -252,6 +253,10 @@ class BitrixService
             if ($channel) {
                 $request['fields']['UF_CRM_MGO_CC_CHANNEL_TYPE'] = $channel;
             }
+        }
+
+        if ($data['date_sending']) {
+            $request['fields']['UF_CRM_MGO_CC_CREATE'] = $data['date_sending'];
         }
 
         if ($datetime) {
