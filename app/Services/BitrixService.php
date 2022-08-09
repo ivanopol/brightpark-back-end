@@ -256,7 +256,7 @@ class BitrixService
         }
 
         if ($data['date_sending']) {
-            $request['fields']['UF_CRM_MGO_CC_CREATE'] = $data['date_sending'];
+            $request['fields']['UF_CRM_MGO_CC_CREATE'] = $data['date_sending'] . ' 01:00:00';
         }
 
         if ($datetime) {
