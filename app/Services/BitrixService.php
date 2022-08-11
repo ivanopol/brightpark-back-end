@@ -4,6 +4,7 @@
 namespace App\Services;
 
 use Exception;
+use Illuminate\Support\Facades\Log;
 use Mail;
 use App\City;
 use Illuminate\Support\Facades\Session;
@@ -288,6 +289,13 @@ class BitrixService
                     $request['fields'][strtoupper($label)] = $data['utm'][$label];
                 }
             }
+        }
+
+        if ($data['form_type'] == 5 ||
+            $data['form_type'] == 6 ||
+            $data['form_type'] == 7
+        ) {
+            Log::info('Вайбер форма: ' . json_encode($request));
         }
 
         $curl = curl_init();
