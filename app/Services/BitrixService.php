@@ -79,7 +79,7 @@ class BitrixService
         $is_service = false;
         $no_lead = false;
         $resp_id = 0;
-        $responsible_id = 35253; // Ответственная ЕРЦ Черемных Елена
+        $responsible_id = 19465; // Ответственная ЕРЦ Черемных Елена
         $source_id = "SELF";
 
         switch ($data['form_type']) {
