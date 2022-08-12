@@ -99,7 +99,7 @@ class BitrixService
             case 5: // Вайбер / Сервис
                 $emailsTo .= 'service@brightpark.ru';
                 $is_service = true;
-                $resp_id = 1073;  // Оксана Килина
+                $resp_id = 32787;  // Мучкина Татьяна
                 $source_id = '11';
                 $channel = 'Viber';
             break;
@@ -239,7 +239,7 @@ class BitrixService
                 "STATUS_ID" => "NEW",
                 "OPENED" => "Y",
                 "ASSIGNED_BY_ID" => $responsible_id,
-                "UF_CRM_1471411617" => '40', // источник=lada-rostov.ru
+                "UF_CRM_1471411617" => '40', // источник=brightpark.ru
                 "UF_CRM_MT_REFERER" => $referer,
                 "SOURCE_ID" => $source_id,
                 "NAME" => $data['name'], //имя из поля
@@ -295,6 +295,7 @@ class BitrixService
             $data['form_type'] == 6 ||
             $data['form_type'] == 7
         ) {
+            $data['UF_CRM_1471411617'] = '';
             Log::info('Вайбер форма: ' . json_encode($request));
         }
 
