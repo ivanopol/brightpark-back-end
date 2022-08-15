@@ -295,6 +295,10 @@ class BitrixService
             $data['form_type'] == 6 ||
             $data['form_type'] == 7
         ) {
+            // Лид / Направление - UF_CRM_1604059429
+            // 5833 - Сервис
+            // 5828 - Продажи новые ФЛ
+            $request['fields']['UF_CRM_1604059429'] = $data['form_type'] == 5 || $data['form_type'] == 6 ? 5833 : 5828;
             $request['fields']['UF_CRM_1471411617'] = '';
             Log::info('Вайбер форма: ' . json_encode($request));
         }
