@@ -214,14 +214,14 @@ class BitrixService
         $title = $data['caption'] ? $data['caption'] : 'Test lid';
 
         if ($is_service) {
-            $caption = '';
-            $caption = isset($city[0]->title_ru) ? $city[0]->title_ru . ' ' . $data['caption'] : $data['caption'];
-            $title = $caption;
+            $title = $data['caption'];
         }
 
         if ($data['form_type'] == 6 || $data['form_type'] == 7) {
             $title .= '. Вайбер';
         }
+
+        $title = isset($city[0]->title_ru) ? $title . ' ' . $city[0]->title_ru : $title;
 
         if ($no_lead) {
             return false;
