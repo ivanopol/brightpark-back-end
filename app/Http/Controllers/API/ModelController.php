@@ -548,6 +548,7 @@ class ModelController extends Controller
                         "title_ru" => $car->cars_offer[0]->title_ru,
                     ],
                     "price" =>  $car->cars_offer[0]->pivot->special_price,
+                    "price_old" => $car->cars_offer[0]->pivot->price,
                     "credit" =>  $car->cars_offer[0]->pivot->credit_from,
                 ];
             }
