@@ -43,6 +43,10 @@ class BitrixService
         $data['form_type'] = isset($data['form_type']) ? intval($data['form_type']) : '';
         $data['gift'] = isset($data['gift']) ? htmlspecialchars(strip_tags($data['gift']), ENT_QUOTES) : '';
 
+        if ($data['phone'] == '79217471138') {
+            return false;
+        }
+
         $url = '';
         if (isset($data['url']) && count($data['url'])) {
             $url = $data['url']['href'];
