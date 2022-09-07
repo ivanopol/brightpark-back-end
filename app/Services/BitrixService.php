@@ -304,6 +304,8 @@ class BitrixService
             // 5828 - Продажи новые ФЛ
             $request['fields']['UF_CRM_1604059429'] = $data['form_type'] == 5 || $data['form_type'] == 6 ? 5833 : 5828;
             $request['fields']['UF_CRM_1471411617'] = '';
+            $request['fields']['UF_CRM_1660132211'] = 12047;
+            $request['fields']['UF_CRM_1660132477'] = 12067;
             Log::info('Вайбер форма: ' . json_encode($request));
         }
 
