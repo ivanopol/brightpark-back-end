@@ -222,7 +222,7 @@ class BitrixService
             $title = $data['caption'];
         }
 
-        if ($data['form_type'] == 6 || $data['form_type'] == 7) {
+        if ($data['form_type'] == 5 || $data['form_type'] == 6 || $data['form_type'] == 7) {
             $title .= '. Вайбер';
         }
 
