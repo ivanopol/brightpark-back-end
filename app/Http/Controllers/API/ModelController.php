@@ -398,9 +398,18 @@ class ModelController extends Controller
 
         $stocks = Cache::remember($key, $minutes, function () use ($city_id, $stocks_slug)  {
             $result = [];
-            $stocks = Stocks::where('slug', $stocks_slug)->first();
+            $stocks = Stocks::where('slug', '=', $stocks_slug)
+                ->whereIn('city_id', [0, $city_id])
+                ->orderBy('city_id', 'DESC')
+                ->get();
 
-            if (!$stocks || !intval($stocks->active)) {
+            if (!count($stocks)) {
+                return new \stdClass();
+            }
+
+            $stocks = $stocks[0];
+
+            if (!intval($stocks->active)) {
                 return new \stdClass();
             }
 
