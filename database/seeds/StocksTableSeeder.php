@@ -1132,8 +1132,8 @@ class StocksTableSeeder extends Seeder
                     <p>Если вы&nbsp;хотите купить автомобиль, посетить сервисный центр или купить запчасти, то&nbsp;эти выгодные дни специально для вас!</p>
                     <p>Только три дня <span class="orange">28, 29&nbsp;и&nbsp;30&nbsp;октября 2022г</span> при покупке новой LADA выдадим машину с&nbsp;<span class="orange">полным баком бензина!</span> Покупаете в&nbsp;кредит? Дополнительно получаете зимнюю резину или сигнализацию <span class="orange">в&nbsp;ПОДАРОК!</span></p>
                     <p>Ну&nbsp;это еще не&nbsp;все! Всем посетителям сервиса <span class="orange">скидка&nbsp;20%</span> на&nbsp;запчасти, а&nbsp;также отдаем все <span class="orange">аксессуары по&nbsp;себестоимости!</span></p>
-                    <p>Узнать больше или записаться в&nbsp;ДЦ для покупки новой LADA можно по&nbsp;телефону <span class="calltouch_phone">+7(351) 958-56-58</span></p>
-                    <p>Уточнить информацию или записаться в&nbsp;сервисный центр&nbsp;&mdash;</br><span class="callibri_phone_service">+7(351)951-58-56</span></p>
+                    <p>Узнать больше или записаться в&nbsp;ДЦ для покупки новой LADA можно по&nbsp;телефону <span class="calltouch_phone b">+7(351) 958-56-58</span></p>
+                    <p>Уточнить информацию или записаться в&nbsp;сервисный центр&nbsp;&mdash;</br><span class="callibri_phone_service b">+7(351)951-58-56</span></p>
                     <p>Задать интересующие вопросы или купить запчасти&nbsp;&mdash;</br><span class="b">+7 (343) 385-03-32 доб. 1696</span></p>
                     <p>Или оставьте заявку, мы вам перезвоним!</p>
                 ',
@@ -1152,8 +1152,8 @@ class StocksTableSeeder extends Seeder
                     <p>Если вы&nbsp;хотите купить автомобиль, посетить сервисный центр или купить запчасти, то&nbsp;эти выгодные дни специально для вас!</p>
                     <p>Только три дня <span class="orange">28, 29&nbsp;и&nbsp;30&nbsp;октября 2022г</span> при покупке новой LADA выдадим машину с&nbsp;<span class="orange">полным баком бензина!</span> Покупаете в&nbsp;кредит? Дополнительно получаете зимнюю резину или сигнализацию <span class="orange">в&nbsp;ПОДАРОК!</span></p>
                     <p>Ну&nbsp;это еще не&nbsp;все! Всем посетителям сервиса <span class="orange">скидка&nbsp;20%</span> на&nbsp;запчасти, а&nbsp;также отдаем все <span class="orange">аксессуары по&nbsp;себестоимости!</span></p>
-                    <p>Узнать больше или записаться в&nbsp;ДЦ для покупки новой LADA можно по&nbsp;телефону <span class="calltouch_phone">+7 (495) 145-88-45</span></p>
-                    <p>Уточнить информацию или записаться в&nbsp;сервисный центр&nbsp;&mdash;</br><span class="callibri_phone_service">+7(495)145-87-45</span></p>
+                    <p>Узнать больше или записаться в&nbsp;ДЦ для покупки новой LADA можно по&nbsp;телефону <span class="calltouch_phone b">+7 (495) 145-88-45</span></p>
+                    <p>Уточнить информацию или записаться в&nbsp;сервисный центр&nbsp;&mdash;</br><span class="callibri_phone_service b">+7(495)145-87-45</span></p>
                     <p>Задать интересующие вопросы или купить запчасти&nbsp;&mdash;</br><span class="b">+7 (342) 200-93-85 доб. 1691</span></p>
                     <p>Или оставьте заявку, мы вам перезвоним!</p>
                 ',
