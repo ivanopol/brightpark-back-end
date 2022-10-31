@@ -1064,7 +1064,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 48,
                 'date_begin' => '2022-10-28',
                 'date_end' => '2022-10-30',
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'title' => 'Выгодные выходные во всех дилерских центрах Брайт Парк!',
@@ -1084,7 +1084,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 48,
                 'date_begin' => '2022-10-28',
                 'date_end' => '2022-10-30',
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'title' => 'Выгодные выходные во всех дилерских центрах Брайт Парк!',
@@ -1104,7 +1104,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 48,
                 'date_begin' => '2022-10-28',
                 'date_end' => '2022-10-30',
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'title' => 'Выгодные выходные во всех дилерских центрах Брайт Парк!',
@@ -1124,7 +1124,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 48,
                 'date_begin' => '2022-10-28',
                 'date_end' => '2022-10-30',
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'title' => 'Выгодные выходные во всех дилерских центрах Брайт Парк!',
@@ -1144,7 +1144,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 48,
                 'date_begin' => '2022-10-28',
                 'date_end' => '2022-10-30',
-                'active' => 1,
+                'active' => 0,
             ],
             [
                 'title' => 'Выгодные выходные во всех дилерских центрах Брайт Парк!',
