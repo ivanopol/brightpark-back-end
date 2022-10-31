@@ -1164,7 +1164,7 @@ class StocksTableSeeder extends Seeder
                 'sort' => 48,
                 'date_begin' => '2022-10-28',
                 'date_end' => '2022-10-30',
-                'active' => 1,
+                'active' => 0,
             ],
         ];
 
