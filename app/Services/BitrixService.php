@@ -116,7 +116,7 @@ class BitrixService
             break;
             case 7: // Вайбер / Отдел продаж
                 $emailsTo .= 'new-cars@brightpark.ru';
-                $resp_id = 856; // Софья Гоблиб
+                $resp_id = 19465; // Безматерных Анастасия
                 $source_id = '11';
                 $channel = 'Viber';
             break;
