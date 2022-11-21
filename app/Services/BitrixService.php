@@ -84,7 +84,7 @@ class BitrixService
         $is_service = false;
         $no_lead = false;
         $resp_id = 0;
-        $responsible_id = 19465; // Ответственная ЕРЦ Черемных Елена
+        $responsible_id = 19465; // Ответственная ЕРЦ Анастасия Безматерных
         $source_id = "SELF";
         $channel = '';
 
