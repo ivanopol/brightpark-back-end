@@ -1063,7 +1063,7 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 1,
                 'sort' => 48,
                 'date_begin' => '2022-10-28',
-                'date_end' => '2022-10-30',
+                'date_end' => '2022-11-30',
                 'active' => 0,
             ],
             [
@@ -1083,7 +1083,7 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 5,
                 'sort' => 48,
                 'date_begin' => '2022-10-28',
-                'date_end' => '2022-10-30',
+                'date_end' => '2022-11-30',
                 'active' => 0,
             ],
             [
@@ -1103,7 +1103,7 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 6,
                 'sort' => 48,
                 'date_begin' => '2022-10-28',
-                'date_end' => '2022-10-30',
+                'date_end' => '2022-11-30',
                 'active' => 0,
             ],
             [
@@ -1123,7 +1123,7 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 4,
                 'sort' => 48,
                 'date_begin' => '2022-10-28',
-                'date_end' => '2022-10-30',
+                'date_end' => '2022-11-30',
                 'active' => 0,
             ],
             [
@@ -1143,7 +1143,7 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 3,
                 'sort' => 48,
                 'date_begin' => '2022-10-28',
-                'date_end' => '2022-10-30',
+                'date_end' => '2022-11-30',
                 'active' => 0,
             ],
             [
@@ -1163,8 +1163,34 @@ class StocksTableSeeder extends Seeder
                 'city_id' => 2,
                 'sort' => 48,
                 'date_begin' => '2022-10-28',
-                'date_end' => '2022-10-30',
+                'date_end' => '2022-11-30',
                 'active' => 0,
+            ],
+            [
+                'title' => 'Уникальное предложение только в Брайт Парке! Выгода по госпрограмме до 25%*!',
+                'text' => '
+                    <p>Более 300 автомобилей в&nbsp;наличии, отличные кредитные ставки и&nbsp;trade-in по&nbsp;цене рынка!</p>
+                    <p>Государственные программы доступны для граждан, которые:</p>
+                    <ul>
+                        <li>имеют&nbsp;1 (и&nbsp;более) несовершеннолетнего ребёнка</li>
+                        <li>не&nbsp;имели ранее в&nbsp;собственности автомобиль</li>
+                        <li>сдают в&nbsp;&laquo;трейд-ин&raquo; автомобиль старше 6&nbsp;лет и&nbsp;сроком владения не&nbsp;менее 1&nbsp;года</li>
+                        <li>являются сотрудниками медицинских организаций</li>
+                        <li>являются военнослужащими, в&nbsp;том числе призванных в&nbsp;рамках частичной мобилизации, членов их&nbsp;семей</li>
+                        <li>являются пенсионерами, ранее проходившими службу в&nbsp;вооружённых силах</li>
+                        <li><являются сотрудниками образовательных организаций.</li>
+                    </ul>
+                    <p>Подробнее об&nbsp;условиях и&nbsp;сроках приобретения автомобиля уточняйте у&nbsp;менеджеров отдела продаж.</p>
+                    <p>*Выгода&nbsp;25% состоит из&nbsp;выгоды&nbsp;20% по&nbsp;госпрограмме и&nbsp;дополнительной выгоды&nbsp;5% от&nbsp;Брайт Парка.</p>
+                ',
+                'text_short' => 'Более 300 автомобилей в&nbsp;наличии, отличные кредитные ставки и&nbsp;trade-in по&nbsp;цене рынка!',
+                'preview' => '/images/stocks/skidki-do-25-procentov-po-gosprogramme-lada.jpg',
+                'slug' => 'skidki-do-25-procentov-po-gosprogramme-lada',
+                'city_id' => 0,
+                'sort' => 49,
+                'date_begin' => '2022-08-01',
+                'date_end' => '2022-10-30',
+                'active' => 1,
             ],
         ];
 
